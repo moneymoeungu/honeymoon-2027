@@ -78,7 +78,7 @@
 
     if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
       navigator.serviceWorker
-        .register('sw.js?v=5')
+        .register('sw.js?v=6')
         .then((reg) => reg.update().catch(() => {}))
         .catch(() => {});
     }
@@ -116,11 +116,28 @@
         if (!saved.coupleTitle || saved.coupleTitle === '우리의 이베리아 허니문') {
           saved.coupleTitle = '종구♡쨀린 허니문';
         }
+        let mergedBudgetItems = Array.isArray(saved.budgetItems) && saved.budgetItems.length ? saved.budgetItems : fresh.budgetItems;
+        const legacyRoundTripIdx = mergedBudgetItems.findIndex(
+          (x) => x.id === 'bi-1' && x.title && x.title.includes('왕복') && (!x.actual || x.actual === 0)
+        );
+        const hasSplitReturn = mergedBudgetItems.some((x) => x.id === 'bi-1b');
+        if (legacyRoundTripIdx !== -1 && !hasSplitReturn) {
+          const freshOut = fresh.budgetItems.find((x) => x.id === 'bi-1');
+          const freshRet = fresh.budgetItems.find((x) => x.id === 'bi-1b');
+          if (freshOut && freshRet) {
+            mergedBudgetItems = [
+              ...mergedBudgetItems.slice(0, legacyRoundTripIdx),
+              freshOut,
+              freshRet,
+              ...mergedBudgetItems.slice(legacyRoundTripIdx + 1)
+            ];
+          }
+        }
         userState = {
           ...fresh,
           ...saved,
           budgetConfig: { ...fresh.budgetConfig, ...(saved.budgetConfig || {}) },
-          budgetItems: Array.isArray(saved.budgetItems) && saved.budgetItems.length ? saved.budgetItems : fresh.budgetItems,
+          budgetItems: mergedBudgetItems,
           checklist: Array.isArray(saved.checklist) && saved.checklist.length ? saved.checklist : fresh.checklist
         };
         saveUserState();
@@ -802,9 +819,10 @@
                   )
                   .join('')}
                 <div class="flex flex-wrap gap-1.5 pt-1">
-                  <a href="${f.skyscannerUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-primary btn-hm-sm">스카이스캐너</a>
+                  <a href="${f.naverFlightsUrl || f.skyscannerUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-primary btn-hm-sm">네이버 항공권 (2인·편도)</a>
                   <a href="${f.googleFlightsUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-sm">Google 항공권</a>
-                  <a href="${f.bookingUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-sm">항공사 공식 사이트</a>
+                  <a href="${f.bookingUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-sm">${escapeHtml(f.bookingLabel || '항공사 공식 사이트')}</a>
+                  ${f.extraUrl ? `<a href="${f.extraUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-sm">${escapeHtml(f.extraLabel || '추가 비교')}</a>` : ''}
                 </div>
               </div>
 
@@ -1347,8 +1365,9 @@
               ${b.voucher ? `<span class="text-[var(--done-text)] font-medium">보관: ${escapeHtml(b.voucher)}</span>` : ''}
             </div>
             <div class="flex flex-wrap gap-1.5">
-              ${b.url ? `<a href="${b.url}" target="_blank" rel="noopener" class="btn-hm btn-hm-primary btn-hm-sm flex-1">공식 사이트</a>` : ''}
+              ${b.url ? `<a href="${b.url}" target="_blank" rel="noopener" class="btn-hm btn-hm-primary btn-hm-sm flex-1">${escapeHtml(b.urlLabel || '공식 사이트')}</a>` : ''}
               ${b.subUrl ? `<a href="${b.subUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-sm">${escapeHtml(b.subLabel || '비교')}</a>` : ''}
+              ${b.thirdUrl ? `<a href="${b.thirdUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-sm">${escapeHtml(b.thirdLabel || '공식')}</a>` : ''}
               <button type="button" data-voucher-booking="${b.id}" class="btn-hm btn-hm-sm">바우처 메모</button>
             </div>
           </div>
@@ -1932,12 +1951,12 @@ ${names}`;
           };
 
           if (fd.get('syncBudget')) {
-            const bookingMap = { f1: 'b-flight-icn-bcn', f2: 'b-flight-bcn-opo', f3: 'b-flight-opo-pmi', f4: 'b-flight-pmi-bcn', f5: 'b-flight-icn-bcn' };
+            const bookingMap = { f1: 'b-flight-icn-bcn', f2: 'b-flight-bcn-opo', f3: 'b-flight-opo-pmi', f4: 'b-flight-pmi-bcn', f5: 'b-flight-bcn-icn' };
             const bId = bookingMap[flightId];
             if (bId) {
               userState.bookingOverrides[bId] = { ...(userState.bookingOverrides[bId] || {}), status: status === 'booked' ? 'booked' : 'todo' };
             }
-            const budgetMap = { f1: 'bi-1', f2: 'bi-2', f3: 'bi-3', f4: 'bi-4' };
+            const budgetMap = { f1: 'bi-1', f2: 'bi-2', f3: 'bi-3', f4: 'bi-4', f5: 'bi-1b' };
             const bItem = userState.budgetItems.find((x) => x.id === budgetMap[flightId]);
             if (bItem && status === 'booked' && paidKRW > 0) {
               bItem.currency = 'KRW';

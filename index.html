@@ -30,8 +30,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin="" onerror="this.onerror=null;this.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';" />
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" crossorigin="" onerror="var s=document.createElement('script');s.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';document.head.appendChild(s);"></script>
 
-  <link rel="manifest" href="manifest.json?v=5" />
-  <link rel="stylesheet" href="css/styles.css?v=5" />
+  <link rel="manifest" href="manifest.json?v=6" />
+  <link rel="stylesheet" href="css/styles.css?v=6" />
 </head>
 <body data-layout="tabs">
 
@@ -74,7 +74,7 @@
 
           <!-- Clean City Color Legend Route -->
           <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm text-[var(--text-sub)]">
-            <span>인천</span>
+            <span>인천(도하 경유)</span>
             <span class="text-[var(--text-muted)]">→</span>
             <span class="inline-flex items-center gap-1 font-medium text-[var(--text-main)]">
               <span class="city-dot dot-bcn"></span>바르셀로나 4박
@@ -88,7 +88,7 @@
               <span class="city-dot dot-pmi"></span>마요르카 4박
             </span>
             <span class="text-[var(--text-muted)]">→</span>
-            <span>인천(5/22 도착)</span>
+            <span>인천 직항(5/22 도착)</span>
           </div>
         </div>
       </div>
@@ -185,7 +185,7 @@
           <span id="flights-summary-badge" class="px-2 py-0.5 rounded text-xs font-semibold status-todo">전 구간 미예약</span>
         </div>
         <p class="text-xs sm:text-sm text-[var(--text-sub)]">
-          장거리 왕복(인천↔바르셀로나)을 먼저 확정한 뒤, 유럽 내 3구간을 수하물(20~25kg) 포함 조건으로 발권하세요. 모든 시각은 현지 기준입니다.
+          출국편(인천→도하→바르셀로나 경유 편도)과 귀국편(바르셀로나→인천 직항 편도)을 먼저 확정한 뒤, 유럽 내 3구간을 수하물(20~25kg) 포함 조건으로 발권하세요. 모든 시각은 현지 기준입니다.
         </p>
       </div>
 
@@ -517,7 +517,7 @@
   <div id="modal-root"></div>
   <div id="toast-root"></div>
 
-  <script src="data/trip-data.js?v=5"></script>
-  <script src="js/app.js?v=5"></script>
+  <script src="data/trip-data.js?v=6"></script>
+  <script src="js/app.js?v=6"></script>
 </body>
 </html>
