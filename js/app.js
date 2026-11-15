@@ -78,7 +78,7 @@
 
     if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
       navigator.serviceWorker
-        .register('sw.js?v=7')
+        .register('sw.js?v=8')
         .then((reg) => reg.update().catch(() => {}))
         .catch(() => {});
     }
@@ -133,13 +133,23 @@
             ];
           }
         }
-        // Sync any base budget items newly confirmed in trip.json if user's saved copy was still untouched 'todo'
+        // Sync any base budget items newly confirmed or updated in trip.json
         mergedBudgetItems = mergedBudgetItems.map((item) => {
           const baseMatch = fresh.budgetItems.find((b) => b.id === item.id);
           if (baseMatch && baseMatch.payStatus === 'paid' && item.payStatus === 'todo' && (!item.actual || item.actual === 0)) {
             return { ...baseMatch };
           }
+          if (baseMatch && item.id === 'bi-1b' && item.actual === 1700000 && !item.title.includes('34G')) {
+            return { ...item, title: baseMatch.title, method: baseMatch.method, memo: baseMatch.memo };
+          }
           return item;
+        });
+        let mergedChecklist = Array.isArray(saved.checklist) && saved.checklist.length ? [...saved.checklist] : [...fresh.checklist];
+        const existingCheckIds = new Set(mergedChecklist.map((c) => c.id));
+        fresh.checklist.forEach((fc) => {
+          if (!existingCheckIds.has(fc.id)) {
+            mergedChecklist.push(fc);
+          }
         });
         if (saved.flightOverrides && saved.flightOverrides.f5 && saved.flightOverrides.f5.status === 'todo') {
           delete saved.flightOverrides.f5;
@@ -152,7 +162,7 @@
           ...saved,
           budgetConfig: { ...fresh.budgetConfig, ...(saved.budgetConfig || {}) },
           budgetItems: mergedBudgetItems,
-          checklist: Array.isArray(saved.checklist) && saved.checklist.length ? saved.checklist : fresh.checklist
+          checklist: mergedChecklist
         };
         saveUserState();
       } else {
@@ -790,7 +800,7 @@
               </div>
             </div>
 
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-3 text-xs">
+            <div class="grid grid-cols-1 sm:grid-cols-2 ${f.seatAssigned ? 'lg:grid-cols-4' : 'lg:grid-cols-3'} gap-3 mt-3 text-xs">
               <div class="p-3 rounded-lg border border-[var(--border-line)]">
                 <span class="text-[var(--text-muted)] block mb-0.5">터미널</span>
                 <strong class="text-[var(--text-main)]">${escapeHtml(f.terminal)}</strong>
@@ -799,13 +809,52 @@
                 <span class="text-[var(--text-muted)] block mb-0.5">수하물</span>
                 <strong class="text-[var(--text-main)]">${escapeHtml(f.baggage)}</strong>
               </div>
+              ${
+                f.seatAssigned
+                  ? `<div class="p-3 rounded-lg border border-[#C8553D]/40 bg-[#C8553D]/5">
+                      <span class="text-[var(--text-muted)] block mb-0.5">사전 지정 좌석</span>
+                      <strong class="text-[#C8553D] tabular-nums">${escapeHtml(f.seatAssigned)}</strong>
+                    </div>`
+                  : ''
+              }
               <div class="p-3 rounded-lg border border-[var(--border-line)]">
-                <span class="text-[var(--text-muted)] block mb-0.5">${isBooked ? '결제 금액 · 메모' : '2인 예상 비용 · 좌석 팁'}</span>
+                <span class="text-[var(--text-muted)] block mb-0.5">${isBooked ? '결제 금액 · 좌석 메모' : '2인 예상 비용 · 좌석 팁'}</span>
                 <strong class="text-[var(--text-main)] tabular-nums">
                   ${f.estimatedCostKRW > 0 ? fmtKRW(f.estimatedCostKRW) + ' · ' : f.costIncludedIn ? '왕복 포함 · ' : ''}${escapeHtml(f.seatMemo || '')}
                 </strong>
               </div>
             </div>
+
+            ${
+              f.seatMap242
+                ? (() => {
+                    const rNo = f.seatMap242.row;
+                    const sel = new Set(f.seatMap242.selected || []);
+                    const seatBox = (col) => {
+                      const active = sel.has(col);
+                      return `<span class="inline-flex items-center justify-center w-9 h-7 sm:w-10 sm:h-8 rounded text-[11px] font-bold tabular-nums border ${
+                        active
+                          ? 'bg-[#C8553D] text-white border-[#C8553D] shadow-sm'
+                          : 'bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-line)] opacity-60'
+                      }">${active ? '✓ ' : ''}${rNo}${col}</span>`;
+                    };
+                    return `
+                    <div class="mt-3 p-3 rounded-lg border border-[var(--border-line)] bg-[var(--bg-subtle)] flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
+                      <div>
+                        <div class="font-semibold text-[var(--text-main)]">사전 좌석 배치도 (${rNo}열 · 2-4-2 배열)</div>
+                        <div class="text-[11px] text-[var(--text-sub)] mt-0.5">${escapeHtml(f.seatMap242.caption || '')}</div>
+                      </div>
+                      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5 shrink-0">
+                        <div class="flex items-center gap-1">${seatBox('A')}${seatBox('B')}</div>
+                        <span class="text-[10px] text-[var(--text-muted)] px-0.5">복도</span>
+                        <div class="flex items-center gap-1">${seatBox('C')}${seatBox('D')}${seatBox('E')}${seatBox('F')}</div>
+                        <span class="text-[10px] text-[var(--text-muted)] px-0.5">복도</span>
+                        <div class="flex items-center gap-1">${seatBox('G')}${seatBox('H')}</div>
+                      </div>
+                    </div>`;
+                  })()
+                : ''
+            }
 
             ${
               f.pnrMemo
@@ -837,6 +886,7 @@
                     isBooked
                       ? `
                     <a href="${f.bookingUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-primary btn-hm-sm">${escapeHtml(f.bookingLabel || '항공사 예약조회')}</a>
+                    ${f.extraUrl ? `<a href="${f.extraUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-sm">${escapeHtml(f.extraLabel || '항공사 공식')}</a>` : ''}
                     <a href="${f.naverFlightsUrl || f.skyscannerUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-sm">노선 조회 (네이버)</a>
                     <a href="${f.googleFlightsUrl}" target="_blank" rel="noopener" class="btn-hm btn-hm-sm">Google 항공권</a>
                   `
@@ -1831,7 +1881,7 @@
       .map(
         (t, idx) => `
       <div class="hm-card p-5">
-        <div class="text-xs font-semibold text-[var(--text-muted)] mb-1">TIP 0${idx + 1}</div>
+        <div class="text-xs font-semibold text-[var(--text-muted)] mb-1">TIP ${String(idx + 1).padStart(2, '0')}</div>
         <h4 class="font-bold text-sm sm:text-base mb-1.5">${escapeHtml(t.title)}</h4>
         <p class="text-xs text-[var(--text-sub)] leading-relaxed">${escapeHtml(t.body)}</p>
       </div>
@@ -1937,13 +1987,19 @@ ${names}`;
             <input type="number" name="paidKRW" value="${flight.estimatedCostKRW || 0}" class="hm-input tabular-nums" />
           </div>
         </div>
-        <div>
-          <label class="block text-xs font-medium text-[var(--text-sub)] mb-1">수하물</label>
-          <input name="baggage" value="${escapeHtml(flight.baggage)}" class="hm-input" />
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-medium text-[var(--text-sub)] mb-1">수하물</label>
+            <input name="baggage" value="${escapeHtml(flight.baggage)}" class="hm-input" />
+          </div>
+          <div>
+            <label class="block text-xs font-medium text-[var(--text-sub)] mb-1">사전 지정 좌석</label>
+            <input name="seatAssigned" value="${escapeHtml(flight.seatAssigned || '')}" placeholder="예: 34G · 34H" class="hm-input" />
+          </div>
         </div>
         <div>
-          <label class="block text-xs font-medium text-[var(--text-sub)] mb-1">좌석·개인 메모 (현재 기기에만 저장)</label>
-          <input name="pnrMemo" value="${escapeHtml(flight.pnrMemo || '')}" placeholder="예: 24A·24B 지정 완료" class="hm-input" />
+          <label class="block text-xs font-medium text-[var(--text-sub)] mb-1">발권처·개인 메모 (현재 기기에만 저장)</label>
+          <input name="pnrMemo" value="${escapeHtml(flight.pnrMemo || '')}" placeholder="예: 하나투어 발권 · 좌석 지정 완료" class="hm-input" />
         </div>
         <label class="flex items-center gap-2 text-xs pt-1 cursor-pointer">
           <input type="checkbox" name="syncBudget" checked class="w-4 h-4 accent-[var(--text-main)]" />
@@ -1970,6 +2026,7 @@ ${names}`;
             arrLocal: fd.get('arrLocal'),
             terminal: fd.get('terminal'),
             baggage: fd.get('baggage'),
+            seatAssigned: fd.get('seatAssigned').trim(),
             pnrMemo: fd.get('pnrMemo'),
             estimatedCostKRW: paidKRW
           };
@@ -2752,6 +2809,15 @@ ${names}`;
       const txt = document.getElementById('hm-mail-preview')?.value || '';
       navigator.clipboard.writeText(txt).then(() => {
         showToast('영문 메일이 복사되었습니다.');
+      });
+    });
+
+    document.querySelectorAll('[data-copy-snippet]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const txt = btn.getAttribute('data-copy-snippet') || '';
+        navigator.clipboard.writeText(txt).then(() => {
+          showToast('요청 문구가 복사되었습니다.');
+        });
       });
     });
 

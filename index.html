@@ -30,8 +30,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin="" onerror="this.onerror=null;this.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';" />
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" crossorigin="" onerror="var s=document.createElement('script');s.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';document.head.appendChild(s);"></script>
 
-  <link rel="manifest" href="manifest.json?v=7" />
-  <link rel="stylesheet" href="css/styles.css?v=7" />
+  <link rel="manifest" href="manifest.json?v=8" />
+  <link rel="stylesheet" href="css/styles.css?v=8" />
 </head>
 <body data-layout="tabs">
 
@@ -88,7 +88,7 @@
               <span class="city-dot dot-pmi"></span>마요르카 4박
             </span>
             <span class="text-[var(--text-muted)]">→</span>
-            <span class="font-medium text-[var(--done-text)]">인천 직항(5/22 16:40 · 예매완료)</span>
+            <span class="font-medium text-[var(--done-text)]">인천 직항(5/22 16:40 · 34G/34H 확정)</span>
           </div>
         </div>
       </div>
@@ -456,6 +456,27 @@
         </div>
         <textarea id="hm-mail-preview" rows="8" class="hm-input font-mono text-xs leading-relaxed mb-3"></textarea>
         <button id="btn-copy-hm-mail" class="btn-hm btn-hm-primary btn-hm-sm w-full sm:w-auto">영문 메일 복사</button>
+
+        <div class="mt-4 pt-4 border-t border-[var(--border-line)] grid grid-cols-1 md:grid-cols-2 gap-3 text-xs">
+          <div class="p-3 hm-subtle-box flex flex-col justify-between gap-2">
+            <div>
+              <div class="font-semibold text-[var(--text-main)] mb-1">파인다이닝 · 루프탑 예약 메모란 문구 (창가·테라스석 요청)</div>
+              <p class="text-[var(--text-sub)] leading-relaxed">"We are visiting from South Korea to celebrate our honeymoon. If possible, we would love a quiet window or terrace table with a view. Muchas gracias!"</p>
+            </div>
+            <div>
+              <button type="button" data-copy-snippet="We are visiting from South Korea to celebrate our honeymoon. If possible, we would love a quiet window or terrace table with a view. Muchas gracias!" class="btn-hm btn-hm-sm">문구 복사</button>
+            </div>
+          </div>
+          <div class="p-3 hm-subtle-box flex flex-col justify-between gap-2">
+            <div>
+              <div class="font-semibold text-[var(--text-main)] mb-1">출국 항공편(카타르항공 등) 기내 허니문 축하 케이크 요청 문구</div>
+              <p class="text-[var(--text-sub)] leading-relaxed">"We are traveling on our honeymoon! Could we kindly request a complimentary Honeymoon Celebration Cake (SPML) on board if available? Thank you!"</p>
+            </div>
+            <div>
+              <button type="button" data-copy-snippet="We are traveling on our honeymoon! Could we kindly request a complimentary Honeymoon Celebration Cake (SPML) on board if available? Thank you!" class="btn-hm btn-hm-sm">문구 복사</button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div>
@@ -517,7 +538,7 @@
   <div id="modal-root"></div>
   <div id="toast-root"></div>
 
-  <script src="data/trip-data.js?v=7"></script>
-  <script src="js/app.js?v=7"></script>
+  <script src="data/trip-data.js?v=8"></script>
+  <script src="js/app.js?v=8"></script>
 </body>
 </html>

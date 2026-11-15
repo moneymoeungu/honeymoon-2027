@@ -1,4 +1,4 @@
-const CACHE_NAME = 'iberia-honeymoon-v7';
+const CACHE_NAME = 'iberia-honeymoon-v8';
 const ASSETS = [
   './',
   './index.html',
