@@ -1,4 +1,4 @@
-const CACHE_NAME = 'iberia-honeymoon-v4';
+const CACHE_NAME = 'iberia-honeymoon-v5';
 const ASSETS = [
   './',
   './index.html',
@@ -25,11 +25,17 @@ self.addEventListener('activate', (event) => {
 
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
+  const reqUrl = new URL(event.request.url);
+  // Only cache same-origin app shell files; never intercept external map tiles or CDNs
+  if (reqUrl.origin !== self.location.origin) return;
+
   event.respondWith(
     fetch(event.request)
       .then((res) => {
-        const clone = res.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone)).catch(() => {});
+        if (res && res.ok) {
+          const clone = res.clone();
+          caches.open(CACHE_NAME).then((cache) => cache.put(event.request, clone)).catch(() => {});
+        }
         return res;
       })
       .catch(() => caches.match(event.request))

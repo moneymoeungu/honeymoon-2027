@@ -77,7 +77,10 @@
     renderAll();
 
     if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
-      navigator.serviceWorker.register('sw.js').catch(() => {});
+      navigator.serviceWorker
+        .register('sw.js?v=5')
+        .then((reg) => reg.update().catch(() => {}))
+        .catch(() => {});
     }
   }
 
@@ -380,11 +383,17 @@
     }
 
     if (tabId === 'itinerary') {
-      setTimeout(() => {
+      requestAnimationFrame(() => {
         ensureMapInitialized();
         if (mapInstance) mapInstance.invalidateSize();
         renderMapMarkers();
-      }, 80);
+        setTimeout(() => {
+          if (mapInstance) {
+            mapInstance.invalidateSize();
+            renderMapMarkers();
+          }
+        }, 180);
+      });
     }
   }
 
@@ -855,18 +864,89 @@
      9. PANEL 3: Itinerary & Leaflet Map
      ----------------------------------------------------------------------- */
   function ensureMapInitialized() {
-    if (mapInstance || typeof L === 'undefined') return;
     const mapEl = document.getElementById('honeymoon-map');
     if (!mapEl) return;
 
+    if (typeof L === 'undefined') {
+      mapEl.innerHTML =
+        '<div style="height:100%;display:flex;align-items:center;justify-content:center;padding:20px;text-align:center;font-size:13px;color:var(--text-sub);">지도 라이브러리를 불러오는 중입니다. 잠시 후 다시 눌러주세요.</div>';
+      setTimeout(() => {
+        if (typeof L !== 'undefined' && activeTab === 'itinerary') {
+          mapEl.innerHTML = '';
+          ensureMapInitialized();
+        }
+      }, 800);
+      return;
+    }
+
+    if (mapInstance) return;
+
     mapInstance = L.map('honeymoon-map', { scrollWheelZoom: true }).setView([41.3902, 2.1686], 13);
 
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+    // Key-free reliable basemaps (replaces CARTO which began returning "API KEY REQUIRED" tiles)
+    const esriStreetLayer = L.tileLayer(
+      'https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      {
+        maxZoom: 19,
+        attribution: '&copy; Esri, HERE, Garmin, OpenStreetMap'
+      }
+    );
+
+    const osmStandardLayer = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      attribution: '&copy; OpenStreetMap &copy; CARTO'
-    }).addTo(mapInstance);
+      attribution: '&copy; OpenStreetMap contributors'
+    });
+
+    const esriTopoLayer = L.tileLayer(
+      'https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',
+      {
+        maxZoom: 19,
+        attribution: '&copy; Esri, OpenStreetMap contributors'
+      }
+    );
+
+    const esriSatelliteLayer = L.tileLayer(
+      'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',
+      {
+        maxZoom: 19,
+        attribution: '&copy; Esri, Maxar, Earthstar Geographics'
+      }
+    );
+
+    // Default to Esri World Street/Topo (works 100% without API key or Referer in KakaoTalk/Safari/Chrome),
+    // with OSM Detailed Streets & Satellite one tap away in top-right layer switcher.
+    const defaultLayer = esriTopoLayer;
+
+    defaultLayer.addTo(mapInstance);
+
+    L.control
+      .layers(
+        {
+          '기본 지도 (깔끔 지형)': esriTopoLayer,
+          '도로·명소 지도': esriStreetLayer,
+          '상세 골목 지도 (OSM)': osmStandardLayer,
+          '위성 사진': esriSatelliteLayer
+        },
+        null,
+        { position: 'topright', collapsed: true }
+      )
+      .addTo(mapInstance);
 
     mapLayerGroup = L.layerGroup().addTo(mapInstance);
+
+    // Keep map size synced whenever hidden tab opens, screen rotates, or viewport resizes
+    if (typeof ResizeObserver !== 'undefined') {
+      let lastW = 0;
+      const ro = new ResizeObserver((entries) => {
+        const rect = entries[0]?.contentRect;
+        if (rect && rect.width > 0 && Math.abs(rect.width - lastW) > 4 && mapInstance) {
+          lastW = rect.width;
+          mapInstance.invalidateSize();
+        }
+      });
+      ro.observe(mapEl);
+    }
+
     renderMapMarkers();
   }
 
