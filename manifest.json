@@ -1,0 +1,10 @@
+{
+  "name": "종구♡쨀린 허니문 · 바르셀로나·포르투·마요르카",
+  "short_name": "종구♡쨀린 허니문",
+  "description": "2027.05.08 출발 ~ 05.21 출국 신혼여행 플래너",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FAF8F5",
+  "theme_color": "#221E1C",
+  "lang": "ko"
+}

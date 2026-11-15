@@ -1,0 +1,3549 @@
+// Auto-synced from data/trip.json for offline / file:// direct opening
+window.__DEFAULT_TRIP_DATA__ = {
+  "trip": {
+    "title": "종구♡쨀린 허니문",
+    "subtitle": "바르셀로나 · 포르투 · 마요르카 12박 15일",
+    "coupleLabel": "2027. 05. 08 — 05. 21",
+    "start": "2027-05-08",
+    "end": "2027-05-22",
+    "departKorea": "2027-05-08",
+    "departEurope": "2027-05-21",
+    "arriveKorea": "2027-05-22",
+    "nights": 12,
+    "daysCount": 15,
+    "routeSummary": "ICN → DOH → BCN (4박) → OPO (4박) → PMI (4박) → BCN → ICN",
+    "cities": [
+      {
+        "code": "bcn",
+        "name": "바르셀로나",
+        "nameEn": "Barcelona",
+        "country": "스페인",
+        "nights": 4,
+        "dateRange": "5/9(일) ~ 5/13(목)",
+        "color": "#C8553D",
+        "timezoneOffsetFromKST": -7,
+        "utcOffset": "UTC+2 (서머타임)",
+        "vibe": "가우디의 곡선, 고딕 골목의 타파스, 지중해 노을",
+        "center": [
+          41.3902,
+          2.1686
+        ],
+        "zoom": 13
+      },
+      {
+        "code": "opo",
+        "name": "포르투",
+        "nameEn": "Porto",
+        "country": "포르투갈",
+        "nights": 4,
+        "dateRange": "5/13(목) ~ 5/17(월)",
+        "color": "#2B59C3",
+        "timezoneOffsetFromKST": -8,
+        "utcOffset": "UTC+1 (서머타임, 스페인보다 -1시간)",
+        "vibe": "아줄레주 타일, 동 루이스 다리 윤슬, 달콤한 포트와인",
+        "center": [
+          41.143,
+          -8.614
+        ],
+        "zoom": 14
+      },
+      {
+        "code": "pmi",
+        "name": "마요르카",
+        "nameEn": "Mallorca",
+        "country": "스페인",
+        "nights": 4,
+        "dateRange": "5/17(월) ~ 5/21(금)",
+        "color": "#2A9D8F",
+        "timezoneOffsetFromKST": -7,
+        "utcOffset": "UTC+2 (서머타임, 포르투보다 +1시간)",
+        "vibe": "트라문타나 절벽 드라이브와 에메랄드 칼라 해변 휴양",
+        "center": [
+          39.62,
+          2.88
+        ],
+        "zoom": 10
+      }
+    ]
+  },
+  "roadmap": [
+    {
+      "phase": "STEP 1 · D-180 ~ D-150 (가장 먼저!)",
+      "title": "장거리 왕복 항공권 & 유럽 내 3구간 발권",
+      "desc": "인천↔바르셀로나 왕복(카타르항공 등)을 먼저 확정한 뒤, BCN→OPO·OPO→PMI·PMI→BCN 구간을 위탁수하물(20~23kg) 포함 조건으로 발권합니다.",
+      "targetTab": "flights"
+    },
+    {
+      "phase": "STEP 2 · D-150 ~ D-100",
+      "title": "3개 도시 숙소(총 12박) 확정 & 허니문 요청 메일",
+      "desc": "포르투 강변 뷰·마요르카 부티크 호텔은 인기 객실이 빨리 마감됩니다. 무료 취소 가능 조건으로 선점 후 허니문 코멘트를 남기세요.",
+      "targetTab": "stays"
+    },
+    {
+      "phase": "STEP 3 · 2027년 3월 초 (D-60)",
+      "title": "사그라다 파밀리아·도우루 투어·마요르카 렌터카 예약",
+      "desc": "사그라다 파밀리아 오전 첫 타임(탑 포함), 한국어 가우디 투어, 도우루 밸리 일일투어, 마요르카 오토매틱 소형 SUV 렌터카를 예약합니다.",
+      "targetTab": "bookings"
+    },
+    {
+      "phase": "STEP 4 · 2027년 4월 중순 (D-30 ~ D-14)",
+      "title": "까탈루냐 음악당·렴루 서점·포트와인 셀러·인기 맛집 예약",
+      "desc": "피카소 미술관, 렴루 서점 오픈런 바우처, 가이아 와인 셀러, 허니문 스페셜 디너(Cinc Sentits / Béns d'Avall / 칼라 데이아 식당) 예약을 마무리합니다.",
+      "targetTab": "food"
+    },
+    {
+      "phase": "STEP 5 · 출발 1주 전 (2027.05.01~)",
+      "title": "국제운전면허증·eSIM·온라인 체크인·최종 예산 점검",
+      "desc": "트래블카드 충전, 바우처 오프라인 저장, ETIAS 시행 여부 최종 확인, 저가항공 온라인 체크인을 마치고 설레는 마음으로 출발!",
+      "targetTab": "prep"
+    }
+  ],
+  "flights": [
+    {
+      "id": "f1",
+      "order": 1,
+      "leg": "ICN-BCN",
+      "legTitle": "출국 장거리 · 인천 → 도하 → 바르셀로나",
+      "cityColor": "#C8553D",
+      "airline": "카타르항공 (후보 1순위)",
+      "flightNo": "QR859 → QR145 (예정)",
+      "depAirport": "ICN",
+      "depCity": "인천",
+      "depLocal": "2027-05-08T01:25",
+      "arrAirport": "BCN",
+      "arrCity": "바르셀로나",
+      "arrLocal": "2027-05-09T14:10",
+      "duration": "약 18시간 45분 (도하 경유 포함)",
+      "terminal": "ICN T1 → BCN T1",
+      "baggage": "위탁 25~30kg (운임별 상이) + 기내 7kg",
+      "status": "todo",
+      "estimatedCostKRW": 3200000,
+      "bookingUrl": "https://www.qatarairways.com/ko-kr/homepage.html",
+      "skyscannerUrl": "https://www.skyscanner.co.kr/transport/flights/icn/bcn/270508/270521/",
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=Flights%20to%20BCN%20from%20ICN%20on%202027-05-08%20through%202027-05-21",
+      "manageUrl": "",
+      "pnrPrivate": true,
+      "seatMemo": "장거리 구간 복도+창가 또는 2인 좌석 추천",
+      "importantNote": "새벽 비행 날짜 체크 필수! 카타르항공 QR859(01:25 출발)는 자정 직후 출발입니다. 5/9(일) 오후 바르셀로나 도착(4박)에 맞추려면 ① 5/8(토) 밤 공항 도착 → 5/9(일) 01:25 출발편을 끊거나, ② 5/8(토) 01:25 출발 후 도하 1박 스탑오버 패키지(카타르항공 제공)를 이용하면 캘린더 일정과 정확히 맞아떨어집니다!",
+      "candidates": [
+        {
+          "name": "카타르항공 QR859+QR145",
+          "time": "01:25 인천 → 도하 경유 → 14:10 바르셀로나",
+          "note": "캘린더 기준 추천! 도하 하마드 공항 환승 쾌적, 오후 체크인 딱 맞음"
+        },
+        {
+          "name": "대한항공 / 티웨이·아시아나 직항 비교",
+          "time": "오전 11~12시 인천 → 당일 저녁 바르셀로나",
+          "note": "직항 선호 시 5/9(일) 오전 출발편도 가격 비교 추천"
+        }
+      ],
+      "transferTimeline": [
+        {
+          "time": "전날 22:00",
+          "label": "인천공항 제1터미널 도착 · 수하물 위탁 · 면세품 수령"
+        },
+        {
+          "time": "01:25",
+          "label": "인천(ICN) 출발 → 도하(DOH) 약 9시간 30분 비행"
+        },
+        {
+          "time": "05:55 (현지)",
+          "label": "도하 하마드 공항 환승 (약 2시간 20분 여유)"
+        },
+        {
+          "time": "08:15 (현지)",
+          "label": "도하(DOH) 출발 → 바르셀로나(BCN) 약 6시간 55분 비행"
+        },
+        {
+          "time": "14:10 (현지)",
+          "label": "바르셀로나 T1 도착 · 입국심사 후 Aerobus(35분) 또는 택시(정액 약 €39~45)로 시내 숙소 이동"
+        }
+      ]
+    },
+    {
+      "id": "f2",
+      "order": 2,
+      "leg": "BCN-OPO",
+      "legTitle": "유럽 이동 1 · 바르셀로나 → 포르투",
+      "cityColor": "#2B59C3",
+      "airline": "부엘링 Vueling (후보)",
+      "flightNo": "VY8472 (예정)",
+      "depAirport": "BCN",
+      "depCity": "바르셀로나",
+      "depLocal": "2027-05-13T12:10",
+      "arrAirport": "OPO",
+      "arrCity": "포르투",
+      "arrLocal": "2027-05-13T13:10",
+      "duration": "약 2시간 (시차 -1시간으로 현지 13:10 도착!)",
+      "terminal": "BCN T1 → OPO",
+      "baggage": "기본 운임 위탁 없음 → Optima 운임(25kg 위탁 포함) 선택 필수",
+      "status": "todo",
+      "estimatedCostKRW": 420000,
+      "bookingUrl": "https://www.vueling.com/en",
+      "skyscannerUrl": "https://www.skyscanner.co.kr/transport/flights/bcn/opo/270513/",
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=Flights%20to%20OPO%20from%20BCN%20on%202027-05-13",
+      "manageUrl": "",
+      "pnrPrivate": true,
+      "seatMemo": "우측 창가(F열) 앉으면 포르투 착륙 직전 도우루 강이 보일 수 있음",
+      "importantNote": "포르투갈은 스페인보다 1시간 느립니다! 12:10에 출발해 2시간 날아가도 포르투 현지 시각 13:10에 도착해 오후 일정을 알차게 쓸 수 있습니다.",
+      "candidates": [
+        {
+          "name": "부엘링 VY8472 (캘린더 픽)",
+          "time": "12:10 BCN(T1) → 13:10 OPO",
+          "note": "아침에 여유롭게 체크아웃 후 공항 가기 가장 좋은 황금 시간대"
+        },
+        {
+          "name": "라이언에어 FR 직항",
+          "time": "오전/낮 시간대 (BCN T2 출발)",
+          "note": "가격은 저렴하나 수하물 규정이 엄격하므로 부엘링 T1 출발이 더 편리"
+        }
+      ],
+      "transferTimeline": [
+        {
+          "time": "09:15",
+          "label": "바르셀로나 숙소 체크아웃 · 카탈루냐 광장 Aerobus 또는 택시 탑승"
+        },
+        {
+          "time": "10:00",
+          "label": "바르셀로나 공항 T1 도착 · 부엘링 수하물 드롭 & 보안검색"
+        },
+        {
+          "time": "12:10",
+          "label": "바르셀로나(BCN) 이륙 (쉥겐 내 노선이라 입출국 심사 없음!)"
+        },
+        {
+          "time": "13:10 (포르투 시각)",
+          "label": "포르투 공항 도착 · 수하물 수령 후 Bolt/Uber(약 €15~20, 25분)로 숙소 체크인"
+        }
+      ]
+    },
+    {
+      "id": "f3",
+      "order": 3,
+      "leg": "OPO-PMI",
+      "legTitle": "유럽 이동 2 · 포르투 → 마요르카(팔마)",
+      "cityColor": "#2A9D8F",
+      "airline": "라이언에어 / 이지젯 직항 (후보)",
+      "flightNo": "직항 점심편 예정",
+      "depAirport": "OPO",
+      "depCity": "포르투",
+      "depLocal": "2027-05-17T12:30",
+      "arrAirport": "PMI",
+      "arrCity": "마요르카 팔마",
+      "arrLocal": "2027-05-17T15:20",
+      "duration": "약 1시간 50분 (시차 +1시간으로 현지 15:20 도착)",
+      "terminal": "OPO → PMI",
+      "baggage": "저가항공 20kg 위탁수하물 사전 추가 필수 (공항 현장 추가 시 폭탄 요금)",
+      "status": "todo",
+      "estimatedCostKRW": 480000,
+      "bookingUrl": "https://www.ryanair.com",
+      "skyscannerUrl": "https://www.skyscanner.co.kr/transport/flights/opo/pmi/270517/",
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=Flights%20to%20PMI%20from%20OPO%20on%202027-05-17",
+      "manageUrl": "",
+      "pnrPrivate": true,
+      "seatMemo": "좌측/우측 창가에서 마요르카 에메랄드 해안선 감상 추천!",
+      "importantNote": "포르투→마요르카는 다시 스페인 시간대(+1시간)로 돌아가므로 비행시간 1시간 50분에 시차 1시간이 더해져 도착 시각이 약 3시간 뒤로 찍힙니다. 팔마 공항 도착 즉시 렌터카 픽업 시간을 항공편에 맞춰 예약하세요.",
+      "candidates": [
+        {
+          "name": "라이언에어 (Ryanair) 직항",
+          "time": "점심 시간대 OPO → PMI (약 1시간 50분)",
+          "note": "하계 스케줄(5월) 월요일 직항 운항, Regular+20kg 수하물 번들 추천"
+        },
+        {
+          "name": "이지젯 (easyJet) / 부엘링(BCN 경유)",
+          "time": "오전~점심 출발",
+          "note": "직항 시간대가 안 맞을 경우 부엘링 바르셀로나 환승편(약 3.5~4시간) 대안 가능"
+        }
+      ],
+      "transferTimeline": [
+        {
+          "time": "09:45",
+          "label": "포르투 숙소 체크아웃 · 택시/Bolt로 포르투 공항 이동 (약 25분)"
+        },
+        {
+          "time": "10:15",
+          "label": "포르투 공항 도착 · 온라인 체크인 보딩패스 확인 & 백드롭"
+        },
+        {
+          "time": "12:30",
+          "label": "포르투(OPO) 출발 → 마요르카 팔마(PMI) 직항 비행"
+        },
+        {
+          "time": "15:20 (스페인 시각)",
+          "label": "팔마 공항 도착 · 공항 터미널 맞은편 렌터카 데스크 픽업 → 호텔 체크인"
+        }
+      ]
+    },
+    {
+      "id": "f4",
+      "order": 4,
+      "leg": "PMI-BCN",
+      "legTitle": "유럽 이동 3 (귀국 연결) · 마요르카 → 바르셀로나",
+      "cityColor": "#D4A373",
+      "airline": "부엘링 / 에어유로파 (후보)",
+      "flightNo": "오전~점심 일찍 출발편 예정",
+      "depAirport": "PMI",
+      "depCity": "마요르카 팔마",
+      "depLocal": "2027-05-21T10:30",
+      "arrAirport": "BCN",
+      "arrCity": "바르셀로나",
+      "arrLocal": "2027-05-21T11:25",
+      "duration": "약 55분",
+      "terminal": "PMI → BCN T1 (권장!)",
+      "baggage": "위탁수하물 25kg 포함 운임 필수 (귀국 기념품·와인 대비!)",
+      "status": "todo",
+      "estimatedCostKRW": 320000,
+      "bookingUrl": "https://www.vueling.com/en",
+      "skyscannerUrl": "https://www.skyscanner.co.kr/transport/flights/pmi/bcn/270521/",
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=Flights%20to%20BCN%20from%20PMI%20on%202027-05-21",
+      "manageUrl": "",
+      "pnrPrivate": true,
+      "seatMemo": "바르셀로나 T1에 도착하는 부엘링(Vueling) 이용 시 저녁 국제선(T1) 환승 동선이 가장 편함!",
+      "importantNote": "저녁 20:50 귀국 국제선과 '분리발권'이므로 지연 대비 최소 6~8시간 여유를 두고 오전 10~11시경 출발편을 예약하세요! BCN T1 도착 후 수하물 보관소(Consigna)에 캐리어를 맡기면 시내 마지막 점심·쇼핑까지 여유롭게 가능합니다.",
+      "candidates": [
+        {
+          "name": "부엘링 (Vueling) 오전 10~11시편",
+          "time": "10:30 PMI → 11:25 BCN (T1 도착)",
+          "note": "매시간 운항! BCN T1으로 바로 떨어져 카타르항공 출국 터미널과 동일"
+        },
+        {
+          "name": "에어유로파 (Air Europa)",
+          "time": "10:00~11:30 PMI → BCN (T1 도착)",
+          "note": "풀서비스 캐리어 느낌으로 수하물 포함 운임 비교 추천"
+        }
+      ],
+      "transferTimeline": [
+        {
+          "time": "08:00",
+          "label": "마요르카 호텔 체크아웃 · 팔마 공항 인근 주유소 만탱크 주유 후 렌터카 반납"
+        },
+        {
+          "time": "08:45",
+          "label": "팔마 공항 수하물 위탁 & 보안검색 통과"
+        },
+        {
+          "time": "10:30",
+          "label": "팔마(PMI) 이륙 → 11:25 바르셀로나(BCN T1) 도착"
+        },
+        {
+          "time": "12:00",
+          "label": "BCN T1 수하물 보관소(0층 Consigna)에 큰 짐 보관 후 시내 마지막 만찬 나들이!"
+        }
+      ]
+    },
+    {
+      "id": "f5",
+      "order": 5,
+      "leg": "BCN-ICN",
+      "legTitle": "귀국 장거리 · 바르셀로나 → 도하 → 인천",
+      "cityColor": "#C8553D",
+      "airline": "카타르항공 (후보 1순위)",
+      "flightNo": "QR146 → QR858 (예정)",
+      "depAirport": "BCN",
+      "depCity": "바르셀로나",
+      "depLocal": "2027-05-21T20:50",
+      "arrAirport": "ICN",
+      "arrCity": "인천",
+      "arrLocal": "2027-05-22T17:30",
+      "duration": "약 13시간 40분~16시간 (경유 시간에 따라 상이)",
+      "terminal": "BCN T1 → ICN T1",
+      "baggage": "위탁 25~30kg + 기내 7kg (올리브유·포트와인 위탁 포장 필수!)",
+      "status": "todo",
+      "estimatedCostKRW": 0,
+      "costIncludedIn": "f1 (인천↔바르셀로나 왕복 요금에 포함)",
+      "bookingUrl": "https://www.qatarairways.com/ko-kr/homepage.html",
+      "skyscannerUrl": "https://www.skyscanner.co.kr/transport/flights/icn/bcn/270508/270521/",
+      "googleFlightsUrl": "https://www.google.com/travel/flights?q=Flights%20to%20BCN%20from%20ICN%20on%202027-05-08%20through%202027-05-21",
+      "manageUrl": "",
+      "pnrPrivate": true,
+      "seatMemo": "체크인 전 반드시 공항 DIVA 키오스크에서 택스리펀드 바코드 스캔 먼저!",
+      "importantNote": "스페인 택스리펀드(DIVA)는 수하물 부치기 전 BCN T1 출발층 왼편 세관 구역의 DIVA 무인 스캐너에 서류 바코드를 찍어야 합니다(초록불 뜨면 완료!). 20:50 비행기 기준 늦어도 17:20에는 공항에 도착하세요.",
+      "candidates": [
+        {
+          "name": "카타르항공 저녁 출발편",
+          "time": "20:50~22:10 BCN 출발 → 도하 경유 → 익일(5/22 토) 오후 인천 도착",
+          "note": "5/21 낮 시간을 온전히 활용하고 기내 숙면 후 토요일 오후 귀국 가능"
+        },
+        {
+          "name": "대한항공 / 아시아나 저녁 직항",
+          "time": "20:50~21:00경 BCN 출발 → 5/22(토) 16:30경 인천 도착",
+          "note": "직항 왕복 특가가 뜰 경우 함께 비교"
+        }
+      ],
+      "transferTimeline": [
+        {
+          "time": "17:00",
+          "label": "바르셀로나 공항 T1 복귀 · 보관소 짐 찾기 · 와인/액체류 위탁 캐리어 정리"
+        },
+        {
+          "time": "17:25",
+          "label": "T1 출발층 세관 DIVA 키오스크에서 택스리펀드 스캔 (수하물 위탁 전 필수!)"
+        },
+        {
+          "time": "17:50",
+          "label": "항공사 체크인 & 출국심사 → 면세구역 내 Global Blue/Planet 환급소 & 라운지 휴식"
+        },
+        {
+          "time": "20:50",
+          "label": "바르셀로나(BCN) 출발 → 5/22(토) 인천국제공항 도착 · 허니문 무사 귀환!"
+        }
+      ]
+    }
+  ],
+  "airportTransfers": [
+    {
+      "city": "bcn",
+      "airport": "바르셀로나 엘프라트 공항 (BCN)",
+      "options": [
+        {
+          "method": "Aerobus (A1/A2 공항버스)",
+          "time": "35분",
+          "cost": "편도 €7.25 / 왕복 €12.50 (1인)",
+          "pros": "카탈루냐 광장 직행, 5분 배차, 캐리어 랙 넉넉함"
+        },
+        {
+          "method": "공식 블랙&옐로우 택시",
+          "time": "25~30분",
+          "cost": "시내 약 €38~45",
+          "pros": "장거리 비행 직후 호텔 문 앞까지 가장 안전하고 편함 (신혼여행 강력 추천)"
+        }
+      ]
+    },
+    {
+      "city": "opo",
+      "airport": "포르투 공항 (OPO)",
+      "options": [
+        {
+          "method": "Uber / Bolt 호출",
+          "time": "20~25분",
+          "cost": "차량 1대 약 €14~20",
+          "pros": "포르투 구시가지 돌길 언덕에 캐리어 끌 필요 없이 숙소 바로 앞 하차! 압도적 가성비"
+        },
+        {
+          "method": "메트로 E선 (보라색)",
+          "time": "30분",
+          "cost": "1인 약 €2.80 (Andante Z4)",
+          "pros": "트린다드·볼량역 근처 평지 호텔일 때만 추천"
+        }
+      ]
+    },
+    {
+      "city": "pmi",
+      "airport": "마요르카 팔마 공항 (PMI)",
+      "options": [
+        {
+          "method": "공항 터미널 렌터카 픽업",
+          "time": "팔마 시내 15분",
+          "cost": "4일 풀커버 보험 포함 약 €220~320",
+          "pros": "도착층 맞은편 주차빌딩에서 바로 픽업 가능(Sixt, Europcar, Centauro, Record go 등). 국제운전면허증+한국면허증 실물 필수!"
+        }
+      ]
+    }
+  ],
+  "areaGuides": [
+    {
+      "city": "bcn",
+      "cityName": "바르셀로나 (4박: 5/9~5/13)",
+      "recommended": "에이샴플라 (Eixample) / 그라시아 거리 주변",
+      "summary": "바둑판식 넓은 거리라 치안이 가장 안전하고, 카사 바트요·유명 타파스 맛집·공항버스 정류장 모두 도보권입니다.",
+      "zones": [
+        {
+          "name": "에이샴플라 (Eixample) ⭐ 1순위",
+          "pros": "치안 최고, 평지라 캐리어 이동 편함, 맛집(Vinitus·Catalana) 밀집",
+          "cons": "해변까지는 버스/택시 15분 이동"
+        },
+        {
+          "name": "카탈루냐 광장 · 고딕 입구",
+          "pros": "공항버스(Aerobus) 직결, 고딕·보른 지구 산책 최적",
+          "cons": "골목 안쪽 숙소는 밤 소음·택시 진입 불가 여부 확인 필요"
+        }
+      ]
+    },
+    {
+      "city": "opo",
+      "cityName": "포르투 (4박: 5/13~5/17)",
+      "recommended": "히베이라 강변 또는 가이아(Gaia) 강변 뷰 부티크",
+      "summary": "포르투는 언덕이 심합니다! 구시가지 도보 관광 편의는 상벤투/알리아두스, 허니문 인생 뷰와 스파는 가이아 강변 5성급이 최고입니다.",
+      "zones": [
+        {
+          "name": "빌라 노바 드 가이아 강변 ⭐ 허니문 뷰",
+          "pros": "객실 테라스에서 포르투 구시가지 파노라마 야경 감상, 신축 5성급 스파 호텔 다수",
+          "cons": "구시가지 갈 때 다리 건너거나 우버(€5) 이용"
+        },
+        {
+          "name": "상 벤투 · 히베이라 강변",
+          "pros": "주요 명소·맛집 전부 도보 5~10분, 밤산책 낭만 최고",
+          "cons": "유서 깊은 건물이라 방 크기가 아담한 편"
+        }
+      ]
+    },
+    {
+      "city": "pmi",
+      "cityName": "마요르카 (4박: 5/17~5/21)",
+      "recommended": "팔마 성벽 오션뷰 4박 연박 OR 팔마 2박 + 소예르/해변 리조트 2박",
+      "summary": "렌터카 주차 가능 여부(발렛/전용 주차장)와 팔마 구시가지 차량제한구역(ZBE — 투숙객 사전 차량번호 등록 시 진입 가능)을 꼭 확인하세요!",
+      "zones": [
+        {
+          "name": "팔마 구시가지 성벽 라인 (4박 연박 편함)",
+          "pros": "짐 다시 쌀 필요 없이 트라문타나·남동부·북부 모두 차로 40~55분 방사형 이동 가능, 저녁엔 팔마 맛집 도보 이용",
+          "cons": "호텔 발렛/유료 주차비(1박 €25~30) 발생"
+        },
+        {
+          "name": "소예르 항구 / 해변 리조트 (2+2박 분할)",
+          "pros": "진정한 지중해 휴양지 리조트 바이브, 주차 여유로움",
+          "cons": "중간에 체크아웃·체크인 1회 추가"
+        }
+      ]
+    }
+  ],
+  "stays": [
+    {
+      "id": "s-bcn-1",
+      "city": "bcn",
+      "name": "H10 쿠빅 (H10 Cubik)",
+      "area": "카탈루냐 광장 · 비아 라이에타나",
+      "pricePerNight": 340,
+      "currency": "EUR",
+      "nights": [
+        "2027-05-09",
+        "2027-05-10",
+        "2027-05-11",
+        "2027-05-12"
+      ],
+      "nightsCount": 4,
+      "cancellation": "출발 3~7일 전 무료 취소 요금제 선택 가능",
+      "breakfast": "조식 뷔페 우수 (약 €22 추가 또는 포함 특가)",
+      "features": [
+        "루프탑 인피니티 풀",
+        "대성당 뷰 바",
+        "까탈루냐 음악당 도보 3분",
+        "공항버스 도보 6분"
+      ],
+      "distanceNote": "고딕·보른·카탈루냐 광장 도보 5분 컷",
+      "status": "candidate",
+      "bookingUrl": "https://www.h10hotels.com/en/barcelona-hotels/h10-cubik",
+      "placeId": "stay-bcn-h10cubik",
+      "votes": {
+        "me": 1,
+        "partner": 1
+      },
+      "notes": "신혼여행 가성비+루프탑 뷰 밸런스 최강 후보"
+    },
+    {
+      "id": "s-bcn-2",
+      "city": "bcn",
+      "name": "세븐티 바르셀로나 (Seventy Barcelona)",
+      "area": "에이샴플라 · 그라시아 상단",
+      "pricePerNight": 390,
+      "currency": "EUR",
+      "nights": [
+        "2027-05-09",
+        "2027-05-10",
+        "2027-05-11",
+        "2027-05-12"
+      ],
+      "nightsCount": 4,
+      "cancellation": "무료 취소 옵션 있음",
+      "breakfast": "타파스 스타일 신선한 조식 호평",
+      "features": [
+        "루프탑 수영장",
+        "지하 비건 스파",
+        "카사 밀라 도보 5분",
+        "모던 지중해 인테리어"
+      ],
+      "distanceNote": "가우디 명소 & 그라시아 쇼핑 중심",
+      "status": "candidate",
+      "bookingUrl": "https://www.seventybarcelona.com/en/",
+      "placeId": "stay-bcn-seventy",
+      "votes": {
+        "me": 0,
+        "partner": 1
+      },
+      "notes": "따뜻한 우드&테라코타 감성이 허니문과 찰떡"
+    },
+    {
+      "id": "s-bcn-3",
+      "city": "bcn",
+      "name": "마제스틱 호텔 & 스파 (Majestic Hotel & Spa GL)",
+      "area": "그라시아 거리 한복판",
+      "pricePerNight": 520,
+      "currency": "EUR",
+      "nights": [
+        "2027-05-09",
+        "2027-05-10",
+        "2027-05-11",
+        "2027-05-12"
+      ],
+      "nightsCount": 4,
+      "cancellation": "유연 요금제 선택 시 무료 취소",
+      "breakfast": "스페인 최고 수준 샴페인 조식 수상 경력",
+      "features": [
+        "5성급 GL 클래식 럭셔리",
+        "사그라다&카사바트요 루프탑 뷰",
+        "샴페인 조식"
+      ],
+      "distanceNote": "카사 바트요 도보 2분",
+      "status": "candidate",
+      "bookingUrl": "https://www.hotelmajestic.es/en",
+      "placeId": "stay-bcn-majestic",
+      "votes": {
+        "me": 0,
+        "partner": 0
+      },
+      "notes": "바르셀로나 위치 끝판왕 5성급 럭셔리 후보"
+    },
+    {
+      "id": "s-opo-1",
+      "city": "opo",
+      "name": "더 레벨로 호텔 & 스파 (The Rebello Hotel & Spa)",
+      "area": "빌라 노바 드 가이아 강변",
+      "pricePerNight": 330,
+      "currency": "EUR",
+      "nights": [
+        "2027-05-13",
+        "2027-05-14",
+        "2027-05-15",
+        "2027-05-16"
+      ],
+      "nightsCount": 4,
+      "cancellation": "무료 취소 플랜 지원",
+      "breakfast": "포함 요금제 많음 (알라카르트+뷔페 극찬)",
+      "features": [
+        "도우루 강 정면 뷰",
+        "실내 로마식 온수 스파 풀",
+        "루프탑 바 Bello",
+        "포트와인 셀러 도보 5분"
+      ],
+      "distanceNote": "히베이라 무료 수상셔틀/도보 12분",
+      "status": "candidate",
+      "bookingUrl": "https://www.therebello.com/",
+      "placeId": "stay-opo-rebello",
+      "votes": {
+        "me": 1,
+        "partner": 1
+      },
+      "notes": "최근 한국 신혼부부 원픽! 넓고 감각적인 5성급 SLH 멤버 호텔"
+    },
+    {
+      "id": "s-opo-2",
+      "city": "opo",
+      "name": "페스타나 빈티지 포르투 (Pestana Vintage Porto)",
+      "area": "히베이라 광장 정중앙",
+      "pricePerNight": 360,
+      "currency": "EUR",
+      "nights": [
+        "2027-05-13",
+        "2027-05-14",
+        "2027-05-15",
+        "2027-05-16"
+      ],
+      "nightsCount": 4,
+      "cancellation": "무료 취소 옵션 확인",
+      "breakfast": "강변 테라스 조식",
+      "features": [
+        "동 루이스 다리 뷰 발코니",
+        "유네스코 문화유산 건물",
+        "최고의 접근성"
+      ],
+      "distanceNote": "히베이라 광장 0분, 상벤투역 도보 8분",
+      "status": "candidate",
+      "bookingUrl": "https://www.pestana.com/en/hotel/pestana-vintage-porto",
+      "placeId": "stay-opo-pestana",
+      "votes": {
+        "me": 0,
+        "partner": 0
+      },
+      "notes": "창문 열면 바로 동 루이스 다리와 버스킹이 들리는 로맨틱 입지"
+    },
+    {
+      "id": "s-opo-3",
+      "city": "opo",
+      "name": "토렐 아방가르드 (Torel Avantgarde)",
+      "area": "미라가이아 언덕 전망",
+      "pricePerNight": 310,
+      "currency": "EUR",
+      "nights": [
+        "2027-05-13",
+        "2027-05-14",
+        "2027-05-15",
+        "2027-05-16"
+      ],
+      "nightsCount": 4,
+      "cancellation": "무료 취소 가능",
+      "breakfast": "강 전망 테라스 조식",
+      "features": [
+        "야외 인피니티 풀",
+        "예술가 테마 객실",
+        "선셋 파노라마 뷰"
+      ],
+      "distanceNote": "렴루 서점 도보 10분",
+      "status": "candidate",
+      "bookingUrl": "https://www.torelavantgarde.com/en/",
+      "placeId": "stay-opo-torel",
+      "votes": {
+        "me": 1,
+        "partner": 0
+      },
+      "notes": "포르투 시내에서 드물게 야외 리버뷰 수영장이 있는 부티크 5성급"
+    },
+    {
+      "id": "s-pmi-1",
+      "city": "pmi",
+      "name": "엘 요렌스 파르크 데 라 마르 (El Llorenç Parc de la Mar)",
+      "area": "팔마 구시가지 해안 성벽 (성인 전용)",
+      "pricePerNight": 490,
+      "currency": "EUR",
+      "nights": [
+        "2027-05-17",
+        "2027-05-18",
+        "2027-05-19",
+        "2027-05-20"
+      ],
+      "nightsCount": 4,
+      "cancellation": "무료 취소 플랜 선택 가능",
+      "breakfast": "루프탑/테라스 미식 조식 포함 추천",
+      "features": [
+        "성인 전용(Adults Only)",
+        "팔마만 33m 루프탑 인피니티 풀",
+        "실내 스파",
+        "발렛 주차 지원(ZBE 등록 대행)"
+      ],
+      "distanceNote": "팔마 대성당 도보 6분, 공항 차로 12분",
+      "status": "candidate",
+      "bookingUrl": "https://www.elllorenc.com/en/",
+      "placeId": "stay-pmi-llorenc",
+      "votes": {
+        "me": 1,
+        "partner": 1
+      },
+      "notes": "신혼여행 하이라이트로 힘주기 좋은 성인전용 럭셔리 루프탑 풀 호텔!"
+    },
+    {
+      "id": "s-pmi-2",
+      "city": "pmi",
+      "name": "비키니 아일랜드 & 마운틴 호텔 소예르 (Bikini Island & Mountain)",
+      "area": "포르트 데 소예르 (트라문타나 항구)",
+      "pricePerNight": 350,
+      "currency": "EUR",
+      "nights": [
+        "2027-05-17",
+        "2027-05-18",
+        "2027-05-19",
+        "2027-05-20"
+      ],
+      "nightsCount": 4,
+      "cancellation": "무료 취소 옵션 있음",
+      "breakfast": "NENI 조식 기본 포함 많음",
+      "features": [
+        "보헤미안 휴양 무드",
+        "항구 파노라마 야외 풀",
+        "무료/편리한 주차",
+        "NENI 레스토랑"
+      ],
+      "distanceNote": "소예르 항구 도보 5분, 팔마 공항 차로 35분",
+      "status": "candidate",
+      "bookingUrl": "https://www.bikini-hotels.com/port-de-soller/",
+      "placeId": "stay-pmi-ikkil",
+      "votes": {
+        "me": 0,
+        "partner": 1
+      },
+      "notes": "팔마 2박 + 소예르 2박으로 나눌 때 가장 인기 많은 감성 리조트"
+    },
+    {
+      "id": "s-pmi-3",
+      "city": "pmi",
+      "name": "호텔 코르트 (Hotel Cort)",
+      "area": "팔마 코르트 광장 중심",
+      "pricePerNight": 340,
+      "currency": "EUR",
+      "nights": [
+        "2027-05-17",
+        "2027-05-18",
+        "2027-05-19",
+        "2027-05-20"
+      ],
+      "nightsCount": 4,
+      "cancellation": "무료 취소 가능",
+      "breakfast": "올리브 나무 광장 노천 조식",
+      "features": [
+        "지중해 블루&화이트 인테리어",
+        "팔마 맛집 한가운데",
+        "루프탑 플런지 풀"
+      ],
+      "distanceNote": "팔마 대성당 도보 5분, La Rosa 도보 4분",
+      "status": "candidate",
+      "bookingUrl": "https://www.hotelcort.com/en/",
+      "placeId": "stay-pmi-cort",
+      "votes": {
+        "me": 0,
+        "partner": 0
+      },
+      "notes": "저녁마다 팔마 구시가지 타파스 투어하기 가장 편리한 부티크 호텔"
+    }
+  ],
+  "places": [
+    {
+      "id": "bcn-airport",
+      "city": "bcn",
+      "category": "transport",
+      "name": "바르셀로나 엘프라트 공항 (BCN)",
+      "nameLocal": "Aeroport Josep Tarradellas Barcelona-El Prat",
+      "lat": 41.2974,
+      "lng": 2.0833,
+      "summary": "바르셀로나 관문 공항. 카타르항공·부엘링 모두 T1 터미널 이용.",
+      "hoursNote": "24시간 운영",
+      "closedDays": [],
+      "price": "",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "catalunya-sq",
+      "city": "bcn",
+      "category": "sight",
+      "name": "카탈루냐 광장",
+      "nameLocal": "Plaça de Catalunya",
+      "lat": 41.387,
+      "lng": 2.17,
+      "summary": "공항버스(Aerobus) 종점이자 구시가지와 에이샴플라를 잇는 바르셀로나의 심장.",
+      "hoursNote": "상시 개방",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "gothic-quarter",
+      "city": "bcn",
+      "category": "sight",
+      "name": "고딕 지구 & 비스베 다리",
+      "nameLocal": "Barri Gòtic · Pont del Bisbe",
+      "lat": 41.3833,
+      "lng": 2.1761,
+      "summary": "중세 돌담 골목과 네오고딕 구름다리가 어우러진 포토스팟. 왕의 광장·레이알 광장까지 산책!",
+      "hoursNote": "상시 개방 (해 질 녘 조명 감성 최고)",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "bcn-cathedral",
+      "city": "bcn",
+      "category": "sight",
+      "name": "바르셀로나 대성당",
+      "nameLocal": "Catedral de Barcelona",
+      "lat": 41.384,
+      "lng": 2.1762,
+      "summary": "13마리 흰 거위가 사는 중정 회랑과 루프탑 전망이 아름다운 고딕 대성당.",
+      "hoursNote": "평일 09:30~18:30 (민소매·짧은 반바지 입장 제한 주의)",
+      "closedDays": [],
+      "price": "€14",
+      "mustBook": false,
+      "bookingUrl": "https://tickets.catedralbcn.org/"
+    },
+    {
+      "id": "barceloneta",
+      "city": "bcn",
+      "category": "sight",
+      "name": "바르셀로네타 해변",
+      "nameLocal": "Platja de la Barceloneta",
+      "lat": 41.3784,
+      "lng": 2.1925,
+      "summary": "야자수 해변 산책로와 지중해 바닷바람! 첫날 시차 적응하며 걷기 완벽한 해변.",
+      "hoursNote": "상시 개방",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "sagrada",
+      "city": "bcn",
+      "category": "sight",
+      "name": "사그라다 파밀리아 성당",
+      "nameLocal": "Basílica de la Sagrada Família",
+      "lat": 41.4036,
+      "lng": 2.1744,
+      "summary": "가우디의 걸작! 오전 09:00~10:00 입장 시 탄생의 파사드 쪽 파란·초록 스테인드글라스 채광이 황홀합니다.",
+      "hoursNote": "09:00~20:00 (5월 기준)",
+      "closedDays": [],
+      "price": "기본 €26 / 탑 포함 €36",
+      "mustBook": true,
+      "bookingUrl": "https://sagradafamilia.org/en/tickets"
+    },
+    {
+      "id": "park-guell",
+      "city": "bcn",
+      "category": "sight",
+      "name": "구엘 공원",
+      "nameLocal": "Park Güell",
+      "lat": 41.4145,
+      "lng": 2.1527,
+      "summary": "트렌카디스 모자이크 도마뱀 분수와 바르셀로나 시내·지중해가 한눈에 내려다보이는 동화 같은 언덕 공원.",
+      "hoursNote": "09:30~19:30",
+      "closedDays": [],
+      "price": "€18",
+      "mustBook": true,
+      "bookingUrl": "https://parkguell.barcelona/en"
+    },
+    {
+      "id": "casa-batllo",
+      "city": "bcn",
+      "category": "sight",
+      "name": "카사 바트요",
+      "nameLocal": "Casa Batlló",
+      "lat": 41.3917,
+      "lng": 2.1649,
+      "summary": "지중해 바다와 산 조르디 전설을 형상화한 가우디의 보석 같은 저택. 한국어 스마트 가이드 제공.",
+      "hoursNote": "09:00~22:00 (매직 나이트 공연 옵션 있음)",
+      "closedDays": [],
+      "price": "€35~",
+      "mustBook": true,
+      "bookingUrl": "https://www.casabatllo.es/en/"
+    },
+    {
+      "id": "casa-mila",
+      "city": "bcn",
+      "category": "sight",
+      "name": "라 페드레라 (카사 밀라)",
+      "nameLocal": "Casa Milà - La Pedrera",
+      "lat": 41.3954,
+      "lng": 2.162,
+      "summary": "물결치는 석조 외관과 투구 모양 굴뚝이 인상적인 가우디 마지막 시민 건축물. 야간 프로젝션 투어도 유명!",
+      "hoursNote": "09:00~20:30 / 야간투어 21:00~",
+      "closedDays": [],
+      "price": "€28 / 야간 €39",
+      "mustBook": true,
+      "bookingUrl": "https://www.lapedrera.com/en"
+    },
+    {
+      "id": "santa-maria-mar",
+      "city": "bcn",
+      "category": "sight",
+      "name": "산타 마리아 델 마르 성당",
+      "nameLocal": "Basílica de Santa Maria del Mar",
+      "lat": 41.3839,
+      "lng": 2.1821,
+      "summary": "선원들이 돌을 날라 지은 카탈루냐 고딕 건축의 정수. 보른 지구의 고즈넉한 보석.",
+      "hoursNote": "10:00~20:30",
+      "closedDays": [],
+      "price": "€5~10",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "picasso-museum",
+      "city": "bcn",
+      "category": "sight",
+      "name": "피카소 미술관",
+      "nameLocal": "Museu Picasso",
+      "lat": 41.3852,
+      "lng": 2.1809,
+      "summary": "청년 피카소의 화풍 변천사와 <시녀들(Las Meninas)> 연작을 소장한 중세 궁전 미술관.",
+      "hoursNote": "화~일 10:00~20:00",
+      "closedDays": [
+        "월"
+      ],
+      "price": "€14",
+      "mustBook": true,
+      "bookingUrl": "https://museupicassobcn.cat/en"
+    },
+    {
+      "id": "santa-caterina",
+      "city": "bcn",
+      "category": "sight",
+      "name": "산타 카테리나 시장",
+      "nameLocal": "Mercat de Santa Caterina",
+      "lat": 41.3863,
+      "lng": 2.1782,
+      "summary": "알록달록 물결 세라믹 지붕이 예쁜 로컬 시장. 보케리아보다 덜 붐비고 하몽·올리브 사기 좋음!",
+      "hoursNote": "월~토 07:30~15:30",
+      "closedDays": [
+        "일"
+      ],
+      "price": "무료 입장",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "palau-musica",
+      "city": "bcn",
+      "category": "sight",
+      "name": "까탈루냐 음악당",
+      "nameLocal": "Palau de la Música Catalana",
+      "lat": 41.3876,
+      "lng": 2.1753,
+      "summary": "유네스코 세계문화유산! 거꾸로 매달린 태양 같은 스테인드글라스 천장 아래서 기타·플라멩코 저녁 공연을 보면 최고의 허니문 이벤트!",
+      "hoursNote": "투어 09:00~15:30 / 저녁 공연 별도",
+      "closedDays": [],
+      "price": "투어 €18~22 / 공연 €35~70",
+      "mustBook": true,
+      "bookingUrl": "https://www.palaumusica.cat/en"
+    },
+    {
+      "id": "boqueria",
+      "city": "bcn",
+      "category": "sight",
+      "name": "보케리아 시장 & 람블라 거리",
+      "nameLocal": "Mercat de la Boqueria",
+      "lat": 41.3817,
+      "lng": 2.1716,
+      "summary": "납작복숭아(5월 제철 시작!), 이베리코 베요타 하몽 콘, 신선한 해산물 타파스가 가득한 활기찬 시장.",
+      "hoursNote": "월~토 08:00~20:30",
+      "closedDays": [
+        "일"
+      ],
+      "price": "무료 입장",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "montjuic-castle",
+      "city": "bcn",
+      "category": "sight",
+      "name": "몬주익 성 & 케이블카",
+      "nameLocal": "Castell de Montjuïc · Telefèric",
+      "lat": 41.363,
+      "lng": 2.1651,
+      "summary": "케이블카를 타고 오르며 바르셀로나 항구와 지중해를 360도로 조망하는 요새 언덕.",
+      "hoursNote": "10:00~20:00",
+      "closedDays": [],
+      "price": "성 €12 / 케이블카 왕복 €16",
+      "mustBook": false,
+      "bookingUrl": "https://www.telefericdemontjuic.cat/en"
+    },
+    {
+      "id": "mnac",
+      "city": "bcn",
+      "category": "sight",
+      "name": "카탈루냐 국립미술관(MNAC) 전망 계단",
+      "nameLocal": "Museu Nacional d'Art de Catalunya",
+      "lat": 41.3684,
+      "lng": 2.1536,
+      "summary": "스페인 광장까지 일직선으로 뻗은 웅장한 뷰와 버스킹이 아름다운 명소 (마법의 분수는 일~수 미운영이므로 전망 위주 감상).",
+      "hoursNote": "외부 계단 상시 개방",
+      "closedDays": [],
+      "price": "전망 무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "passeig-gracia",
+      "city": "bcn",
+      "category": "sight",
+      "name": "그라시아 거리 & 엘 코르테 잉글레스 쇼핑",
+      "nameLocal": "Passeig de Gràcia",
+      "lat": 41.3926,
+      "lng": 2.1641,
+      "summary": "로에베(스페인 본고장!), 마시모두띠, 자라 홈, 사바테르 형제 수제비누 등 쇼핑 & 택스리펀드 성지.",
+      "hoursNote": "월~토 10:00~21:00 (일요일 대부분 휴무!)",
+      "closedDays": [
+        "일"
+      ],
+      "price": "",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "bunkers-carmel",
+      "city": "bcn",
+      "category": "sight",
+      "name": "벙커 델 카르멜 전망대",
+      "nameLocal": "Turó de la Rovira (Bunkers del Carmel)",
+      "lat": 41.4192,
+      "lng": 2.1617,
+      "summary": "사그라다 파밀리아와 바둑판 도시 너머 바다까지 분홍빛으로 물드는 바르셀로나 최고의 파노라마 노을 전망대.",
+      "hoursNote": "하절기 야간 폐쇄 시간(보통 19:30~20:30 전후) 현지 확인, 해 질 무렵 골든아워 추천",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-7portes",
+      "city": "bcn",
+      "category": "food",
+      "foodType": "해산물·빠에야",
+      "name": "세테 포르테스 (7 Portes)",
+      "nameLocal": "7 Portes",
+      "lat": 41.3822,
+      "lng": 2.1833,
+      "summary": "1836년 오픈, 피카소와 체 게바라가 즐겨 찾던 클래식 레스토랑.",
+      "signature": "부자 빠에야(Paella Parellada — 껍질 손질된 해산물 빠에야), 상그리아",
+      "price": "€€€",
+      "hoursNote": "13:00~24:00 (연중무휴)",
+      "closedDays": [],
+      "nearDay": "Day 1 저녁",
+      "mustBook": true,
+      "bookingUrl": "https://7portes.com/en/"
+    },
+    {
+      "id": "food-vinitus",
+      "city": "bcn",
+      "category": "food",
+      "foodType": "타파스",
+      "name": "비니투스 (Vinitus)",
+      "nameLocal": "Vinitus",
+      "lat": 41.3902,
+      "lng": 2.1636,
+      "summary": "한국인·현지인 모두 극찬하는 실패 없는 바르셀로나 타파스 맛집!",
+      "signature": "꿀대구(Bacalao a la miel), 맛조개 구이, 소고기 안심 몬타디토, 레몬 맥주(클라라)",
+      "price": "€€",
+      "hoursNote": "11:30~01:00",
+      "closedDays": [],
+      "nearDay": "Day 2 점심/저녁",
+      "mustBook": false,
+      "bookingUrl": "https://www.google.com/maps/search/?api=1&query=Vinitus+Barcelona"
+    },
+    {
+      "id": "food-cerveceria",
+      "city": "bcn",
+      "category": "food",
+      "foodType": "타파스",
+      "name": "세르베세리아 카탈라나",
+      "nameLocal": "Cervecería Catalana",
+      "lat": 41.3923,
+      "lng": 2.1607,
+      "summary": "비니투스와 쌍벽을 이루는 에이샴플라 최고 인기 타파스 바. 오전 11시 반이나 오후 5시 애매한 시간에 가면 웨이팅 단축!",
+      "signature": "푸아그라 안심 타파스, 감바스 알 아히요, 오징어 튀김",
+      "price": "€€",
+      "hoursNote": "08:30~01:30",
+      "closedDays": [],
+      "nearDay": "Day 2·4",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-xampanyet",
+      "city": "bcn",
+      "category": "bar",
+      "foodType": "바·타파스",
+      "name": "엘 샴파니에트 (El Xampanyet)",
+      "nameLocal": "El Xampanyet",
+      "lat": 41.3845,
+      "lng": 2.1816,
+      "summary": "피카소 미술관 바로 옆, 1929년부터 이어온 유쾌한 스파클링 카바(Cava) & 엔초비 바!",
+      "signature": "하우스 스파클링 와인, 엔초비, 꽈리고추 튀김",
+      "price": "€€",
+      "hoursNote": "화~토 12:00~15:30, 19:00~23:00",
+      "closedDays": [
+        "일",
+        "월"
+      ],
+      "nearDay": "Day 3 점심",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-joncake",
+      "city": "bcn",
+      "category": "cafe",
+      "foodType": "카페·디저트",
+      "name": "존 케이크 (Jon Cake)",
+      "nameLocal": "Jon Cake",
+      "lat": 41.3858,
+      "lng": 2.1802,
+      "summary": "미슐랭 레스토랑 출신 파티시에가 무게 단위로 잘라 파는 꾸덕한 바스크 치즈케이크.",
+      "signature": "클래식 바스크 치즈케이크, 이디아사발 스모크 치즈케이크",
+      "price": "€",
+      "hoursNote": "10:00~20:00",
+      "closedDays": [],
+      "nearDay": "Day 3 디저트",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-xurreria",
+      "city": "bcn",
+      "category": "cafe",
+      "foodType": "카페·디저트",
+      "name": "추레리아 라이에타나",
+      "nameLocal": "Xurreria Laietana",
+      "lat": 41.3854,
+      "lng": 2.1767,
+      "summary": "주문 즉시 바삭하게 튀겨주는 로컬 츄러스 & 진한 핫초콜릿(Con Chocolate) 맛집.",
+      "signature": "츄러스 + 초콜라테",
+      "price": "€",
+      "hoursNote": "평일 07:00~21:30 (토요일 휴무 확인)",
+      "closedDays": [
+        "토"
+      ],
+      "nearDay": "Day 3 아침/간식",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-ciudad-condal",
+      "city": "bcn",
+      "category": "food",
+      "foodType": "타파스·브런치",
+      "name": "시우다드 콘달 (Ciudad Condal)",
+      "nameLocal": "Ciudad Condal",
+      "lat": 41.3887,
+      "lng": 2.1669,
+      "summary": "카탈루냐 광장 인근 야외 테라스가 넓고 쾌적한 올데이 타파스 레스토랑.",
+      "signature": "대구요리, 미니 버거, 상그리아, 크림 카탈라나",
+      "price": "€€",
+      "hoursNote": "08:00~01:30",
+      "closedDays": [],
+      "nearDay": "Day 1·13",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-cinc-sentits",
+      "city": "bcn",
+      "category": "food",
+      "foodType": "파인다이닝",
+      "name": "싱크 센티츠 (Cinc Sentits · 미슐랭 2)",
+      "nameLocal": "Cinc Sentits",
+      "lat": 41.3819,
+      "lng": 2.1539,
+      "summary": "신혼여행 기념 저녁으로 강력 추천하는 현대 카탈루냐 테이스팅 코스 레스토랑.",
+      "signature": "카탈루냐 제철 테이스팅 코스 & 와인 페어링",
+      "price": "€€€€",
+      "hoursNote": "화~토 디너 운영",
+      "closedDays": [
+        "일",
+        "월"
+      ],
+      "nearDay": "Day 3·4 스페셜 디너",
+      "mustBook": true,
+      "bookingUrl": "https://cincsentits.com/en/"
+    },
+    {
+      "id": "stay-bcn-h10cubik",
+      "city": "bcn",
+      "category": "stay",
+      "name": "H10 쿠빅 (숙소 후보)",
+      "nameLocal": "H10 Cubik",
+      "lat": 41.3882,
+      "lng": 2.1746,
+      "summary": "루프탑 인피니티 풀과 최고 입지를 갖춘 바르셀로나 4성급 수페리어 부티크 호텔.",
+      "hoursNote": "체크인 15:00 / 체크아웃 12:00",
+      "closedDays": [],
+      "price": "€340/박",
+      "mustBook": true,
+      "bookingUrl": "https://www.h10hotels.com/en/barcelona-hotels/h10-cubik"
+    },
+    {
+      "id": "stay-bcn-seventy",
+      "city": "bcn",
+      "category": "stay",
+      "name": "세븐티 바르셀로나 (숙소 후보)",
+      "nameLocal": "Seventy Barcelona",
+      "lat": 41.3976,
+      "lng": 2.1607,
+      "summary": "에이샴플라의 따뜻한 감성과 스파·루프탑 풀을 갖춘 부티크 호텔.",
+      "hoursNote": "체크인 15:00 / 체크아웃 12:00",
+      "closedDays": [],
+      "price": "€390/박",
+      "mustBook": true,
+      "bookingUrl": "https://www.seventybarcelona.com/en/"
+    },
+    {
+      "id": "stay-bcn-majestic",
+      "city": "bcn",
+      "category": "stay",
+      "name": "마제스틱 호텔 & 스파 (숙소 후보)",
+      "nameLocal": "Majestic Hotel & Spa",
+      "lat": 41.3932,
+      "lng": 2.1648,
+      "summary": "그라시아 거리의 상징적인 5성급 GL 럭셔리 호텔.",
+      "hoursNote": "체크인 15:00 / 체크아웃 12:00",
+      "closedDays": [],
+      "price": "€520/박",
+      "mustBook": true,
+      "bookingUrl": "https://www.hotelmajestic.es/en"
+    },
+    {
+      "id": "opo-airport",
+      "city": "opo",
+      "category": "transport",
+      "name": "포르투 사 카르네이루 공항 (OPO)",
+      "nameLocal": "Aeroporto Francisco Sá Carneiro",
+      "lat": 41.2481,
+      "lng": -8.6814,
+      "summary": "아담하고 동선이 매우 빠른 포르투 공항. 시내까지 Bolt/Uber로 25분.",
+      "hoursNote": "24시간 운영",
+      "closedDays": [],
+      "price": "",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "ribeira",
+      "city": "opo",
+      "category": "sight",
+      "name": "히베이라 강변 광장",
+      "nameLocal": "Praça da Ribeira",
+      "lat": 41.1408,
+      "lng": -8.613,
+      "summary": "파스텔톤 강변 건물들과 하벨루 와인 운반선, 버스킹 음악이 흐르는 포르투 낭만의 중심.",
+      "hoursNote": "상시 개방",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "dom-luis",
+      "city": "opo",
+      "category": "sight",
+      "name": "동 루이스 1세 다리",
+      "nameLocal": "Ponte Luís I",
+      "lat": 41.1399,
+      "lng": -8.6094,
+      "summary": "에펠의 제자가 설계한 아치형 2층 철교! 위층 보행로에서 바라보는 도우루 강 윤슬은 평생 잊지 못할 장면.",
+      "hoursNote": "상시 개방",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "serra-pilar",
+      "city": "opo",
+      "category": "sight",
+      "name": "세하 두 필라르 전망대 & 모후 정원",
+      "nameLocal": "Mosteiro da Serra do Pilar · Jardim do Morro",
+      "lat": 41.1381,
+      "lng": -8.6083,
+      "summary": "해 질 녘 포르투에서 가장 로맨틱한 곳! 포트와인 한 병과 컵을 챙겨 노을과 야경을 감상하세요.",
+      "hoursNote": "일몰 40분 전 도착 추천",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "livraria-lello",
+      "city": "opo",
+      "category": "sight",
+      "name": "렴루 서점 (렐루 서점)",
+      "nameLocal": "Livraria Lello",
+      "lat": 41.1468,
+      "lng": -8.6149,
+      "summary": "붉은 나선형 나무 계단과 스테인드글라스가 고풍스러운 세계에서 가장 아름다운 서점 중 하나.",
+      "hoursNote": "09:00~19:30 (09:00 첫 타임 Gold 티켓 오픈런 추천!)",
+      "closedDays": [],
+      "price": "€8~15.90 (도서 구매 시 차감)",
+      "mustBook": true,
+      "bookingUrl": "https://www.livrarialello.pt/en/store/ticket-voucher"
+    },
+    {
+      "id": "clerigos",
+      "city": "opo",
+      "category": "sight",
+      "name": "클레리구스 성당 & 종탑",
+      "nameLocal": "Torre dos Clérigos",
+      "lat": 41.1458,
+      "lng": -8.6139,
+      "summary": "225개 계단을 오르면 주황색 테라코타 지붕이 펼쳐진 포르투 시내를 360도로 내려다봅니다.",
+      "hoursNote": "09:00~19:00",
+      "closedDays": [],
+      "price": "€8",
+      "mustBook": false,
+      "bookingUrl": "https://www.torredosclerigos.pt/en/"
+    },
+    {
+      "id": "sao-bento",
+      "city": "opo",
+      "category": "sight",
+      "name": "상 벤투 역",
+      "nameLocal": "Estação de São Bento",
+      "lat": 41.1456,
+      "lng": -8.6106,
+      "summary": "2만 장의 푸른 아줄레주 도자기 타일로 포르투갈 역사를 그려낸 예술 같은 기차역.",
+      "hoursNote": "상시 개방",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "bolhao-market",
+      "city": "opo",
+      "category": "sight",
+      "name": "볼량 시장",
+      "nameLocal": "Mercado do Bolhão",
+      "lat": 41.1492,
+      "lng": -8.6069,
+      "summary": "깨끗하게 리모델링된 전통 시장! 화이트 포트와인 한 잔과 신선한 굴·치즈·통조림 기념품 구경하기 최고.",
+      "hoursNote": "월~금 08:00~20:00, 토 08:00~18:00",
+      "closedDays": [
+        "일"
+      ],
+      "price": "무료 입장",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "taylors-cellar",
+      "city": "opo",
+      "category": "sight",
+      "name": "가이아 포트와인 셀러 (테일러스 / 그레이엄스)",
+      "nameLocal": "Taylor's / Graham's Port Lodge",
+      "lat": 41.1342,
+      "lng": -8.6137,
+      "summary": "오크통이 가득한 유서 깊은 와인 저장고 투어 후 공작새가 거니는 정원에서 루비·토니·빈티지 포트와인 시음!",
+      "hoursNote": "10:00~19:00 (테일러스 한국어 오디오 가이드 완비!)",
+      "closedDays": [],
+      "price": "€22~35",
+      "mustBook": true,
+      "bookingUrl": "https://www.taylor.pt/en/visit-taylor-fladgate/port-cellars"
+    },
+    {
+      "id": "fado-porto",
+      "city": "opo",
+      "category": "sight",
+      "name": "파두 라이브 공연 (카사 다 기타라 / 이데알 클루브)",
+      "nameLocal": "Casa da Guitarra · Ideal Clube de Fado",
+      "lat": 41.1428,
+      "lng": -8.6095,
+      "summary": "포르투갈 전통 12현 기타 선율과 애절한 파두 라이브에 포트와인 1잔이 어우러지는 감동적인 1시간 공연.",
+      "hoursNote": "18:00 / 19:30 세션",
+      "closedDays": [],
+      "price": "€19~24",
+      "mustBook": true,
+      "bookingUrl": "https://casadaguitarra.pt/"
+    },
+    {
+      "id": "douro-pinhao",
+      "city": "opo",
+      "category": "sight",
+      "name": "도우루 밸리 와이너리 & 피냥 리버 크루즈",
+      "nameLocal": "Vale do Douro · Pinhão",
+      "lat": 41.1906,
+      "lng": -7.5453,
+      "summary": "계단식 포도밭이 끝없이 펼쳐진 세계 최초의 지정 와인 산지! 소규모 벤 투어로 부티크 와이너리 2곳 시음 + 전통 런치 + 도우루 강 유람선까지.",
+      "hoursNote": "08:30~18:00 종일 투어",
+      "closedDays": [],
+      "price": "1인 €95~130",
+      "mustBook": true,
+      "bookingUrl": "https://www.getyourguide.com/porto-l151/douro-valley-tc27/"
+    },
+    {
+      "id": "tram-1-foz",
+      "city": "opo",
+      "category": "sight",
+      "name": "1번 빈티지 트램 & 포즈 두 도우루 해변",
+      "nameLocal": "Elétrico 1 · Foz do Douro · Farol de Felgueiras",
+      "lat": 41.148,
+      "lng": -8.6755,
+      "summary": "도우루 강변을 따라 달리는 클래식 목조 트램을 타고 대서양 파도가 부서지는 등대와 야자수 산책로까지!",
+      "hoursNote": "트램 09:00~20:30",
+      "closedDays": [],
+      "price": "트램 편도 €6",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "serralves",
+      "city": "opo",
+      "category": "sight",
+      "name": "세할베스 현대미술관 & 아르데코 핑크 빌라",
+      "nameLocal": "Fundação de Serralves",
+      "lat": 41.1597,
+      "lng": -8.6596,
+      "summary": "초록 정원 속 웨스 앤더슨 영화 같은 핑크빛 아르데코 저택과 트리탑 워크 산책로! 웨딩·허니문 스냅 명소.",
+      "hoursNote": "10:00~19:00",
+      "closedDays": [],
+      "price": "공원+빌라 €15 / 통합 €24",
+      "mustBook": false,
+      "bookingUrl": "https://www.serralves.pt/en/"
+    },
+    {
+      "id": "food-santiago",
+      "city": "opo",
+      "category": "food",
+      "foodType": "로컬미식",
+      "name": "카페 산티아고 (Café Santiago)",
+      "nameLocal": "Café Santiago",
+      "lat": 41.1465,
+      "lng": -8.6047,
+      "summary": "포르투 영혼의 음식 '프란세지냐(Francesinha)' 원조 맛집! 둘이서 프란세지냐 1개 + 감자튀김 + 샐러드/스테이크 나눠 먹으면 딱 좋습니다.",
+      "signature": "프란세지냐 산티아고(달걀 토핑), 수퍼복 생맥주",
+      "price": "€€",
+      "hoursNote": "월~토 12:00~22:30",
+      "closedDays": [
+        "일"
+      ],
+      "nearDay": "Day 6 점심",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-mercadores",
+      "city": "opo",
+      "category": "food",
+      "foodType": "해산물",
+      "name": "타베르나 두스 메르카도르스",
+      "nameLocal": "Taberna dos Mercadores",
+      "lat": 41.1415,
+      "lng": -8.6119,
+      "summary": "히베이라 골목 테이블 6개뿐인 전설의 맛집! 불쇼 소금구이 농어와 해물밥이 예술입니다.",
+      "signature": "불꽃 소금구이 생선, 문어구이, 해물밥(Arroz de Marisco)",
+      "price": "€€€",
+      "hoursNote": "화~토 12:30~15:00, 19:00~22:30",
+      "closedDays": [
+        "일",
+        "월"
+      ],
+      "nearDay": "Day 5·6 저녁",
+      "mustBook": true,
+      "bookingUrl": "https://www.google.com/maps/search/?api=1&query=Taberna+dos+Mercadores+Porto"
+    },
+    {
+      "id": "food-manteigaria",
+      "city": "opo",
+      "category": "cafe",
+      "foodType": "카페·디저트",
+      "name": "만테이가리아 (Manteigaria)",
+      "nameLocal": "Manteigaria",
+      "lat": 41.1488,
+      "lng": -8.6075,
+      "summary": "종이 울리면 방금 오븐에서 나온 따뜻한 에그타르트(나타)! 시나몬 가루 살짝 뿌려 에스프레소와 함께.",
+      "signature": "파스텔 드 나타 (Pastel de Nata)",
+      "price": "€",
+      "hoursNote": "08:00~21:00",
+      "closedDays": [],
+      "nearDay": "Day 6 아침/간식",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-majestic-cafe",
+      "city": "opo",
+      "category": "cafe",
+      "foodType": "카페·브런치",
+      "name": "마제스틱 카페 (Majestic Café)",
+      "nameLocal": "Majestic Café",
+      "lat": 41.1472,
+      "lng": -8.6066,
+      "summary": "1921년 오픈한 벨에포크 양식의 화려한 역사적 카페. 아침 일찍 방문 시 웨이팅 없이 우아한 티타임 가능.",
+      "signature": "라바나다(포르투갈식 프렌치토스트), 봄봄 커피",
+      "price": "€€",
+      "hoursNote": "월~토 09:00~23:00",
+      "closedDays": [
+        "일"
+      ],
+      "nearDay": "Day 6 티타임",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-conga",
+      "city": "opo",
+      "category": "food",
+      "foodType": "로컬미식",
+      "name": "콩가 (Conga — Casa das Bifanas)",
+      "nameLocal": "Conga",
+      "lat": 41.1478,
+      "lng": -8.6085,
+      "summary": "매콤달콤 특제 육수에 푹 적신 돼지고기 샌드위치 '비파나(Bifana)' 현지인 찐맛집! 한국인 입맛 저격.",
+      "signature": "비파나(Bifana) + 수퍼복 맥주",
+      "price": "€",
+      "hoursNote": "월~토 11:00~22:00",
+      "closedDays": [
+        "일"
+      ],
+      "nearDay": "Day 5·6 간식",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-vinum",
+      "city": "opo",
+      "category": "food",
+      "foodType": "파인다이닝",
+      "name": "비눔 레스토랑 & 와인바 (VINUM at Graham's)",
+      "nameLocal": "VINUM Restaurant & Wine Bar",
+      "lat": 41.1368,
+      "lng": -8.6238,
+      "summary": "그레이엄스 포트와인 셀러 테라스에서 도우루 강과 포르투 야경을 바라보며 즐기는 로맨틱 허니문 디너!",
+      "signature": "티본 스테이크(Chuletón), 구운 문어, 빈티지 포트와인 페어링",
+      "price": "€€€€",
+      "hoursNote": "매일 12:30~24:00",
+      "closedDays": [],
+      "nearDay": "Day 6·7 저녁",
+      "mustBook": true,
+      "bookingUrl": "https://www.vinumatgrahams.com/en/"
+    },
+    {
+      "id": "food-marisqueira",
+      "city": "opo",
+      "category": "food",
+      "foodType": "해산물",
+      "name": "페이시 누 메르카두 (포즈 해변 그릴)",
+      "nameLocal": "Peixe no Mercado / Foz Seafood",
+      "lat": 41.1496,
+      "lng": -8.673,
+      "summary": "포즈 두 도우루 바닷가 산책 후 숯불 생선구이와 그린와인(비뉴 베르드) 한 병 즐기기 좋은 해산물 식당.",
+      "signature": "숯불 농어·도미·문어 구이, 비뉴 베르드(Vinho Verde)",
+      "price": "€€€",
+      "hoursNote": "12:30~23:00",
+      "closedDays": [],
+      "nearDay": "Day 8 점심",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "stay-opo-rebello",
+      "city": "opo",
+      "category": "stay",
+      "name": "더 레벨로 호텔 & 스파 (숙소 후보)",
+      "nameLocal": "The Rebello Hotel & Spa",
+      "lat": 41.1389,
+      "lng": -8.6195,
+      "summary": "가이아 강변 정면 리버뷰와 온수 스파 풀을 갖춘 5성급 부티크 호텔.",
+      "hoursNote": "체크인 15:00 / 체크아웃 12:00",
+      "closedDays": [],
+      "price": "€330/박",
+      "mustBook": true,
+      "bookingUrl": "https://www.therebello.com/"
+    },
+    {
+      "id": "stay-opo-pestana",
+      "city": "opo",
+      "category": "stay",
+      "name": "페스타나 빈티지 포르투 (숙소 후보)",
+      "nameLocal": "Pestana Vintage Porto",
+      "lat": 41.1406,
+      "lng": -8.6134,
+      "summary": "히베이라 광장 정중앙 동 루이스 다리 뷰 5성급 호텔.",
+      "hoursNote": "체크인 15:00 / 체크아웃 12:00",
+      "closedDays": [],
+      "price": "€360/박",
+      "mustBook": true,
+      "bookingUrl": "https://www.pestana.com/en/hotel/pestana-vintage-porto"
+    },
+    {
+      "id": "stay-opo-torel",
+      "city": "opo",
+      "category": "stay",
+      "name": "토렐 아방가르드 (숙소 후보)",
+      "nameLocal": "Torel Avantgarde",
+      "lat": 41.1449,
+      "lng": -8.6219,
+      "summary": "도우루 강 파노라마 야외 풀을 자랑하는 예술 부티크 5성급.",
+      "hoursNote": "체크인 15:00 / 체크아웃 12:00",
+      "closedDays": [],
+      "price": "€310/박",
+      "mustBook": true,
+      "bookingUrl": "https://www.torelavantgarde.com/en/"
+    },
+    {
+      "id": "pmi-airport",
+      "city": "pmi",
+      "category": "transport",
+      "name": "팔마 데 마요르카 공항 & 렌터카 센터",
+      "nameLocal": "Aeroport de Palma de Mallorca (PMI)",
+      "lat": 39.5517,
+      "lng": 2.7388,
+      "summary": "마요르카 도착 즉시 터미널 연결 렌터카 빌딩에서 차량 픽업!",
+      "hoursNote": "24시간 운영",
+      "closedDays": [],
+      "price": "",
+      "mustBook": true,
+      "bookingUrl": "https://www.rentalcars.com/"
+    },
+    {
+      "id": "palma-cathedral",
+      "city": "pmi",
+      "category": "sight",
+      "name": "팔마 대성당 (라 세우) & 파르크 데 라 마르",
+      "nameLocal": "Catedral-Basílica de Santa María de Mallorca",
+      "lat": 39.5674,
+      "lng": 2.6483,
+      "summary": "가우디가 내부 천개 장식에 참여한 황금빛 사암 고딕 대성당! 밤에 호수에 비치는 황금 야경이 압권입니다.",
+      "hoursNote": "월~금 10:00~17:15, 토 10:00~14:15",
+      "closedDays": [
+        "일"
+      ],
+      "price": "€10",
+      "mustBook": false,
+      "bookingUrl": "https://catedraldemallorca.org/en/"
+    },
+    {
+      "id": "palma-oldtown",
+      "city": "pmi",
+      "category": "sight",
+      "name": "팔마 구시가지 & 보른 가로수길",
+      "nameLocal": "Passeig del Born · Casco Antiguo",
+      "lat": 39.5712,
+      "lng": 2.6469,
+      "summary": "라피아 바구니 편집샵(Rialto Living 등), 골목 부티크, 올리브 나무 광장이 매력적인 팔마 중심 거리.",
+      "hoursNote": "상점 보통 10:00~20:30",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "valldemossa",
+      "city": "pmi",
+      "category": "sight",
+      "name": "발데모사 마을",
+      "nameLocal": "Valldemossa",
+      "lat": 39.7093,
+      "lng": 2.6226,
+      "summary": "쇼팽과 조르주 상드가 겨울을 보낸 트라문타나 산속의 동화 마을! 집집마다 화분이 걸린 골목과 감자빵 '코카 데 파타타' 필수.",
+      "hoursNote": "오전 09:30~10:00 도착 시 공영주차장 여유",
+      "closedDays": [],
+      "price": "수도원 €12 (골목 산책 무료)",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "deia",
+      "city": "pmi",
+      "category": "sight",
+      "name": "데이아 마을 & 칼라 데이아",
+      "nameLocal": "Deià · Cala Deià",
+      "lat": 39.7483,
+      "lng": 2.6486,
+      "summary": "트라문타나 산자락 황금빛 돌집 예술가 마을과 절벽 아래 옥색 몽돌 협곡 해변.",
+      "hoursNote": "상시 개방 (칼라 데이아 아래 주차장은 협소하므로 식당 예약 시 일찍 이동)",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "soller-town",
+      "city": "pmi",
+      "category": "sight",
+      "name": "소예르 광장 & 산 바르톨로메 성당",
+      "nameLocal": "Plaça de la Constitució, Sóller",
+      "lat": 39.7662,
+      "lng": 2.7152,
+      "summary": "성당 바로 앞 노천카페 테이블 사이로 100년 된 오렌지색 나무 트램이 딸랑거리며 지나가는 명장면!",
+      "hoursNote": "상시 개방",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "port-soller",
+      "city": "pmi",
+      "category": "sight",
+      "name": "소예르 항구 & 오렌지 빈티지 트램",
+      "nameLocal": "Port de Sóller",
+      "lat": 39.7956,
+      "lng": 2.6961,
+      "summary": "소예르 마을에서 항구까지 오렌지 과수원 사이를 달리는 빈티지 트램 체험 & 말굽 모양 항구의 환상적인 일몰.",
+      "hoursNote": "트램 08:00~20:30 매 30분 간격",
+      "closedDays": [],
+      "price": "트램 편도 €10",
+      "mustBook": false,
+      "bookingUrl": "https://trendesoller.com/eng/index"
+    },
+    {
+      "id": "calo-des-moro",
+      "city": "pmi",
+      "category": "sight",
+      "name": "칼로 데스 모로 & 칼라 살무니아",
+      "nameLocal": "Caló des Moro · Cala s'Almunia",
+      "lat": 39.3134,
+      "lng": 3.1216,
+      "summary": "보트가 공중에 떠 있는 듯 투명한 에메랄드빛 천국! 무료 공영주차장에서 도보 15분. 아침 08:30 전에 도착해야 한적하고 인생샷 건집니다.",
+      "hoursNote": "08:00~08:30 도착 강력 추천!",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "santanyi",
+      "city": "pmi",
+      "category": "sight",
+      "name": "산타니 마을 & 수요일 로컬 마켓",
+      "nameLocal": "Mercat de Santanyí",
+      "lat": 39.3544,
+      "lng": 3.1289,
+      "summary": "5/19(수) 일정 대박 포인트! 수·토요일 오전(09:00~13:30)에만 열리는 마요르카 최고 감성의 산타니 야외 마켓(라피아백·도자기·올리브·린넨)!",
+      "hoursNote": "수·토 마켓 09:00~13:30",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "es-trenc",
+      "city": "pmi",
+      "category": "sight",
+      "name": "에스 트렁크 해변",
+      "nameLocal": "Platja d'es Trenc",
+      "lat": 39.349,
+      "lng": 2.9896,
+      "summary": "'유럽의 카리브해'라 불리는 끝없는 하얀 모래사장과 얕은 밀키블루 바다! 오후 내내 썬베드 빌려 수영하고 쉬기 최고.",
+      "hoursNote": "상시 개방 (공식 유료 주차장 €7~8)",
+      "closedDays": [],
+      "price": "주차 유료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "formentor",
+      "city": "pmi",
+      "category": "sight",
+      "name": "포르멘토르 등대 & 에스 콜로메르 전망대",
+      "nameLocal": "Cap de Formentor · Mirador Es Colomer",
+      "lat": 39.9614,
+      "lng": 3.2096,
+      "summary": "깎아지르는 해안 절벽 끝 하얀 등대! 5월 중순부터 10:00~22:00 개인 차량 통제 가능성이 높으므로 09:30 전 진입하거나 포르트 데 폴렌사에서 TIB 334번 셔틀버스를 이용하세요.",
+      "hoursNote": "오전 09:30 이전 진입 또는 셔틀버스 이용",
+      "closedDays": [],
+      "price": "무료 (버스 이용 시 소액)",
+      "mustBook": false,
+      "bookingUrl": "https://www.tib.org/en/"
+    },
+    {
+      "id": "alcudia",
+      "city": "pmi",
+      "category": "sight",
+      "name": "알쿠디아 중세 성벽 마을 & 플라야 데 무로",
+      "nameLocal": "Alcúdia · Platja de Muro",
+      "lat": 39.8532,
+      "lng": 3.1214,
+      "summary": "아기자기한 성벽 안 중세 마을 산책과 마요르카 북부의 긴 에메랄드 해변 무로 비치 클럽 휴양.",
+      "hoursNote": "상시 개방",
+      "closedDays": [],
+      "price": "무료",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-can-joan",
+      "city": "pmi",
+      "category": "cafe",
+      "foodType": "카페·디저트",
+      "name": "칸 조안 데 사이고 (1700년 전통)",
+      "nameLocal": "Ca'n Joan de s'Aigo",
+      "lat": 39.5707,
+      "lng": 2.6531,
+      "summary": "300년 넘게 사랑받는 마요르카 전통 페스트리 '엔사이마다(Ensaïmada)'와 수제 아몬드 아이스크림 원조 카페.",
+      "signature": "따뜻한 엔사이마다, 아몬드 아이스크림, 핫초콜릿",
+      "price": "€",
+      "hoursNote": "08:00~20:30",
+      "closedDays": [],
+      "nearDay": "Day 9·13 간식",
+      "mustBook": false,
+      "bookingUrl": ""
+    },
+    {
+      "id": "food-la-rosa",
+      "city": "pmi",
+      "category": "food",
+      "foodType": "타파스",
+      "name": "라 로사 베르무테리아 (La Rosa)",
+      "nameLocal": "La Rosa Vermutería & Colmado",
+      "lat": 39.5729,
+      "lng": 2.6503,
+      "summary": "팔마에서 분위기 가장 힙하고 맛있는 베르무트 & 해산물 타파스 레스토랑!",
+      "signature": "문어 갈리시아풍, 감바스, 바스크 토르티야, 수제 베르무트",
+      "price": "€€",
+      "hoursNote": "12:30~23:30",
+      "closedDays": [],
+      "nearDay": "Day 9 저녁",
+      "mustBook": true,
+      "bookingUrl": "https://larosavermuteria.com/"
+    },
+    {
+      "id": "food-cas-patro",
+      "city": "pmi",
+      "category": "food",
+      "foodType": "해산물",
+      "name": "카스 파트로 마르크 (칼라 데이아 절벽 식당)",
+      "nameLocal": "Ca's Patró March",
+      "lat": 39.7606,
+      "lng": 2.6409,
+      "summary": "에메랄드 바다 바로 위 나무 데크에서 파도 소리를 들으며 먹는 해산물 그릴! 드라마 <더 나이트 매니저> 촬영지.",
+      "signature": "지중해 새우·오징어 그릴, 오늘의 생선구이, 화이트 상그리아",
+      "price": "€€€",
+      "hoursNote": "12:30~17:00 (런치 중심, 사전 예약 필수)",
+      "closedDays": [],
+      "nearDay": "Day 10 점심",
+      "mustBook": true,
+      "bookingUrl": "https://www.google.com/maps/search/?api=1&query=Cas+Patro+March+Deia"
+    },
+    {
+      "id": "food-bens-davall",
+      "city": "pmi",
+      "category": "food",
+      "foodType": "파인다이닝",
+      "name": "벤스 다발 (Béns d'Avall · 절벽 선셋 미슐랭)",
+      "nameLocal": "Béns d'Avall",
+      "lat": 39.7848,
+      "lng": 2.6657,
+      "summary": "데이아와 소예르 사이 해안 절벽 끝 테라스에서 수평선 너머 지는 노을을 바라보는 마요르카 최고의 허니문 디너 명소!",
+      "signature": "발레아레스 테이스팅 코스 (무알코올 페어링도 훌륭 — 운전자 배려!)",
+      "price": "€€€€",
+      "hoursNote": "목~월 런치/디너 (요일 시즌별 확인)",
+      "closedDays": [
+        "화",
+        "수"
+      ],
+      "nearDay": "Day 10·12 디너",
+      "mustBook": true,
+      "bookingUrl": "https://bensdavall.com/en/"
+    },
+    {
+      "id": "food-cassai",
+      "city": "pmi",
+      "category": "food",
+      "foodType": "브런치·지중해",
+      "name": "카사이 그랑 카페 산타니 (Cassai)",
+      "nameLocal": "Cassai Gran Café & Restaurant",
+      "lat": 39.3547,
+      "lng": 3.1285,
+      "summary": "산타니 마켓 한복판, 보헤미안 라탄 정원 테라스가 너무 예쁜 지중해 브런치 & 런치 레스토랑.",
+      "signature": "마요르카 빠에야, 부라타 샐러드, 오렌지 상그리아",
+      "price": "€€€",
+      "hoursNote": "09:30~23:00",
+      "closedDays": [],
+      "nearDay": "Day 11 점심",
+      "mustBook": true,
+      "bookingUrl": "https://www.cassaigroup.com/"
+    },
+    {
+      "id": "food-el-camino",
+      "city": "pmi",
+      "category": "bar",
+      "foodType": "바·타파스",
+      "name": "엘 카미노 팔마 (El Camino)",
+      "nameLocal": "El Camino Palma",
+      "lat": 39.5738,
+      "lng": 2.6488,
+      "summary": "긴 대리석 바에 나란히 앉아 셰프들이 눈앞에서 요리해주는 모던 마요르칸 타파스 바! 둘이 대화 나누기 최고.",
+      "signature": "새우 크로켓, 젖소 안심 스테이크, 구운 아티초크",
+      "price": "€€€",
+      "hoursNote": "화~토 13:00~15:30, 19:30~23:00",
+      "closedDays": [
+        "일",
+        "월"
+      ],
+      "nearDay": "Day 11·12 저녁",
+      "mustBook": true,
+      "bookingUrl": "https://elcaminopalma.es/"
+    },
+    {
+      "id": "stay-pmi-llorenc",
+      "city": "pmi",
+      "category": "stay",
+      "name": "엘 요렌스 파르크 데 라 마르 (숙소 후보)",
+      "nameLocal": "El Llorenç Parc de la Mar",
+      "lat": 39.5665,
+      "lng": 2.6542,
+      "summary": "성인전용 팔마 성벽 33m 루프탑 인피니티 풀 5성급 호텔.",
+      "hoursNote": "체크인 15:00 / 체크아웃 12:00",
+      "closedDays": [],
+      "price": "€490/박",
+      "mustBook": true,
+      "bookingUrl": "https://www.elllorenc.com/en/"
+    },
+    {
+      "id": "stay-pmi-ikkil",
+      "city": "pmi",
+      "category": "stay",
+      "name": "비키니 아일랜드 & 마운틴 소예르 (숙소 후보)",
+      "nameLocal": "Bikini Island & Mountain Hotel",
+      "lat": 39.7931,
+      "lng": 2.6901,
+      "summary": "포르트 데 소예르 만을 품은 감각적인 보헤미안 휴양 호텔.",
+      "hoursNote": "체크인 15:00 / 체크아웃 12:00",
+      "closedDays": [],
+      "price": "€350/박",
+      "mustBook": true,
+      "bookingUrl": "https://www.bikini-hotels.com/port-de-soller/"
+    },
+    {
+      "id": "stay-pmi-cort",
+      "city": "pmi",
+      "category": "stay",
+      "name": "호텔 코르트 팔마 (숙소 후보)",
+      "nameLocal": "Hotel Cort",
+      "lat": 39.5695,
+      "lng": 2.6502,
+      "summary": "팔마 구시가지 코르트 광장의 스타일리시한 부티크 호텔.",
+      "hoursNote": "체크인 15:00 / 체크아웃 12:00",
+      "closedDays": [],
+      "price": "€340/박",
+      "mustBook": true,
+      "bookingUrl": "https://www.hotelcort.com/en/"
+    }
+  ],
+  "days": [
+    {
+      "date": "2027-05-08",
+      "dayNo": 0,
+      "dow": "토",
+      "city": "bcn",
+      "cityLabel": "출국 · 이동",
+      "calendarTag": "새벽 비행(카타르 도하공항 경유)",
+      "theme": "설레는 허니문 출발 · 인천 → 도하 경유",
+      "travelMode": "transit",
+      "items": [
+        {
+          "time": "22:00",
+          "placeId": "bcn-airport",
+          "customTitle": "인천국제공항 도착 · 수하물 위탁 · 출국 수속",
+          "stayMin": 180,
+          "moveTo": "카타르항공 (도하 경유 예정)",
+          "moveMin": 960,
+          "memo": "여권·국제운전면허증·한국면허증 실물·트래블카드·기내 보습용품·목베개 최종 점검! 기내식에 신혼여행 케이크 사전 신청 가능 여부도 확인해보세요."
+        }
+      ],
+      "planB": "새벽 비행 출발 시각(5/8 01:25 vs 5/9 01:25) 확정 후 공항 도착 시각만 맞춰 조정하면 됩니다. 라운지에서 샤워 후 탑승하면 기내 숙면에 훨씬 좋습니다."
+    },
+    {
+      "date": "2027-05-09",
+      "dayNo": 1,
+      "dow": "일",
+      "city": "bcn",
+      "cityLabel": "바르셀로나 1박",
+      "calendarTag": "바르셀로나 IN : 먹고 놀기",
+      "theme": "바르셀로나 도착 · 고딕 산책 · 바르셀로네타 & 첫 빠에야",
+      "travelMode": "walking",
+      "items": [
+        {
+          "time": "14:10",
+          "placeId": "bcn-airport",
+          "stayMin": 60,
+          "moveTo": "택시(€40) 또는 Aerobus(35분)",
+          "moveMin": 35,
+          "memo": "BCN T1 도착! 장거리 비행 첫날은 캐리어 2개 들고 호텔 문 앞까지 가는 공식 택시 이용 추천."
+        },
+        {
+          "time": "15:30",
+          "placeId": "catalunya-sq",
+          "customTitle": "숙소 체크인 & 샤워 후 가벼운 환복",
+          "stayMin": 75,
+          "moveTo": "도보 산책",
+          "moveMin": 10,
+          "memo": "일요일은 대형 상점과 보케리아 시장이 쉬는 날이라 골목 산책과 바다·맛집 위주로 여유롭게!"
+        },
+        {
+          "time": "17:00",
+          "placeId": "gothic-quarter",
+          "stayMin": 60,
+          "moveTo": "도보 (보른·포트벨 경유)",
+          "moveMin": 20,
+          "memo": "비스베 다리 아래에서 바르셀로나 첫 커플 사진 남기기."
+        },
+        {
+          "time": "18:20",
+          "placeId": "barceloneta",
+          "stayMin": 70,
+          "moveTo": "도보 12분",
+          "moveMin": 12,
+          "memo": "지중해 바닷바람 맞으며 해변 산책로 걷기 — 시차 졸음이 싹 달아납니다."
+        },
+        {
+          "time": "19:45",
+          "placeId": "food-7portes",
+          "stayMin": 100,
+          "moveTo": "택시 또는 산책 복귀",
+          "moveMin": 15,
+          "memo": "껍질이 다 손질되어 나오는 '부자 빠에야(Parellada)'와 시원한 상그리아로 허니문 첫날 건배!",
+          "bookingId": "b-7portes"
+        }
+      ],
+      "planB": "장거리 비행으로 피곤하다면 바르셀로네타를 생략하고 숙소 루프탑 풀에서 쉰 뒤, 숙소 근처 시우다드 콘달(Ciudad Condal) 테라스에서 가볍게 타파스와 클라라 맥주로 첫날을 마무리하세요."
+    },
+    {
+      "date": "2027-05-10",
+      "dayNo": 2,
+      "dow": "월",
+      "city": "bcn",
+      "cityLabel": "바르셀로나 2박",
+      "calendarTag": "가우디 투어 신청",
+      "theme": "가우디 데이 · 사그라다 파밀리아 → 구엘 공원 → 그라시아",
+      "travelMode": "transit",
+      "items": [
+        {
+          "time": "09:00",
+          "placeId": "sagrada",
+          "stayMin": 120,
+          "moveTo": "택시 또는 버스 V19/24",
+          "moveMin": 20,
+          "memo": "오전 첫 타임 스테인드글라스 채광이 가장 아름답습니다! 한국어 반일 투어를 신청했다면 가이드 미팅 시각 기준으로 움직이세요.",
+          "bookingId": "b-sagrada"
+        },
+        {
+          "time": "11:30",
+          "placeId": "park-guell",
+          "stayMin": 90,
+          "moveTo": "버스 24번 / 택시 (내리막)",
+          "moveMin": 20,
+          "memo": "언덕 위에서 시내 쪽으로 내려오는 동선이라 체력을 아낄 수 있습니다.",
+          "bookingId": "b-guell"
+        },
+        {
+          "time": "13:30",
+          "placeId": "food-vinitus",
+          "stayMin": 80,
+          "moveTo": "도보 5분",
+          "moveMin": 5,
+          "memo": "스페인 현지 점심 피크(14:00~) 살짝 직전에 들어가 꿀대구·맛조개·안심 타파스 정복!"
+        },
+        {
+          "time": "15:15",
+          "placeId": "casa-batllo",
+          "stayMin": 90,
+          "moveTo": "도보 7분",
+          "moveMin": 7,
+          "memo": "한국어 AR 태블릿 투어로 지중해 바다를 닮은 내부 관람.",
+          "bookingId": "b-batllo"
+        },
+        {
+          "time": "17:00",
+          "placeId": "casa-mila",
+          "stayMin": 75,
+          "moveTo": "도보",
+          "moveMin": 15,
+          "memo": "카사 바트요 내부를 봤다면 라 페드레라는 외관 감상 후 루프탑 바에서 쉬거나, 밤 21시 야간 투어로 변경해도 환상적입니다.",
+          "bookingId": "b-mila"
+        }
+      ],
+      "planB": "한국어 가우디 반일/종일 투어(마이리얼트립·클룩)를 신청하면 이동 동선 고민 없이 가이드 설명을 들으며 사그라다+구엘+카사바트요 외관까지 한 번에 둘러볼 수 있습니다."
+    },
+    {
+      "date": "2027-05-11",
+      "dayNo": 3,
+      "dow": "화",
+      "city": "bcn",
+      "cityLabel": "바르셀로나 3박",
+      "calendarTag": "까탈루냐 음악당",
+      "theme": "고딕·보른 감성 골목 & 까탈루냐 음악당 로맨틱 데이",
+      "travelMode": "walking",
+      "items": [
+        {
+          "time": "09:30",
+          "placeId": "food-xurreria",
+          "stayMin": 35,
+          "moveTo": "도보 4분",
+          "moveMin": 4,
+          "memo": "갓 튀긴 바삭한 츄러스와 진한 초콜라테로 기분 좋은 아침 시작!"
+        },
+        {
+          "time": "10:15",
+          "placeId": "bcn-cathedral",
+          "stayMin": 65,
+          "moveTo": "도보 8분",
+          "moveMin": 8,
+          "memo": "대성당 앞 광장과 회랑 거위 정원 관람 (어깨·무릎 가리는 복장 준비)."
+        },
+        {
+          "time": "11:30",
+          "placeId": "santa-caterina",
+          "stayMin": 45,
+          "moveTo": "도보 6분",
+          "moveMin": 6,
+          "memo": "물결 지붕 로컬 시장에서 과일컵·하몽 맛보기."
+        },
+        {
+          "time": "12:30",
+          "placeId": "food-xampanyet",
+          "stayMin": 75,
+          "moveTo": "도보 2분",
+          "moveMin": 2,
+          "memo": "12시 오픈 맞춰 입장! 톡 쏘는 하우스 카바(Cava)와 타파스로 보른 지구 감성 만끽."
+        },
+        {
+          "time": "14:00",
+          "placeId": "picasso-museum",
+          "stayMin": 90,
+          "moveTo": "도보 3분",
+          "moveMin": 3,
+          "memo": "월요일 휴관을 피해 화요일 방문! 관람 후 바로 옆 산타 마리아 델 마르 성당도 들러보세요.",
+          "bookingId": "b-picasso"
+        },
+        {
+          "time": "15:45",
+          "placeId": "food-joncake",
+          "stayMin": 40,
+          "moveTo": "도보 8분",
+          "moveMin": 8,
+          "memo": "존 케이크 바스크 치즈케이크 포장해서 카페 타임 또는 숙소 휴식!"
+        },
+        {
+          "time": "18:30",
+          "placeId": "palau-musica",
+          "stayMin": 90,
+          "moveTo": "택시 10분",
+          "moveMin": 10,
+          "memo": "스테인드글라스 천장 아래 스패니시 기타/플라멩코 저녁 공연 감상(또는 낮 가이드 투어 후 저녁 파인다이닝 싱크 센티츠!).",
+          "bookingId": "b-palau"
+        }
+      ],
+      "planB": "비가 오더라도 피카소 미술관 → 엘 샴파니에트 → 까탈루냐 음악당 모두 실내 위주 동선이라 날씨 영향을 거의 받지 않는 완벽한 날입니다!"
+    },
+    {
+      "date": "2027-05-12",
+      "dayNo": 4,
+      "dow": "수",
+      "city": "bcn",
+      "cityLabel": "바르셀로나 4박",
+      "calendarTag": "몬주익성+시장+쇼핑",
+      "theme": "보케리아 시장 · 몬주익 언덕 · 그라시아 쇼핑 & 벙커 일몰",
+      "travelMode": "transit",
+      "items": [
+        {
+          "time": "09:30",
+          "placeId": "boqueria",
+          "stayMin": 65,
+          "moveTo": "지하철 L3 → 푸니쿨라 + 케이블카",
+          "moveMin": 25,
+          "memo": "오전 일찍 가야 쾌적한 보케리아 시장! 납작복숭아·체리·생과일주스·하몽 콘 즐기기."
+        },
+        {
+          "time": "11:00",
+          "placeId": "montjuic-castle",
+          "stayMin": 85,
+          "moveTo": "버스 150번",
+          "moveMin": 15,
+          "memo": "케이블카 타고 몬주익 성벽 위에서 지중해 항구 파노라마 감상!"
+        },
+        {
+          "time": "12:45",
+          "placeId": "mnac",
+          "stayMin": 45,
+          "moveTo": "지하철 L1/L3 또는 택시",
+          "moveMin": 20,
+          "memo": "국립미술관 앞 계단에서 스페인 광장 전망 사진 남기기 (분수대는 목~토 야간만 운영하므로 낮 전망으로!)."
+        },
+        {
+          "time": "14:00",
+          "placeId": "food-cerveceria",
+          "stayMin": 80,
+          "moveTo": "도보 3분",
+          "moveMin": 3,
+          "memo": "푸아그라 스테이크 타파스와 감바스로 든든한 점심."
+        },
+        {
+          "time": "15:30",
+          "placeId": "passeig-gracia",
+          "stayMin": 150,
+          "moveTo": "택시/버스 (벙커 인근 하차 후 도보 12분)",
+          "moveMin": 25,
+          "memo": "로에베·마시모두띠·기념품 쇼핑! 여권 원본(또는 사진 허용 매장 확인) 챙겨서 결제할 때 'Tax Free DIVA' 서류 꼭 받아두세요."
+        },
+        {
+          "time": "19:00",
+          "placeId": "bunkers-carmel",
+          "stayMin": 80,
+          "moveTo": "택시 복귀",
+          "moveMin": 20,
+          "memo": "바르셀로나 마지막 밤! 바둑판 도시 전체가 황금빛으로 물드는 노을 감상 후 내일 포르투 이동 짐 정리."
+        }
+      ],
+      "planB": "다리가 피곤한 날이라면 벙커 오르막 대신 호텔 루프탑 바(마제스틱 La Dolce Vitae 또는 에디션 루프탑)에서 칵테일을 마시며 사그라다 파밀리아 야경을 감상하세요."
+    },
+    {
+      "date": "2027-05-13",
+      "dayNo": 5,
+      "dow": "목",
+      "city": "opo",
+      "cityLabel": "바셀→포르투 · 1박",
+      "calendarTag": "바셀→포르투(부엘링항공 12:10~)",
+      "theme": "포르투 입성! 시차 1시간 선물 받고 동 루이스 다리 황금 노을",
+      "travelMode": "walking",
+      "items": [
+        {
+          "time": "09:30",
+          "placeId": "bcn-airport",
+          "customTitle": "바르셀로나 숙소 체크아웃 → BCN T1 공항 이동",
+          "stayMin": 130,
+          "moveTo": "부엘링 VY8472 (12:10 출발 예정)",
+          "moveMin": 120,
+          "memo": "10:00경 공항 도착해 여유 있게 백드롭 & 브런치. 포르투갈 도착 시 시계가 1시간 뒤로 가므로 13:10 도착!",
+          "bookingId": "b-flight-bcn-opo"
+        },
+        {
+          "time": "13:10",
+          "placeId": "opo-airport",
+          "stayMin": 40,
+          "moveTo": "Uber / Bolt (시내 숙소까지 25분)",
+          "moveMin": 25,
+          "memo": "포르투 공항 밖 라이드셰어 존에서 Bolt 호출하면 약 €16 내외로 언덕 걱정 없이 숙소 직행!"
+        },
+        {
+          "time": "15:00",
+          "placeId": "ribeira",
+          "stayMin": 90,
+          "moveTo": "도보 / 엘리베이터·푸니쿨라",
+          "moveMin": 15,
+          "memo": "체크인 후 강변 카페 테라스에서 화이트 포트와인 토닉(Port Tonic) 한 잔으로 포르투 첫인사!"
+        },
+        {
+          "time": "18:30",
+          "placeId": "dom-luis",
+          "stayMin": 45,
+          "moveTo": "위층 다리 건너 도보 3분",
+          "moveMin": 5,
+          "memo": "동 루이스 1세 다리 2층 보행로를 걸으며 강물 위 윤슬 감상."
+        },
+        {
+          "time": "19:30",
+          "placeId": "serra-pilar",
+          "stayMin": 80,
+          "moveTo": "케이블카 또는 도보",
+          "moveMin": 15,
+          "memo": "포르투 여행 최고의 순간! 5월 포르투 일몰(약 20:40)에 맞춰 모후 정원·세하 두 필라르에서 버스킹과 함께 노을 감상."
+        }
+      ],
+      "planB": "비행기가 조금 지연되거나 바람이 쌀쌀하면 얇은 가디건/트렌치코트를 꼭 챙기세요(포르투 강변 저녁 바람은 5월에도 선선합니다!). 강변 실내 창가석 레스토랑에서 야경을 봐도 충분히 황홀합니다."
+    },
+    {
+      "date": "2027-05-14",
+      "dayNo": 6,
+      "dow": "금",
+      "city": "opo",
+      "cityLabel": "포르투 2박",
+      "calendarTag": "포르투 구시가지·포트와인",
+      "theme": "렴루 서점 · 아줄레주 구시가지 · 가이아 포트와인 셀러 & 파두",
+      "travelMode": "walking",
+      "items": [
+        {
+          "time": "09:00",
+          "placeId": "livraria-lello",
+          "stayMin": 50,
+          "moveTo": "도보 3분",
+          "moveMin": 3,
+          "memo": "09:00 첫 타임 바우처 예약 시 사람 없을 때 붉은 나선 계단 사진 촬영 가능!",
+          "bookingId": "b-lello"
+        },
+        {
+          "time": "10:00",
+          "placeId": "clerigos",
+          "stayMin": 55,
+          "moveTo": "내리막 도보 7분",
+          "moveMin": 7,
+          "memo": "클레리구스 종탑 전망대에서 주황 지붕 파노라마 감상."
+        },
+        {
+          "time": "11:10",
+          "placeId": "sao-bento",
+          "stayMin": 30,
+          "moveTo": "도보 7분",
+          "moveMin": 7,
+          "memo": "2만 장 푸른 아줄레주 타일 역사와 카르무 성당 외벽 인증샷."
+        },
+        {
+          "time": "11:50",
+          "placeId": "bolhao-market",
+          "stayMin": 50,
+          "moveTo": "도보 2분",
+          "moveMin": 2,
+          "memo": "볼량 시장 구경 후 바로 앞 만테이가리아에서 갓 구운 에그타르트(나타) 간식!"
+        },
+        {
+          "time": "12:50",
+          "placeId": "food-santiago",
+          "stayMin": 70,
+          "moveTo": "택시/도보로 가이아 지구 이동",
+          "moveMin": 20,
+          "memo": "포르투 명물 매콤 고소한 프란세지냐 + 시원한 수퍼복 생맥주!"
+        },
+        {
+          "time": "15:00",
+          "placeId": "taylors-cellar",
+          "stayMin": 90,
+          "moveTo": "강변 산책 및 동 루이스 아래층 다리",
+          "moveMin": 20,
+          "memo": "테일러스(한국어 오디오 완비) 또는 그레이엄스 셀러 투어 & 정원 포트와인 테이스팅.",
+          "bookingId": "b-cellar"
+        },
+        {
+          "time": "18:00",
+          "placeId": "fado-porto",
+          "stayMin": 60,
+          "moveTo": "도보 5분",
+          "moveMin": 5,
+          "memo": "1시간 동안 밀도 있게 울리는 전통 파두 라이브 감상 후 강변 해물밥(타베르나 두스 메르카도르스 / 비눔) 저녁!",
+          "bookingId": "b-fado"
+        }
+      ],
+      "planB": "계단 오르기가 부담되면 클레리구스 탑 등반은 생략하고 마제스틱 카페에서 우아하게 커피와 프렌치토스트를 즐긴 뒤 가이아 케이블카를 타고 셀러로 이동하세요."
+    },
+    {
+      "date": "2027-05-15",
+      "dayNo": 7,
+      "dow": "토",
+      "city": "opo",
+      "cityLabel": "포르투 3박",
+      "calendarTag": "포르투 · 도우루 밸리 와이너리",
+      "theme": "도우루 밸리 종일 와이너리 투어 · 포도밭 테라스와 유람선",
+      "travelMode": "driving",
+      "items": [
+        {
+          "time": "08:30",
+          "placeId": "sao-bento",
+          "customTitle": "포르투 시내 미팅 포인트(또는 호텔 픽업) 출발",
+          "stayMin": 20,
+          "moveTo": "전용 투어 밴 이동",
+          "moveMin": 85,
+          "memo": "직접 운전 걱정 없이 둘 다 마음껏 와인을 마실 수 있는 소그룹(8인 이하) 도우루 밸리 투어가 신혼여행 만족도 200%!",
+          "bookingId": "b-douro"
+        },
+        {
+          "time": "10:30",
+          "placeId": "douro-pinhao",
+          "stayMin": 390,
+          "moveTo": "전용 투어 밴 포르투 복귀",
+          "moveMin": 90,
+          "memo": "계단식 포도밭 부티크 와이너리(Quinta) 2곳 프라이빗 시음 + 포르투갈 전통 런치 + 피냥 아줄레주 기차역 + 도우루 강 1시간 보트 크루즈!"
+        },
+        {
+          "time": "19:30",
+          "placeId": "food-vinum",
+          "stayMin": 100,
+          "moveTo": "숙소 휴식",
+          "moveMin": 15,
+          "memo": "포르투로 돌아와 강변 야경이 한눈에 보이는 레스토랑에서 여유로운 토요일 밤 디너 (또는 가볍게 콩가 비파나 야식!)."
+        }
+      ],
+      "planB": "와인을 많이 마시지 않는 커플이라면 도우루 종일 투어 대신 기차로 1시간 거리인 운하 도시 '아베이루 & 코스타노바(줄무늬 알록달록 해변 마을)' 반일 나들이로 바꿔도 사진이 정말 예쁘게 나옵니다!"
+    },
+    {
+      "date": "2027-05-16",
+      "dayNo": 8,
+      "dow": "일",
+      "city": "opo",
+      "cityLabel": "포르투 4박",
+      "calendarTag": "포르투 여유·바다",
+      "theme": "느긋한 일요일 · 세할베스 핑크 빌라 & 1번 트램 대서양 노을",
+      "travelMode": "transit",
+      "items": [
+        {
+          "time": "10:30",
+          "placeId": "serralves",
+          "stayMin": 110,
+          "moveTo": "Uber/Bolt 8분",
+          "moveMin": 10,
+          "memo": "늦잠 자고 호텔 조식 여유롭게 먹은 뒤 출발! 초록 숲길 트리탑 워크와 핑크빛 아르데코 저택에서 허니문 스냅 같은 사진 찍기."
+        },
+        {
+          "time": "13:00",
+          "placeId": "food-marisqueira",
+          "stayMin": 90,
+          "moveTo": "해변 산책",
+          "moveMin": 10,
+          "memo": "포즈 두 도우루 바닷가에서 숯불 생선·문어구이에 청량한 비뉴 베르드(그린와인) 한 잔!"
+        },
+        {
+          "time": "15:00",
+          "placeId": "tram-1-foz",
+          "stayMin": 120,
+          "moveTo": "1번 빈티지 트램 탑승 (강변 따라 시내 복귀)",
+          "moveMin": 30,
+          "memo": "펠게이라스 등대 방파제와 야자수 해변 카페에서 여유 부리다가 목조 1번 트램 타고 도우루 강변 달리기."
+        },
+        {
+          "time": "18:30",
+          "placeId": "food-mercadores",
+          "customTitle": "포르투 마지막 밤 디너 & 포트와인 쇼핑",
+          "stayMin": 110,
+          "moveTo": "도보 복귀",
+          "moveMin": 10,
+          "memo": "위탁수하물에 넣을 화이트 포트와인·토니 포트와인은 에어캡(와인 슬리브)으로 꼼꼼히 포장해 캐리어 정중앙에!"
+        }
+      ],
+      "planB": "호텔 스파(더 레벨로 온수 풀 등)에서 반나절 푹 쉬며 여행 중반부 피로를 녹이고 저녁 산책만 나가도 완벽한 허니문 템포입니다."
+    },
+    {
+      "date": "2027-05-17",
+      "dayNo": 9,
+      "dow": "월",
+      "city": "pmi",
+      "cityLabel": "포르투→마요르카 · 1박",
+      "calendarTag": "포르투→마요르카 (점심 비행)",
+      "theme": "지중해 보석 마요르카 입성 · 렌터카 픽업 & 팔마 대성당 야경",
+      "travelMode": "driving",
+      "items": [
+        {
+          "time": "10:00",
+          "placeId": "opo-airport",
+          "customTitle": "포르투 숙소 체크아웃 → OPO 공항 출국",
+          "stayMin": 140,
+          "moveTo": "직항 점심 비행 (약 1시간 50분, 시차 +1h)",
+          "moveMin": 110,
+          "memo": "저가항공 기내/위탁 수하물 무게 규정을 전날 밤 미리 맞춰두세요. 마요르카 도착 시 시계가 다시 1시간 빨라집니다!",
+          "bookingId": "b-flight-opo-pmi"
+        },
+        {
+          "time": "15:20",
+          "placeId": "pmi-airport",
+          "stayMin": 55,
+          "moveTo": "렌터카 운전 (팔마 호텔까지 15분)",
+          "moveMin": 20,
+          "memo": "렌터카 픽업 시 외관·휠·유리 전체 동영상 촬영 필수! 팔마 구시가지 호텔 투숙 시 호텔에 차량 번호판(Matrícula)을 알려줘서 ZBE 진입 허가 등록!",
+          "bookingId": "b-rentalcar"
+        },
+        {
+          "time": "17:00",
+          "placeId": "palma-oldtown",
+          "stayMin": 90,
+          "moveTo": "도보 6분",
+          "moveMin": 6,
+          "memo": "호텔 체크인 & 루프탑 풀 구경 후 팔마 보른 거리 라피아 백 쇼핑 & 칸 조안 데 사이고 엔사이마다 간식."
+        },
+        {
+          "time": "19:30",
+          "placeId": "food-la-rosa",
+          "stayMin": 90,
+          "moveTo": "도보 10분",
+          "moveMin": 10,
+          "memo": "팔마 최고 인기 타파스 바 라 로사에서 마요르카 첫날 저녁!"
+        },
+        {
+          "time": "21:15",
+          "placeId": "palma-cathedral",
+          "stayMin": 45,
+          "moveTo": "도보 복귀",
+          "moveMin": 8,
+          "memo": "파르크 데 라 마르 호수 건너편에서 황금빛 조명이 켜진 팔마 대성당 데칼코마니 야경 감상."
+        }
+      ],
+      "planB": "운전이 피곤한 이동일 첫날이라 팔마 시내에서는 주차를 맡겨두고 모든 일정을 도보로 편하게 즐깁니다."
+    },
+    {
+      "date": "2027-05-18",
+      "dayNo": 10,
+      "dow": "화",
+      "city": "pmi",
+      "cityLabel": "마요르카 2박",
+      "calendarTag": "마요르카 · 트라문타나 산맥",
+      "theme": "트라문타나 로맨틱 드라이브 · 발데모사 → 데이아 → 소예르 항구",
+      "travelMode": "driving",
+      "items": [
+        {
+          "time": "09:30",
+          "placeId": "valldemossa",
+          "stayMin": 95,
+          "moveTo": "해안 산악도로 Ma-10 드라이브",
+          "moveMin": 20,
+          "memo": "팔마에서 25분! 오전 햇살 비치는 화분 골목 산책 후 베이커리 Ca'n Molinas에서 폭신한 감자빵(코카 데 파타타) 맛보기."
+        },
+        {
+          "time": "11:30",
+          "placeId": "deia",
+          "stayMin": 60,
+          "moveTo": "칼라 데이아 해변 길 이동",
+          "moveMin": 12,
+          "memo": "그림 같은 언덕 돌집 마을 데이아 전망 포인트 산책."
+        },
+        {
+          "time": "12:45",
+          "placeId": "food-cas-patro",
+          "stayMin": 95,
+          "moveTo": "렌터카로 소예르 이동",
+          "moveMin": 25,
+          "memo": "칼라 데이아 에메랄드 절벽 위 해산물 점심! (주차장이 만차면 데이아 마을에 세우고 택시/도보로 내려가는 꿀팁 기억하기)",
+          "bookingId": "b-caspatro"
+        },
+        {
+          "time": "15:00",
+          "placeId": "soller-town",
+          "stayMin": 65,
+          "moveTo": "오렌지 빈티지 트램 탑승!",
+          "moveMin": 20,
+          "memo": "소예르 광장 카페에서 오렌지 아이스크림 먹으며 성당 앞 지나가는 빈티지 트램 구경 후 항구행 트램 탑승.",
+          "bookingId": "b-soller-tram"
+        },
+        {
+          "time": "16:45",
+          "placeId": "port-soller",
+          "stayMin": 150,
+          "moveTo": "트램으로 차 찾은 뒤 Ma-11 터널로 팔마 복귀(30분)",
+          "moveMin": 35,
+          "memo": "잔잔한 소예르 항구 해변 산책 & 황금빛 노을 감상 후 뻥 뚫린 소예르 터널 도로로 편하게 팔마 귀환!"
+        }
+      ],
+      "planB": "산길 커브 운전이 부담스럽다면 렌터카를 팔마에 두고 '팔마↔소예르 1912년 목조 빈티지 기차 + 항구 트램' 코스로 다녀와도 낭만 지수 최고입니다!"
+    },
+    {
+      "date": "2027-05-19",
+      "dayNo": 11,
+      "dow": "수",
+      "city": "pmi",
+      "cityLabel": "마요르카 3박",
+      "calendarTag": "마요르카 · 남동부 해변 & 산타니 마켓",
+      "theme": "칼로 데스 모로 에메랄드 바다 · 수요일 산타니 마켓 · 에스 트렁크",
+      "travelMode": "driving",
+      "items": [
+        {
+          "time": "08:20",
+          "placeId": "calo-des-moro",
+          "stayMin": 110,
+          "moveTo": "렌터카 15분",
+          "moveMin": 15,
+          "memo": "팔마에서 07:30 출발! 아침 8시 반에 도착하면 웨이팅 0분에 요정 같은 에메랄드 협곡 해변과 옆 칼라 살무니아를 여유롭게 독차지합니다. 아쿠아슈즈·비치타월 지참!"
+        },
+        {
+          "time": "10:30",
+          "placeId": "santanyi",
+          "stayMin": 90,
+          "moveTo": "도보 2분",
+          "moveMin": 2,
+          "memo": "수요일에만 열리는 산타니 로컬 마켓 데이! 수제 라피아 가방, 올리브 우드 식기, 마요르카 천일염(Flor de Sal) 기념품 득템 찬스!"
+        },
+        {
+          "time": "12:15",
+          "placeId": "food-cassai",
+          "stayMin": 85,
+          "moveTo": "렌터카 20분",
+          "moveMin": 20,
+          "memo": "산타니 보헤미안 정원 레스토랑 Cassai에서 여유로운 지중해 브런치/빠에야."
+        },
+        {
+          "time": "14:15",
+          "placeId": "es-trenc",
+          "stayMin": 180,
+          "moveTo": "렌터카 팔마 복귀 (40분)",
+          "moveMin": 40,
+          "memo": "고운 백사장과 밀키블루 바다 에스 트렁크에서 파라솔·썬베드 빌려 낮잠 자고 물놀이하며 진짜 휴양 즐기기!"
+        },
+        {
+          "time": "20:00",
+          "placeId": "food-el-camino",
+          "stayMin": 95,
+          "moveTo": "도보 숙소 복귀",
+          "moveMin": 10,
+          "memo": "샤워 후 뽀송하게 차려입고 팔마 오픈키친 타파스 바 엘 카미노에서 오붓한 밤."
+        }
+      ],
+      "planB": "바람이 많이 부는 날이라면 해변 입수 시간을 줄이고 마요르카 남동부 어촌 마을 '칼라 피게라(Cala Figuera)'나 천연 동굴 호수 음악회가 열리는 '드라크 동굴'을 들러보세요."
+    },
+    {
+      "date": "2027-05-20",
+      "dayNo": 12,
+      "dow": "목",
+      "city": "pmi",
+      "cityLabel": "마요르카 4박 (마지막 밤!)",
+      "calendarTag": "마요르카 · 포르멘토르 & 허니문 피날레",
+      "theme": "포르멘토르 절벽 등대 · 알쿠디아 무로 비치 & 마지막 밤 만찬",
+      "travelMode": "driving",
+      "items": [
+        {
+          "time": "08:45",
+          "placeId": "formentor",
+          "stayMin": 95,
+          "moveTo": "렌터카 35분",
+          "moveMin": 35,
+          "memo": "5월 중순 차량 통제(보통 10:00 시작) 전 통과하거나 포르트 데 폴렌사에 주차 후 TIB 334번 버스로 이동! 에스 콜로메르 전망대 뷰는 절대 놓치지 마세요."
+        },
+        {
+          "time": "11:00",
+          "placeId": "alcudia",
+          "stayMin": 150,
+          "moveTo": "렌터카 복귀 (45분)",
+          "moveMin": 45,
+          "memo": "알쿠디아 중세 성벽 골목 산책 & 플라야 데 무로 해변 비치 레스토랑에서 점심 식사."
+        },
+        {
+          "time": "15:30",
+          "placeId": "stay-pmi-llorenc",
+          "customTitle": "호텔 루프탑 인피니티 풀 & 스파 여유 시간 (또는 선셋 요트)",
+          "stayMin": 180,
+          "moveTo": "디너 이동",
+          "moveMin": 25,
+          "memo": "허니문 마지막 오후는 아무 일정 없이 호텔 수영장과 스파에서 둘만의 시간 보내기!"
+        },
+        {
+          "time": "19:30",
+          "placeId": "food-bens-davall",
+          "customTitle": "허니문 피날레 선셋 디너 (벤스 다발 또는 팔마 파인다이닝)",
+          "stayMin": 120,
+          "moveTo": "숙소 복귀 & 짐 패킹",
+          "moveMin": 30,
+          "memo": "12박 15일 여정을 돌아보며 서로에게 편지나 작은 기념품을 건네는 잊지 못할 마지막 밤!",
+          "bookingId": "b-honeymoon-dinner"
+        }
+      ],
+      "planB": "운전 없이 온전히 쉬고 싶은 날이라면 포르멘토르 대신 오전에 호텔 조식+스파 → 오후 팔마 만 프라이빗/소규모 선셋 카타마란 요트 투어(샴페인·스노클링 포함)를 강력 추천합니다!"
+    },
+    {
+      "date": "2027-05-21",
+      "dayNo": 13,
+      "dow": "금",
+      "city": "bcn",
+      "cityLabel": "마요르카→바셀→출국",
+      "calendarTag": "마요르카→바셀(점심 일찍) · 바셀→인천(20:50)",
+      "theme": "팔마 출발 → 바르셀로나 마지막 타파스 만찬 → 20:50 귀국편 탑승",
+      "travelMode": "transit",
+      "items": [
+        {
+          "time": "08:00",
+          "placeId": "pmi-airport",
+          "customTitle": "팔마 공항 인근 만탱크 주유(영수증 보관!) → 렌터카 반납",
+          "stayMin": 120,
+          "moveTo": "오전 비행 (PMI → BCN 약 55분)",
+          "moveMin": 55,
+          "memo": "주유 영수증과 반납 시 차량 상태 사진을 찍어두면 추후 오청구 분쟁을 100% 예방할 수 있습니다.",
+          "bookingId": "b-flight-pmi-bcn"
+        },
+        {
+          "time": "11:30",
+          "placeId": "bcn-airport",
+          "customTitle": "바르셀로나 T1 도착 → 0층 수하물 보관소(Consigna) 캐리어 보관",
+          "stayMin": 45,
+          "moveTo": "Aerobus(35분)로 카탈루냐 광장 직행",
+          "moveMin": 35,
+          "memo": "분리발권이라도 9시간 여유가 있어 수하물 맡기고 가볍게 시내 마지막 점심을 즐기고 올 수 있습니다! (만약 항공편 지연 시엔 공항 내 대기)"
+        },
+        {
+          "time": "13:00",
+          "placeId": "food-ciudad-condal",
+          "customTitle": "바르셀로나 마지막 타파스 & 못 산 쇼핑 마무리",
+          "stayMin": 180,
+          "moveTo": "16:15 Aerobus 탑승 → 공항 복귀",
+          "moveMin": 40,
+          "memo": "투론 초콜릿, 올리브유, 국화꿀차(만사니야) 등 마트 선물 구매 후 위탁 캐리어에 넣을 준비!"
+        },
+        {
+          "time": "17:10",
+          "placeId": "bcn-airport",
+          "customTitle": "BCN T1 짐 찾기 → DIVA 택스리펀드 스캔 → 20:50 인천행 탑승",
+          "stayMin": 220,
+          "moveTo": "귀국 국제선 탑승 (20:50 출발)",
+          "moveMin": 840,
+          "memo": "⭐ 수하물 부치기 전 반드시 T1 출발층 세관 DIVA 스캐너에서 택스리펀드 바코드 스캔 먼저!!",
+          "bookingId": "b-flight-icn-bcn"
+        }
+      ],
+      "planB": "시내에 나가지 않고 여유롭게 쉬고 싶다면 BCN 공항 인근 아울렛(빌라데칸스 더 스타일 아울렛, 무료 셔틀 15분)을 들르거나 BCN T1 VIP 라운지(Sala VIP Pau Casals)에서 타파스와 카바를 즐기며 쉬세요."
+    },
+    {
+      "date": "2027-05-22",
+      "dayNo": 14,
+      "dow": "토",
+      "city": "bcn",
+      "cityLabel": "한국 도착 🇰🇷",
+      "calendarTag": "인천공항 도착 · 허니문 피날레",
+      "theme": "인천국제공항 무사 귀국 · 우리의 새로운 일상 시작!",
+      "travelMode": "transit",
+      "items": [
+        {
+          "time": "17:30",
+          "placeId": "bcn-airport",
+          "customTitle": "인천국제공항 도착 · 수하물 수령 · 귀가",
+          "stayMin": 60,
+          "moveTo": "집으로!",
+          "moveMin": 60,
+          "memo": "일요일 하루가 통째로 남아 시차 적응하고 양가 선물 정리하기까지 완벽한 토요일 귀국 스케줄입니다. 행복한 결혼 생활의 시작을 축하합니다!"
+        }
+      ],
+      "planB": "얼큰한 한식 국물로 시차 피로 싹 풀기!"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "b-flight-icn-bcn",
+      "category": "항공",
+      "title": "인천 ↔ 바르셀로나 왕복 항공권 (카타르항공 등)",
+      "city": "common",
+      "placeId": "bcn-airport",
+      "date": "2027-05-08",
+      "time": "새벽 출발 / 5/21 20:50 귀국",
+      "opensAt": "2026-11-15",
+      "openNote": "지금 바로 가격 비교 & 발권 가능! (출발 5~6개월 전 적기)",
+      "status": "todo",
+      "price": "2인 약 320만 원 예상",
+      "url": "https://www.qatarairways.com/ko-kr/homepage.html",
+      "subUrl": "https://www.skyscanner.co.kr/transport/flights/icn/bcn/270508/270521/",
+      "subLabel": "스카이스캐너 비교",
+      "voucher": "",
+      "priority": 1,
+      "note": "5/9(일) 현지 도착 기준 새벽 비행 날짜(자정 전후) 반드시 재확인!"
+    },
+    {
+      "id": "b-flight-bcn-opo",
+      "category": "항공",
+      "title": "바르셀로나 → 포르투 편도 (부엘링 12:10 후보)",
+      "city": "opo",
+      "placeId": "opo-airport",
+      "date": "2027-05-13",
+      "time": "12:10",
+      "opensAt": "2026-11-20",
+      "openNote": "장거리 왕복 확정 직후 발권 권장",
+      "status": "todo",
+      "price": "2인 수하물 포함 약 42만 원",
+      "url": "https://www.vueling.com/en",
+      "subUrl": "https://www.skyscanner.co.kr/transport/flights/bcn/opo/270513/",
+      "subLabel": "스카이스캐너",
+      "voucher": "",
+      "priority": 1,
+      "note": "Optima 운임(25kg 위탁수하물 + 좌석지정 포함) 선택 시 가장 가성비 좋음"
+    },
+    {
+      "id": "b-flight-opo-pmi",
+      "category": "항공",
+      "title": "포르투 → 마요르카(팔마) 점심 비행",
+      "city": "pmi",
+      "placeId": "pmi-airport",
+      "date": "2027-05-17",
+      "time": "점심 시간대",
+      "opensAt": "2026-11-20",
+      "openNote": "하계 직항 스케줄(라이언에어·이지젯) 오픈 확인",
+      "status": "todo",
+      "price": "2인 수하물 포함 약 48만 원",
+      "url": "https://www.skyscanner.co.kr/transport/flights/opo/pmi/270517/",
+      "subUrl": "https://www.ryanair.com",
+      "subLabel": "Ryanair 공식",
+      "voucher": "",
+      "priority": 1,
+      "note": "20kg 위탁수하물 옵션 반드시 결제 단계에서 함께 추가!"
+    },
+    {
+      "id": "b-flight-pmi-bcn",
+      "category": "항공",
+      "title": "마요르카(팔마) → 바르셀로나 오전 연결편",
+      "city": "bcn",
+      "placeId": "bcn-airport",
+      "date": "2027-05-21",
+      "time": "10:00~11:00 출발 추천",
+      "opensAt": "2026-11-20",
+      "openNote": "귀국편(20:50) 기준 최소 6~8시간 전 도착편 선택",
+      "status": "todo",
+      "price": "2인 수하물 포함 약 32만 원",
+      "url": "https://www.vueling.com/en",
+      "subUrl": "https://www.skyscanner.co.kr/transport/flights/pmi/bcn/270521/",
+      "subLabel": "스카이스캐너",
+      "voucher": "",
+      "priority": 1,
+      "note": "BCN T1 터미널에 도착하는 부엘링/에어유로파 이용 시 국제선 환승이 가장 편함"
+    },
+    {
+      "id": "b-stay-all",
+      "category": "숙소",
+      "title": "바르셀로나(4박)·포르투(4박)·마요르카(4박) 호텔 예약",
+      "city": "common",
+      "placeId": "stay-bcn-h10cubik",
+      "date": "2027-05-09",
+      "time": "총 12박",
+      "opensAt": "2026-12-01",
+      "openNote": "출발 4~5개월 전 무료취소 조건으로 인기 객실 선점",
+      "status": "todo",
+      "price": "12박 합계 약 €4,300~5,000 예상",
+      "url": "https://www.booking.com",
+      "subUrl": "https://www.agoda.com",
+      "subLabel": "아고다 비교",
+      "voucher": "",
+      "priority": 1,
+      "note": "예약 후 호텔에 허니문 축하 요청 이메일 발송 필수! (준비 탭 템플릿 활용)"
+    },
+    {
+      "id": "b-rentalcar",
+      "category": "렌터카",
+      "title": "마요르카 팔마 공항 렌터카 (오토매틱·풀커버 보험)",
+      "city": "pmi",
+      "placeId": "pmi-airport",
+      "date": "2027-05-17",
+      "time": "15:30 픽업 ~ 5/21 08:30 반납 (4일)",
+      "opensAt": "2027-02-15",
+      "openNote": "출발 2~3달 전 예약 (오토매틱 차량 조기 소진 주의!)",
+      "status": "todo",
+      "price": "4일 풀보험 포함 약 €260",
+      "url": "https://www.rentalcars.com/",
+      "subUrl": "https://www.sixt.com/",
+      "subLabel": "Sixt 공식",
+      "voucher": "",
+      "priority": 2,
+      "note": "골목길이 좁아 너무 큰 차보다 소형 SUV(T-Roc/푸조 2008급) + 자차 완전면책(Full Protection) 강력 추천"
+    },
+    {
+      "id": "b-sagrada",
+      "category": "입장권·투어",
+      "title": "사그라다 파밀리아 입장권 (오전 첫 타임 + 탄생의 탑)",
+      "city": "bcn",
+      "placeId": "sagrada",
+      "date": "2027-05-10",
+      "time": "09:00 또는 09:30",
+      "opensAt": "2027-03-10",
+      "openNote": "방문 약 2달 전 오픈 (3월 초부터 매주 확인 필수!)",
+      "status": "todo",
+      "price": "1인 €36 (탑 포함 공식가)",
+      "url": "https://sagradafamilia.org/en/tickets",
+      "subUrl": "",
+      "subLabel": "",
+      "voucher": "",
+      "priority": 2,
+      "note": "검색 상단 스폰서 가짜 대행 사이트 주의! 반드시 sagradafamilia.org 공식 홈페이지 이용"
+    },
+    {
+      "id": "b-gaudi-tour",
+      "category": "입장권·투어",
+      "title": "가우디 한국어 가이드 반일/종일 투어 (선택)",
+      "city": "bcn",
+      "placeId": "sagrada",
+      "date": "2027-05-10",
+      "time": "08:30",
+      "opensAt": "2027-03-01",
+      "openNote": "1~2달 전 인기 가이드 마감 전 예약",
+      "status": "todo",
+      "price": "1인 약 6~9만 원 (입장권 별도)",
+      "url": "https://www.myrealtrip.com",
+      "subUrl": "https://www.klook.com/ko/",
+      "subLabel": "클룩 비교",
+      "voucher": "",
+      "priority": 2,
+      "note": "투어 예약 시 가이드가 안내하는 정확한 사그라다·구엘 입장 시간대에 맞춰 티켓을 예매해야 함!"
+    },
+    {
+      "id": "b-guell",
+      "category": "입장권·투어",
+      "title": "구엘 공원 시간 지정 입장권",
+      "city": "bcn",
+      "placeId": "park-guell",
+      "date": "2027-05-10",
+      "time": "11:30",
+      "opensAt": "2027-03-25",
+      "openNote": "2~6주 전 예약 (당일 현장 매진 잦음!)",
+      "status": "todo",
+      "price": "1인 €18",
+      "url": "https://parkguell.barcelona/en",
+      "subUrl": "",
+      "subLabel": "",
+      "voucher": "",
+      "priority": 2,
+      "note": "입장 시각 후 30분 이내에만 검표 가능하므로 사그라다 이동 시간 여유 둘 것"
+    },
+    {
+      "id": "b-batllo",
+      "category": "입장권·투어",
+      "title": "카사 바트요 (Blue/Gold 티켓)",
+      "city": "bcn",
+      "placeId": "casa-batllo",
+      "date": "2027-05-10",
+      "time": "15:15",
+      "opensAt": "2027-04-01",
+      "openNote": "2~4주 전 예약",
+      "status": "todo",
+      "price": "1인 €35~45",
+      "url": "https://www.casabatllo.es/en/",
+      "subUrl": "",
+      "subLabel": "",
+      "voucher": "",
+      "priority": 3,
+      "note": "Gold 티켓은 시간 변경 유연성 및 전용 루프탑·프라이빗 룸 입장 포함"
+    },
+    {
+      "id": "b-mila",
+      "category": "입장권·투어",
+      "title": "라 페드레라 (카사 밀라 주간 또는 나이트 투어)",
+      "city": "bcn",
+      "placeId": "casa-mila",
+      "date": "2027-05-10",
+      "time": "21:00 (나이트 투어 선택 시)",
+      "opensAt": "2027-04-01",
+      "openNote": "2~4주 전 예약",
+      "status": "todo",
+      "price": "1인 €28~39",
+      "url": "https://www.lapedrera.com/en",
+      "subUrl": "",
+      "subLabel": "",
+      "voucher": "",
+      "priority": 3,
+      "note": "카사 바트요와 둘 중 하나만 내부 관람해도 충분합니다"
+    },
+    {
+      "id": "b-palau",
+      "category": "입장권·투어",
+      "title": "까탈루냐 음악당 저녁 공연 또는 건축 투어",
+      "city": "bcn",
+      "placeId": "palau-musica",
+      "date": "2027-05-11",
+      "time": "18:30 / 20:30 공연 확인",
+      "opensAt": "2027-02-20",
+      "openNote": "2027년 5월 공연 스케줄 공개 시 좋은 좌석 선점!",
+      "status": "todo",
+      "price": "공연 €35~65 / 투어 €18",
+      "url": "https://www.palaumusica.cat/en",
+      "subUrl": "",
+      "subLabel": "",
+      "voucher": "",
+      "priority": 2,
+      "note": "2층 발코니 1열 정중앙 또는 1층 중앙석이 스테인드글라스와 무대를 함께 보기 최고"
+    },
+    {
+      "id": "b-picasso",
+      "category": "입장권·투어",
+      "title": "피카소 미술관 온라인 입장권",
+      "city": "bcn",
+      "placeId": "picasso-museum",
+      "date": "2027-05-11",
+      "time": "14:00",
+      "opensAt": "2027-04-25",
+      "openNote": "1~2주 전 예매",
+      "status": "todo",
+      "price": "1인 €14",
+      "url": "https://museupicassobcn.cat/en",
+      "subUrl": "",
+      "subLabel": "",
+      "voucher": "",
+      "priority": 3,
+      "note": "한국어 오디오 가이드(€5) 추가 추천"
+    },
+    {
+      "id": "b-douro",
+      "category": "입장권·투어",
+      "title": "포르투 도우루 밸리 소그룹 와이너리 종일 투어",
+      "city": "opo",
+      "placeId": "douro-pinhao",
+      "date": "2027-05-15",
+      "time": "08:30 ~ 18:00",
+      "opensAt": "2027-03-15",
+      "openNote": "1~2달 전 후기 좋은 투어 예약",
+      "status": "todo",
+      "price": "1인 €105~125 (런치·보트·와이너리 2곳 포함)",
+      "url": "https://www.getyourguide.com/porto-l151/douro-valley-tc27/",
+      "subUrl": "https://www.myrealtrip.com",
+      "subLabel": "마이리얼트립",
+      "voucher": "",
+      "priority": 2,
+      "note": "대형 버스(30인)보다 벤츠 밴 소그룹(8인) 투어가 부티크 Quinta를 방문해 만족도가 훨씬 높음"
+    },
+    {
+      "id": "b-lello",
+      "category": "입장권·투어",
+      "title": "렴루 서점 온라인 입장 바우처 (09:00 첫 타임)",
+      "city": "opo",
+      "placeId": "livraria-lello",
+      "date": "2027-05-14",
+      "time": "09:00",
+      "opensAt": "2027-04-20",
+      "openNote": "2~4주 전 예약",
+      "status": "todo",
+      "price": "1인 €8~15.90 (책 구매 시 할인)",
+      "url": "https://www.livrarialello.pt/en/store/ticket-voucher",
+      "subUrl": "",
+      "subLabel": "",
+      "voucher": "",
+      "priority": 3,
+      "note": "작은 미니북 에디션(어린왕자 등)이 신혼집 인테리어 소품으로 인기!"
+    },
+    {
+      "id": "b-cellar",
+      "category": "입장권·투어",
+      "title": "포트와인 셀러 투어 (테일러스 또는 그레이엄스)",
+      "city": "opo",
+      "placeId": "taylors-cellar",
+      "date": "2027-05-14",
+      "time": "15:00",
+      "opensAt": "2027-04-20",
+      "openNote": "1~3주 전 예약",
+      "status": "todo",
+      "price": "1인 €22~35",
+      "url": "https://www.taylor.pt/en/visit-taylor-fladgate/port-cellars",
+      "subUrl": "https://www.grahams-port.com/en/visit-us",
+      "subLabel": "Graham's 예약",
+      "voucher": "",
+      "priority": 3,
+      "note": "테일러스는 한국어 오디오 가이드로 자유롭게 돌 수 있고, 그레이엄스는 가이드 투어+뷰가 일품"
+    },
+    {
+      "id": "b-fado",
+      "category": "입장권·투어",
+      "title": "포르투 파두 라이브 공연",
+      "city": "opo",
+      "placeId": "fado-porto",
+      "date": "2027-05-14",
+      "time": "18:00",
+      "opensAt": "2027-05-01",
+      "openNote": "1~2주 전 예약",
+      "status": "todo",
+      "price": "1인 €19 (포트와인 1잔 포함)",
+      "url": "https://casadaguitarra.pt/",
+      "subUrl": "",
+      "subLabel": "",
+      "voucher": "",
+      "priority": 3,
+      "note": "공연장 규모가 아담해 20분 전 도착하면 앞줄 착석 가능"
+    },
+    {
+      "id": "b-7portes",
+      "category": "레스토랑",
+      "title": "바르셀로나 첫날 저녁 7 Portes (전통 해산물 빠에야)",
+      "city": "bcn",
+      "placeId": "food-7portes",
+      "date": "2027-05-09",
+      "time": "19:45",
+      "opensAt": "2027-04-15",
+      "openNote": "방문 3~4주 전 온라인 예약",
+      "status": "todo",
+      "price": "예약 무료 (식사 약 €90)",
+      "url": "https://7portes.com/en/",
+      "subUrl": "https://www.thefork.com/",
+      "subLabel": "TheFork",
+      "voucher": "",
+      "priority": 3,
+      "note": "일요일 저녁 피크 시간대 대기 없이 바로 착석 가능"
+    },
+    {
+      "id": "b-caspatro",
+      "category": "레스토랑",
+      "title": "마요르카 칼라 데이아 절벽 식당 (Ca's Patró March)",
+      "city": "pmi",
+      "placeId": "food-cas-patro",
+      "date": "2027-05-18",
+      "time": "12:45 런치",
+      "opensAt": "2027-04-18",
+      "openNote": "마요르카 최고 인기 뷰 식당 — 오픈 즉시 예약 필수!",
+      "status": "todo",
+      "price": "예약 보증금 확인",
+      "url": "https://www.google.com/maps/search/?api=1&query=Cas+Patro+March+Deia",
+      "subUrl": "",
+      "subLabel": "",
+      "voucher": "",
+      "priority": 2,
+      "note": "바다 바로 앞 1열 데크 좌석 요청 메모 남기기!"
+    },
+    {
+      "id": "b-honeymoon-dinner",
+      "category": "레스토랑",
+      "title": "허니문 마지막 밤 선셋 파인다이닝 (Béns d'Avall / El Camino)",
+      "city": "pmi",
+      "placeId": "food-bens-davall",
+      "date": "2027-05-20",
+      "time": "19:30 선셋 타임",
+      "opensAt": "2027-03-20",
+      "openNote": "1~2달 전 선셋 테라스석 지정 예약",
+      "status": "todo",
+      "price": "2인 코스 약 €260~320",
+      "url": "https://bensdavall.com/en/",
+      "subUrl": "https://elcaminopalma.es/",
+      "subLabel": "El Camino 대안",
+      "voucher": "",
+      "priority": 2,
+      "note": "예약 시 'Honeymoon Sunset Terrace Table' 요청 필수!"
+    },
+    {
+      "id": "b-soller-tram",
+      "category": "현장/교통",
+      "title": "소예르 항구 빈티지 트램 & 포르멘토르 334 버스",
+      "city": "pmi",
+      "placeId": "port-soller",
+      "date": "2027-05-18",
+      "time": "현장 탑승",
+      "opensAt": "2027-05-18",
+      "openNote": "현장 컨택리스 카드/현금 결제",
+      "status": "onsite",
+      "price": "트램 €10 / 버스 €2~4",
+      "url": "https://trendesoller.com/eng/index",
+      "subUrl": "https://www.tib.org/en/",
+      "subLabel": "TIB 버스 시간표",
+      "voucher": "",
+      "priority": 4,
+      "note": "TIB 버스는 비자/마스터 컨택리스 트래블카드를 단말기에 승·하차 모두 태그하면 최저 요금 적용!"
+    }
+  ],
+  "budgetConfig": {
+    "targetTotalKRW": 13500000,
+    "eurRate": 1500,
+    "peopleCount": 2,
+    "note": "2인 12박 15일 신혼여행 기준 현실적인 예산 초안입니다. 아직 항공·숙소 예약 전이므로 목표 예산과 환율을 자유롭게 조정하며 우리만의 기준으로 맞춰보세요!"
+  },
+  "budget": [
+    {
+      "category": "항공",
+      "planned": 4420000,
+      "actual": 0,
+      "currency": "KRW"
+    },
+    {
+      "category": "숙소",
+      "planned": 6750000,
+      "actual": 0,
+      "currency": "KRW"
+    },
+    {
+      "category": "투어·입장권",
+      "planned": 1080000,
+      "actual": 0,
+      "currency": "KRW"
+    },
+    {
+      "category": "교통·렌터카",
+      "planned": 780000,
+      "actual": 0,
+      "currency": "KRW"
+    },
+    {
+      "category": "식비·다이닝",
+      "planned": 2700000,
+      "actual": 0,
+      "currency": "KRW"
+    },
+    {
+      "category": "쇼핑·기타",
+      "planned": 1200000,
+      "actual": 0,
+      "currency": "KRW"
+    }
+  ],
+  "budgetItems": [
+    {
+      "id": "bi-1",
+      "category": "항공",
+      "city": "common",
+      "title": "인천 ↔ 바르셀로나 왕복 항공권 (2인)",
+      "currency": "KRW",
+      "planned": 3200000,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "신용카드(마일리지/무이자)",
+      "memo": "카타르항공 등 경유편 기준 (직항 선택 시 380~450만 원대)"
+    },
+    {
+      "id": "bi-2",
+      "category": "항공",
+      "city": "opo",
+      "title": "바르셀로나 → 포르투 부엘링 항공권 (2인·25kg 수하물)",
+      "currency": "EUR",
+      "planned": 280,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "트래블카드/해외결제카드",
+      "memo": "5/13(목) 12:10 VY8472 Optima 운임 기준"
+    },
+    {
+      "id": "bi-3",
+      "category": "항공",
+      "city": "pmi",
+      "title": "포르투 → 마요르카 직항 항공권 (2인·20kg 수하물)",
+      "currency": "EUR",
+      "planned": 320,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "트래블카드/해외결제카드",
+      "memo": "5/17(월) 점심 직항 + 위탁수하물 2개 추가 포함"
+    },
+    {
+      "id": "bi-4",
+      "category": "항공",
+      "city": "bcn",
+      "title": "마요르카 → 바르셀로나 항공권 (2인·25kg 수하물)",
+      "currency": "EUR",
+      "planned": 215,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "트래블카드/해외결제카드",
+      "memo": "5/21(금) 오전 출발 부엘링 T1 도착편"
+    },
+    {
+      "id": "bi-5",
+      "category": "숙소",
+      "city": "bcn",
+      "title": "바르셀로나 호텔 4박 (5/9~5/13) + 도시세",
+      "currency": "EUR",
+      "planned": 1440,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "온라인 사전결제/현장결제",
+      "memo": "1박 약 €350급 부티크 4성급 수페리어~5성급 + 바르셀로나 관광세 별도"
+    },
+    {
+      "id": "bi-6",
+      "category": "숙소",
+      "city": "opo",
+      "title": "포르투 리버뷰 호텔 4박 (5/13~5/17) + 도시세",
+      "currency": "EUR",
+      "planned": 1350,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "온라인 사전결제/현장결제",
+      "memo": "더 레벨로 / 페스타나 빈티지급 5성급 조식 포함 기준"
+    },
+    {
+      "id": "bi-7",
+      "category": "숙소",
+      "city": "pmi",
+      "title": "마요르카 럭셔리 부티크 호텔 4박 (5/17~5/21)",
+      "currency": "EUR",
+      "planned": 1720,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "온라인 사전결제/현장결제",
+      "memo": "팔마 성벽 오션뷰 또는 소예르 리조트 허니문 하이라이트 숙소"
+    },
+    {
+      "id": "bi-8",
+      "category": "투어·입장권",
+      "city": "bcn",
+      "title": "사그라다·구엘·카사바트요 입장권 & 가우디 투어 (2인)",
+      "currency": "EUR",
+      "planned": 290,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "공식 홈페이지 결제",
+      "memo": "사그라다 탑 포함(€72) + 구엘(€36) + 바트요(€70) + 투어비"
+    },
+    {
+      "id": "bi-9",
+      "category": "투어·입장권",
+      "city": "bcn",
+      "title": "까탈루냐 음악당 공연 & 피카소·몬주익 입장권 (2인)",
+      "currency": "EUR",
+      "planned": 145,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "공식 홈페이지 결제",
+      "memo": "음악당 공연 2인(€90) + 피카소(€28) + 몬주익 케이블카"
+    },
+    {
+      "id": "bi-10",
+      "category": "투어·입장권",
+      "city": "opo",
+      "title": "도우루 밸리 종일 투어 + 셀러 + 렴루 + 파두 (2인)",
+      "currency": "EUR",
+      "planned": 340,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "투어 플랫폼 결제",
+      "memo": "도우루 소그룹 2인(€220) + 와인셀러(€50) + 파두(€38) + 렴루(€32)"
+    },
+    {
+      "id": "bi-11",
+      "category": "교통·렌터카",
+      "city": "pmi",
+      "title": "마요르카 렌터카 4일 (오토·풀커버 보험) + 주유·주차비",
+      "currency": "EUR",
+      "planned": 370,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "운전자 명의 해외신용카드(실물!)",
+      "memo": "렌트+풀보험(€260) + 주유(€45) + 호텔/공영주차장(€65)"
+    },
+    {
+      "id": "bi-12",
+      "category": "교통·렌터카",
+      "city": "common",
+      "title": "바르셀로나·포르투 공항 택시/Aerobus/Uber/트램",
+      "currency": "EUR",
+      "planned": 150,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "트래블카드/Uber 연동",
+      "memo": "BCN 공항 왕복 + T-casual 교통권 + 포르투 Bolt + 수하물 보관소"
+    },
+    {
+      "id": "bi-13",
+      "category": "식비·다이닝",
+      "city": "bcn",
+      "title": "바르셀로나 4일 식비·타파스·카페 예산",
+      "currency": "EUR",
+      "planned": 560,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "트래블카드 + 소액 현금",
+      "memo": "1일 약 €140 (7 Portes 빠에야, 비니투스, 보케리아 등 넉넉하게)"
+    },
+    {
+      "id": "bi-14",
+      "category": "식비·다이닝",
+      "city": "opo",
+      "title": "포르투 4일 식비·포트와인·해물밥 예산",
+      "currency": "EUR",
+      "planned": 500,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "트래블카드 + 소액 현금",
+      "memo": "포르투는 물가가 착함! 강변 와인 디너 1회 포함"
+    },
+    {
+      "id": "bi-15",
+      "category": "식비·다이닝",
+      "city": "pmi",
+      "title": "마요르카 4일 식비 & 허니문 파인다이닝 1회",
+      "currency": "EUR",
+      "planned": 740,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "트래블카드/신용카드",
+      "memo": "칼라 데이아 해변 런치 + 마지막 밤 선셋 테이스팅 디너(약 €300) 포함"
+    },
+    {
+      "id": "bi-16",
+      "category": "쇼핑·기타",
+      "city": "common",
+      "title": "여행자 보험(2인) · 유럽 eSIM(15일 무제한 2개) · 국제면허",
+      "currency": "KRW",
+      "planned": 170000,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "국내 결제",
+      "memo": "휴대품 파손·항공기 지연 특약 든든한 플랜 가입 추천"
+    },
+    {
+      "id": "bi-17",
+      "category": "쇼핑·기타",
+      "city": "common",
+      "title": "기념품·포트와인·라피아백·쇼핑 예비비",
+      "currency": "EUR",
+      "planned": 700,
+      "actual": 0,
+      "payStatus": "todo",
+      "method": "트래블카드 (택스리펀드 환급 가능)",
+      "memo": "스페인은 한 영수증 금액 제한 없이(€0.01부터!) 택스리펀드 발급 가능!"
+    }
+  ],
+  "checklist": [
+    {
+      "id": "c1",
+      "group": "필수 서류·금융",
+      "text": "두 사람 여권 만료일 6개월 이상 남았는지 확인 (2027년 11월 이후 만료)",
+      "done": false,
+      "due": "지금 바로"
+    },
+    {
+      "id": "c2",
+      "group": "필수 서류·금융",
+      "text": "유럽 ETIAS(전자여행허가) 2027년 5월 기준 의무 시행 여부 확인 및 신청 (€7~20 공식 사이트만 이용)",
+      "done": false,
+      "due": "2027-03"
+    },
+    {
+      "id": "c3",
+      "group": "필수 서류·금융",
+      "text": "국제운전면허증 발급 + 한국 실물 운전면허증 함께 챙기기 (마요르카 렌터카 픽업 시 둘 다 필수!)",
+      "done": false,
+      "due": "2027-04"
+    },
+    {
+      "id": "c4",
+      "group": "필수 서류·금융",
+      "text": "렌터카 데파짓용 '운전자 본인 명의 해외결제 실물 신용카드(IC칩 비밀번호 확인)' 준비",
+      "done": false,
+      "due": "2027-04"
+    },
+    {
+      "id": "c5",
+      "group": "필수 서류·금융",
+      "text": "트래블월렛 / 트래블로그 카드 2장 발급 + 유로 소액 현금(€200~300, €10·€20 권종 위주) 환전",
+      "done": false,
+      "due": "2027-04"
+    },
+    {
+      "id": "c6",
+      "group": "필수 서류·금융",
+      "text": "신혼여행 증빙용 영문 가족관계증명서/혼인관계증명서 또는 청첩장 사진 준비 & 호텔 축하 메일 발송",
+      "done": false,
+      "due": "2027-04"
+    },
+    {
+      "id": "c7",
+      "group": "예약·통신·보험",
+      "text": "해외 여행자 보험 가입 (수하물 지연·휴대품 도난 특약 포함)",
+      "done": false,
+      "due": "2027-05-01"
+    },
+    {
+      "id": "c8",
+      "group": "예약·통신·보험",
+      "text": "유럽 30개국 공용 eSIM 15일권 구매 (통화/문자 수신 필요한 번호는 로밍 요금제 병행 확인)",
+      "done": false,
+      "due": "2027-05-03"
+    },
+    {
+      "id": "c9",
+      "group": "예약·통신·보험",
+      "text": "Uber · Bolt · Google Maps 오프라인 지도(바르셀로나·포르투·마요르카) · 항공사 앱 설치",
+      "done": false,
+      "due": "2027-05-05"
+    },
+    {
+      "id": "c10",
+      "group": "예약·통신·보험",
+      "text": "유럽 저가항공(부엘링·라이언에어 등) 모바일 온라인 체크인 완료 및 보딩패스 캡처",
+      "done": false,
+      "due": "출발 24~48h 전"
+    },
+    {
+      "id": "c11",
+      "group": "짐싸기·현지필수품",
+      "text": "소매치기 방지용 휴대폰 스트랩 + 지퍼 달린 크로스백 + 캐리어 자물쇠·와이어",
+      "done": false,
+      "due": "짐싸기"
+    },
+    {
+      "id": "c12",
+      "group": "짐싸기·현지필수품",
+      "text": "포트와인·올리브유 위탁 포장용 에어캡(와인 버블백 3~4장) & 휴대용 수하물 저울",
+      "done": false,
+      "due": "짐싸기"
+    },
+    {
+      "id": "c13",
+      "group": "짐싸기·현지필수품",
+      "text": "마요르카 해변용 수영복 2벌 · 아쿠아슈즈(칼로 데스 모로 몽돌/바위 필수!) · 선글라스 · 산호초 안전 선크림",
+      "done": false,
+      "due": "짐싸기"
+    },
+    {
+      "id": "c14",
+      "group": "짐싸기·현지필수품",
+      "text": "5월 일교차 대비 가벼운 가디건/바람막이/트렌치코트 (포르투 강변 저녁은 선선함!)",
+      "done": false,
+      "due": "짐싸기"
+    },
+    {
+      "id": "c15",
+      "group": "짐싸기·현지필수품",
+      "text": "성당 입장용 어깨 가리는 스카프/셔츠 + 파인다이닝용 깔끔한 세미캐주얼 복장",
+      "done": false,
+      "due": "짐싸기"
+    },
+    {
+      "id": "c16",
+      "group": "짐싸기·현지필수품",
+      "text": "유럽 멀티어댑터(한국과 같은 220V Type C/F라 헐거움 방지용 어댑터 1~2개면 충분) + 보조배터리(기내 반입만 가능!)",
+      "done": false,
+      "due": "짐싸기"
+    }
+  ],
+  "honeymoonTemplates": [
+    {
+      "title": "호텔 허니문 코멘트 & 룸 업그레이드 정중 요청 메일 (영문)",
+      "subtitle": "호텔 예약 확정 후 체크인 2~3주 전에 호텔 대표 이메일로 보내면 웰컴 카바/포트와인·고층 뷰 배정·룸 업그레이드 확률이 확 올라갑니다!",
+      "body": "Subject: Honeymoon Stay Request – Reservation #[예약번호] ([영문성함], May [날짜], 2027) Dear Reservations Team, Warm greetings from South Korea!\nMy partner and I are thrilled to stay at [호텔명] from May [체크인일] to May [체크아웃일], 2027 (Booking Reference: #[예약번호]) to celebrate our honeymoon. Since this is a once-in-a-lifetime trip for us, we would be truly grateful if you could kindly assign us a quiet room on a high floor with a lovely view (and a king/double bed), subject to availability upon arrival. Thank you very much for your warm hospitality, and we cannot wait to create unforgettable memories at your hotel! Warm regards,\n[두 분 영문 성함]"
+    }
+  ],
+  "tips": [
+    {
+      "icon": "",
+      "title": "마법 같은 시차 변화 (+1h / -1h)",
+      "body": "5월 서머타임 기준 스페인(바르셀로나·마요르카)은 한국보다 7시간 느리고, 포르투갈(포르투)은 8시간 느립니다. 바르셀로나→포르투 이동 날엔 1시간이 생기고, 포르투→마요르카 날엔 1시간이 줄어듭니다!"
+    },
+    {
+      "icon": "",
+      "title": "스페인·포르투갈 식사 피크 시간 피하기",
+      "body": "현지인 점심은 14:00~15:30, 저녁은 20:30~22:00에 몰립니다. 인기 맛집(비니투스, 카페 산티아고 등)은 점심 12:30이나 저녁 19:00에 가면 웨이팅 없이 바로 좋은 자리에 앉을 수 있습니다."
+    },
+    {
+      "icon": "",
+      "title": "유럽 저가항공 수하물 & 온라인 체크인",
+      "body": "부엘링·라이언에어·이지젯은 기본 특가에 위탁수하물이 없고 기내 캐리어 규격도 엄격합니다. 반드시 발권할 때 20~25kg 위탁수하물을 함께 결제하고, 출발 24시간 전 앱으로 무료 온라인 체크인을 마치세요."
+    },
+    {
+      "icon": "",
+      "title": "스페인 무제한 택스리펀드 & DIVA 스캔",
+      "body": "스페인은 최소 구매 금액 제한이 없어 소액 쇼핑도 'Tax Free(DIVA)' 서류 발급이 됩니다! 5/21 귀국 날 바르셀로나 T1에서 위탁수하물 부치기 전에 반드시 세관 구역 DIVA 무인 스캐너에 바코드를 찍으세요."
+    },
+    {
+      "icon": "",
+      "title": "마요르카 렌터카 ZBE 구역 & 주차선 색상",
+      "body": "팔마 중심부는 저공해차량구역(ZBE)이라 숙소 발렛/전용주차장을 예약하고 차량번호를 호텔에 등록해야 과태료가 없습니다. 길가 주차선은 흰색=무료, 파란색=기계 유료결제(ORA), 노란색=주차금지입니다!"
+    },
+    {
+      "icon": "",
+      "title": "바르셀로나 소매치기 예방 3원칙",
+      "body": "① 식당 야외 테라스 테이블 위에 절대 휴대폰 올려두지 않기 ② 지하철 문 앞·람블라 거리에서 가방은 앞으로 메기 ③ 낯선 사람이 옷에 뭐가 묻었다며 다가오면 무시하고 자리 피하기. 이것만 지키면 정말 안전하고 행복합니다!"
+    }
+  ]
+};
