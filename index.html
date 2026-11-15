@@ -30,8 +30,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin="" onerror="this.onerror=null;this.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';" />
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" crossorigin="" onerror="var s=document.createElement('script');s.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';document.head.appendChild(s);"></script>
 
-  <link rel="manifest" href="manifest.json?v=6" />
-  <link rel="stylesheet" href="css/styles.css?v=6" />
+  <link rel="manifest" href="manifest.json?v=7" />
+  <link rel="stylesheet" href="css/styles.css?v=7" />
 </head>
 <body data-layout="tabs">
 
@@ -88,7 +88,7 @@
               <span class="city-dot dot-pmi"></span>마요르카 4박
             </span>
             <span class="text-[var(--text-muted)]">→</span>
-            <span>인천 직항(5/22 도착)</span>
+            <span class="font-medium text-[var(--done-text)]">인천 직항(5/22 16:40 · 예매완료)</span>
           </div>
         </div>
       </div>
@@ -171,7 +171,7 @@
       <div>
         <div class="mb-3">
           <h2 class="text-base sm:text-lg font-bold">출발 전 준비 순서</h2>
-          <p class="text-xs text-[var(--text-sub)]">항공편 미예약 상태 기준 권장 진행 순서입니다.</p>
+          <p class="text-xs text-[var(--text-sub)]">귀국 직항(TW0408) 예매 완료! 남은 출국편·유럽 구간 및 예약 진행 순서입니다.</p>
         </div>
         <div id="roadmap-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3"></div>
       </div>
@@ -182,10 +182,10 @@
       <div class="hm-card p-4 sm:p-5">
         <div class="flex flex-wrap items-center gap-2 mb-1">
           <h2 class="text-base sm:text-lg font-bold">항공권 및 도시 간 이동</h2>
-          <span id="flights-summary-badge" class="px-2 py-0.5 rounded text-xs font-semibold status-todo">전 구간 미예약</span>
+          <span id="flights-summary-badge" class="px-2 py-0.5 rounded text-xs font-semibold status-todo">1/5 발권</span>
         </div>
         <p class="text-xs sm:text-sm text-[var(--text-sub)]">
-          출국편(인천→도하→바르셀로나 경유 편도)과 귀국편(바르셀로나→인천 직항 편도)을 먼저 확정한 뒤, 유럽 내 3구간을 수하물(20~25kg) 포함 조건으로 발권하세요. 모든 시각은 현지 기준입니다.
+          귀국 직항(5/21 21:00 바르셀로나 T2 → 인천 T1 트리니티 TW0408)은 예매 완료! 이제 출국편(인천→도하→바르셀로나)과 유럽 내 3구간을 수하물(20~25kg) 포함 조건으로 발권하세요.
         </p>
       </div>
 
@@ -517,7 +517,7 @@
   <div id="modal-root"></div>
   <div id="toast-root"></div>
 
-  <script src="data/trip-data.js?v=6"></script>
-  <script src="js/app.js?v=6"></script>
+  <script src="data/trip-data.js?v=7"></script>
+  <script src="js/app.js?v=7"></script>
 </body>
 </html>
