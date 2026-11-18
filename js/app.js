@@ -78,7 +78,7 @@
 
     if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
       navigator.serviceWorker
-        .register('sw.js?v=9')
+        .register('sw.js?v=10')
         .then((reg) => reg.update().catch(() => {}))
         .catch(() => {});
     }
@@ -138,7 +138,7 @@
         mergedChecklist = mergedChecklist.map((item) => {
           const fm = fresh.checklist.find((fc) => fc.id === item.id);
           if (fm && refreshedIds.has(item.id) && item.text !== fm.text) {
-            return { ...fm, done: false };
+            return { ...fm };
           }
           return item;
         });
@@ -834,30 +834,31 @@
             </div>
 
             ${
-              f.seatMap242
+              f.seatMap
                 ? (() => {
-                    const rNo = f.seatMap242.row;
-                    const sel = new Set(f.seatMap242.selected || []);
+                    const rNo = f.seatMap.row;
+                    const sel = new Set(f.seatMap.selected || []);
+                    const activeColor = f.seatMap.color || '#0F3460';
+                    const blocks = f.seatMap.blocks || [['A', 'B', 'C'], ['D', 'E', 'G'], ['H', 'J', 'K']];
                     const seatBox = (col) => {
                       const active = sel.has(col);
-                      return `<span class="inline-flex items-center justify-center w-9 h-7 sm:w-10 sm:h-8 rounded text-[11px] font-bold tabular-nums border ${
+                      return `<span class="inline-flex items-center justify-center w-8 h-7 sm:w-9 sm:h-8 rounded text-[10px] sm:text-[11px] font-bold tabular-nums border" style="${
                         active
-                          ? 'bg-[#C8553D] text-white border-[#C8553D] shadow-sm'
-                          : 'bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-line)] opacity-60'
-                      }">${active ? '✓ ' : ''}${rNo}${col}</span>`;
+                          ? `background:${activeColor};color:#fff;border-color:${activeColor}`
+                          : 'background:var(--bg-card);color:var(--text-muted);border-color:var(--border-line);opacity:0.65'
+                      }">${active ? '✓' : ''}${rNo}${col}</span>`;
                     };
+                    const blocksHtml = blocks
+                      .map((grp) => `<div class="flex items-center gap-0.5 sm:gap-1">${grp.map(seatBox).join('')}</div>`)
+                      .join('<span class="text-[10px] text-[var(--text-muted)] px-0.5">복도</span>');
                     return `
-                    <div class="mt-3 p-3 rounded-lg border border-[var(--border-line)] bg-[var(--bg-subtle)] flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 text-xs">
+                    <div class="mt-3 p-3 rounded-lg border border-[var(--border-line)] bg-[var(--bg-subtle)] flex flex-col lg:flex-row lg:items-center justify-between gap-2.5 text-xs">
                       <div>
-                        <div class="font-semibold text-[var(--text-main)]">사전 좌석 배치도 (${rNo}열 · 2-4-2 배열)</div>
-                        <div class="text-[11px] text-[var(--text-sub)] mt-0.5">${escapeHtml(f.seatMap242.caption || '')}</div>
+                        <div class="font-semibold text-[var(--text-main)]">사전 좌석 배치도 (${rNo}열 · ${escapeHtml(f.seatMap.layoutLabel || '3-3-3 배열')})</div>
+                        <div class="text-[11px] text-[var(--text-sub)] mt-0.5">${escapeHtml(f.seatMap.caption || '')}</div>
                       </div>
-                      <div class="flex items-center gap-2 overflow-x-auto no-scrollbar py-0.5 shrink-0">
-                        <div class="flex items-center gap-1">${seatBox('A')}${seatBox('B')}</div>
-                        <span class="text-[10px] text-[var(--text-muted)] px-0.5">복도</span>
-                        <div class="flex items-center gap-1">${seatBox('C')}${seatBox('D')}${seatBox('E')}${seatBox('F')}</div>
-                        <span class="text-[10px] text-[var(--text-muted)] px-0.5">복도</span>
-                        <div class="flex items-center gap-1">${seatBox('G')}${seatBox('H')}</div>
+                      <div class="flex items-center gap-1.5 overflow-x-auto no-scrollbar py-0.5 shrink-0">
+                        ${blocksHtml}
                       </div>
                     </div>`;
                   })()

@@ -102,7 +102,7 @@
       "id": "f1",
       "order": 1,
       "leg": "ICN-BCN",
-      "legTitle": "출국 장거리 (직항 · 예매완료) · 서울(인천) → 바르셀로나",
+      "legTitle": "출국 장거리 (직항 · 좌석확정) · 서울(인천) → 바르셀로나",
       "cityColor": "#C8553D",
       "airline": "대한항공 (Korean Air)",
       "flightNo": "KE0915 · Airbus A350-900",
@@ -115,24 +115,33 @@
       "duration": "14시간 20분 (무착륙 직항)",
       "terminal": "ICN 터미널 2 (T2) → BCN 터미널 1 (T1)",
       "baggage": "일반석 / U · 위탁수하물 1개(23kg) 포함 + 기내 10kg",
+      "seatAssigned": "38A (창가) · 38B (인접석)",
+      "seatMap": {
+        "row": 38,
+        "layoutLabel": "A350-900 · 3-3-3 배열",
+        "blocks": [["A", "B", "C"], ["D", "E", "G"], ["H", "J", "K"]],
+        "selected": ["A", "B"],
+        "color": "#0F3460",
+        "caption": "38A(좌측 창가) · 38B 지정 완료! 일반석 앞쪽(35열~) 날개 부근이라 흔들림이 적고 바르셀로나 도착 후 입국심사 하기가 빠릅니다."
+      },
       "status": "booked",
       "estimatedCostKRW": 3800000,
-      "pnrMemo": "대한항공 왕복 직항 예매 완료 · 05/09(일) 11:50 ICN T2 → 19:10 BCN T1 · 기종 Airbus A350-900 (일반석/U · 수하물 1개 포함)",
+      "pnrMemo": "대한항공 왕복 직항 예매 완료 · 사전좌석 38A·38B 지정 완료 (Airbus A350-900 · 일반석/U · 수하물 1개 포함)",
       "naverFlightsUrl": "https://flight.naver.com/flights/international/ICN-BCN-20270509?adult=2&isDirect=true&fareType=Y",
       "googleFlightsUrl": "https://www.google.com/travel/flights?hl=ko&curr=KRW&q=One%20way%20flights%20from%20ICN%20to%20BCN%20on%202027-05-09%20for%202%20adults",
       "bookingUrl": "https://www.koreanair.com/",
-      "bookingLabel": "대한항공 예약조회·좌석지정",
+      "bookingLabel": "대한항공 예약·좌석확인",
       "extraUrl": "https://www.hanatour.com/",
       "extraLabel": "하나투어 예약내역",
       "manageUrl": "",
       "pnrPrivate": true,
-      "seatMemo": "왕복 직항 확정! (A350-900 사전 좌석배정 · 2인 왕복 실결제액은 '정보 수정'에서 반영 가능)",
-      "importantNote": "[인천 제2여객터미널(T2) 출발 주의!] T1이 아닌 '인천국제공항 터미널 2(T2)'에서 5/9(일) 낮 11:50 출발합니다. 5/8(토) 밤에 무리해서 공항 갈 필요 없이 푹 주무시고 5/9(일) 오전 08:50경 T2에 도착하세요! 대한항공 공식 홈페이지/앱에서 항공사 6자리 예약번호(PNR)를 등록하면 A350-900 사전 좌석 지정이 가능합니다.",
+      "seatMemo": "좌석 38A · 38B 확정 (2인 왕복 실결제액은 '정보 수정'에서 반영 가능)",
+      "importantNote": "[인천 제2여객터미널(T2) 출발 주의!] T1이 아닌 '인천국제공항 터미널 2(T2)'에서 5/9(일) 낮 11:50 출발합니다. 5/8(토) 밤에 무리해서 공항 갈 필요 없이 푹 주무시고 5/9(일) 오전 08:50경 T2에 도착하세요! 출발 48시간 전(5/7 11:50~) 모바일 체크인으로 38A·38B 탑승권을 바로 발급받을 수 있습니다.",
       "candidates": [
         {
-          "name": "[예매 완료] 대한항공 KE0915 무착륙 직항 (Airbus A350-900)",
+          "name": "[예매·좌석 확정] 대한항공 KE0915 직항 · 좌석 38A · 38B",
           "time": "2027.05.09(일) 11:50 ICN(T2) → 05.09(일) 19:10 BCN(T1) · 14시간 20분",
-          "note": "클래스 일반석/U · 위탁수하물 1개(23kg) 포함! A350-900 이코노미는 기본 3-3-3 배열이며, 기체 후미 테이퍼 구간의 창가 2인석 또는 29~31열 엑스트라 레그룸 좌석 선점을 추천합니다."
+          "note": "Airbus A350-900 · 일반석/U · 위탁수하물 1개(23kg) 포함 · 무료 일반석 앞쪽 구역인 38A(창가)·38B 지정 완료!"
         }
       ],
       "transferTimeline": [
@@ -334,7 +343,7 @@
       "id": "f5",
       "order": 5,
       "leg": "BCN-ICN",
-      "legTitle": "귀국 장거리 (직항 · 예매완료) · 바르셀로나 → 서울(인천)",
+      "legTitle": "귀국 장거리 (직항 · 좌석확정) · 바르셀로나 → 서울(인천)",
       "cityColor": "#C8553D",
       "airline": "대한항공 (Korean Air)",
       "flightNo": "KE0916 · Airbus A350-900",
@@ -347,25 +356,34 @@
       "duration": "12시간 30분 (무착륙 직항)",
       "terminal": "BCN 터미널 1 (T1) → ICN 터미널 2 (T2)",
       "baggage": "일반석 / E · 위탁수하물 1개(23kg) 포함 + 기내 10kg",
+      "seatAssigned": "39A (창가) · 39B (인접석)",
+      "seatMap": {
+        "row": 39,
+        "layoutLabel": "A350-900 · 3-3-3 배열",
+        "blocks": [["A", "B", "C"], ["D", "E", "G"], ["H", "J", "K"]],
+        "selected": ["A", "B"],
+        "color": "#0F3460",
+        "caption": "39A(좌측 창가) · 39B 지정 완료! 화장실·갤리(41~43열 이후)와 떨어져 조용하고 날개 부근이라 야간 숙면에 안정적인 위치입니다."
+      },
       "status": "booked",
       "estimatedCostKRW": 0,
       "costIncludedIn": "f1",
-      "pnrMemo": "대한항공 왕복 직항 예매 완료 · 05/21(금) 20:50 BCN T1 → 05/22(토) 16:20 ICN T2 · 기종 Airbus A350-900 (일반석/E · 수하물 1개 포함)",
+      "pnrMemo": "대한항공 왕복 직항 예매 완료 · 사전좌석 39A·39B 지정 완료 (Airbus A350-900 · 일반석/E · 수하물 1개 포함)",
       "naverFlightsUrl": "https://flight.naver.com/flights/international/BCN-ICN-20270521?adult=2&isDirect=true&fareType=Y",
       "googleFlightsUrl": "https://www.google.com/travel/flights?hl=ko&curr=KRW&q=One%20way%20flights%20from%20BCN%20to%20ICN%20on%202027-05-21%20for%202%20adults",
       "bookingUrl": "https://www.koreanair.com/",
-      "bookingLabel": "대한항공 예약조회·좌석지정",
+      "bookingLabel": "대한항공 예약·좌석확인",
       "extraUrl": "https://www.hanatour.com/",
       "extraLabel": "하나투어 예약내역",
       "manageUrl": "",
       "pnrPrivate": true,
-      "seatMemo": "구간 01 왕복 운임 포함 · A350-900 사전 좌석 지정 추천",
+      "seatMemo": "구간 01 왕복 운임 포함 · 좌석 39A · 39B 확정!",
       "importantNote": "[바르셀로나 터미널 1(T1) 출발 · 세관 먼저!] 시내 카탈루냐 광장에서 공항 복귀 시 'Aerobus A1(T1행)'을 타세요. 대한항공 카운터에서 수하물(23kg)을 부치기 전에 반드시 BCN T1 3층 출발홀 안쪽 세관 구역에서 ① 스페인 쇼핑분은 DIVA 무인기계 바코드 스캔, ② 포르투갈 쇼핑분은 바로 옆 세관 창구 실물 확인 도장을 먼저 받아야 합니다!",
       "candidates": [
         {
-          "name": "[예매 완료] 대한항공 KE0916 무착륙 직항 (Airbus A350-900)",
+          "name": "[예매·좌석 확정] 대한항공 KE0916 직항 · 좌석 39A · 39B",
           "time": "2027.05.21(금) 20:50 BCN(T1) → 05.22(토) 16:20 ICN(T2) · 12시간 30분",
-          "note": "클래스 일반석/E · 위탁수하물 1개(23kg) 포함! 출국편(KE0915)과 동일한 대한항공 왕복 직항 발권으로 갈 때·올 때 모두 환승 피로 없이 가장 쾌적한 스케줄입니다."
+          "note": "Airbus A350-900 · 일반석/E · 위탁수하물 1개(23kg) 포함 · 좌측 창가 39A·39B 지정 완료!"
         }
       ],
       "transferTimeline": [
@@ -2741,42 +2759,42 @@
     {
       "id": "b-flight-icn-bcn",
       "category": "항공",
-      "title": "출국 직항 · 서울/인천(T2) → 바르셀로나(T1) · 대한항공 KE0915",
+      "title": "출국 직항 · 서울/인천(T2) → 바르셀로나(T1) · 대한항공 KE0915 (38A·38B)",
       "city": "common",
       "placeId": "bcn-airport",
       "date": "2027-05-09",
       "time": "11:50 출발 → 당일 19:10 도착 (14시간 20분)",
       "opensAt": "2026-11-18",
-      "openNote": "예매 완료! (Airbus A350-900 · 일반석/U · 수하물 1개 포함)",
+      "openNote": "예매 & 사전좌석(38A·38B) 지정 완료!",
       "status": "booked",
       "price": "대한항공 왕복 직항 발권 완료",
-      "urlLabel": "대한항공 공식(좌석지정)",
+      "urlLabel": "대한항공 예약확인",
       "url": "https://www.koreanair.com/",
       "subUrl": "https://www.hanatour.com/",
       "subLabel": "하나투어 예약내역",
-      "voucher": "KE0915 · 05/09(일) 11:50 ICN T2 출발 · A350-900",
+      "voucher": "KE0915 · 좌석 38A·38B · 05/09 11:50 ICN T2",
       "priority": 1,
-      "note": "인천공항 제2여객터미널(T2) 출발 → 바르셀로나 터미널 1(T1) 도착! 대한항공 홈페이지/앱에서 항공사 6자리 예약번호(PNR)로 A350-900 사전 좌석 지정을 진행하세요."
+      "note": "인천공항 제2여객터미널(T2) 출발 → 바르셀로나 터미널 1(T1) 도착 · Airbus A350-900 좌측 창가 38A·38B 지정 완료!"
     },
     {
       "id": "b-flight-bcn-icn",
       "category": "항공",
-      "title": "귀국 직항 · 바르셀로나(T1) → 서울/인천(T2) · 대한항공 KE0916",
+      "title": "귀국 직항 · 바르셀로나(T1) → 서울/인천(T2) · 대한항공 KE0916 (39A·39B)",
       "city": "common",
       "placeId": "bcn-airport",
       "date": "2027-05-21",
       "time": "20:50 출발 → 익일 16:20 도착 (12시간 30분)",
       "opensAt": "2026-11-18",
-      "openNote": "예매 완료! (Airbus A350-900 · 일반석/E · 수하물 1개 포함)",
+      "openNote": "예매 & 사전좌석(39A·39B) 지정 완료!",
       "status": "booked",
       "price": "출국편(KE0915) 왕복 운임 포함",
-      "urlLabel": "대한항공 공식(좌석지정)",
+      "urlLabel": "대한항공 예약확인",
       "url": "https://www.koreanair.com/",
       "subUrl": "https://www.hanatour.com/",
       "subLabel": "하나투어 예약내역",
-      "voucher": "KE0916 · 05/21(금) 20:50 BCN T1 출발 · A350-900",
+      "voucher": "KE0916 · 좌석 39A·39B · 05/21 20:50 BCN T1",
       "priority": 1,
-      "note": "바르셀로나 엘프라트 공항 '터미널 1(T1)' 출발 → 인천 제2터미널(T2) 도착! 수하물 위탁 전 T1 3층 세관(DIVA 스캔 / 포르투갈 세관도장) 먼저 처리 필수."
+      "note": "바르셀로나 엘프라트 공항 '터미널 1(T1)' 출발 → 인천 제2터미널(T2) 도착 · 좌측 창가 39A·39B 지정 완료! (수하물 위탁 전 T1 3층 세관 먼저)"
     },
     {
       "id": "b-flight-bcn-opo",
@@ -3534,9 +3552,9 @@
     {
       "id": "c17",
       "group": "예약·통신·보험",
-      "text": "[대한항공 왕복 직항 체크] 대한항공 공식 홈페이지/앱에 '항공사 예약번호(6자리 영문 PNR)' 등록 후 KE0915·KE0916(A350-900) 사전 좌석 배정 완료하기",
-      "done": false,
-      "due": "지금 바로"
+      "text": "[완료] 대한항공 왕복 직항 사전 좌석 지정 완료 (출국 KE0915 38A·38B / 귀국 KE0916 39A·39B) & 스카이패스 마일리지 번호 입력 확인",
+      "done": true,
+      "due": "좌석지정 완료"
     },
     {
       "id": "c18",
