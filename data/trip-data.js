@@ -2,16 +2,16 @@
 window.__DEFAULT_TRIP_DATA__ = {
   "trip": {
     "title": "종구♡쨀린 허니문",
-    "subtitle": "바르셀로나 · 포르투 · 마요르카 12박 15일",
-    "coupleLabel": "2027. 05. 08 — 05. 21",
+    "subtitle": "바르셀로나 · 포르투 · 마요르카 12박 14일",
+    "coupleLabel": "2027. 05. 09 — 05. 22",
     "start": "2027-05-08",
     "end": "2027-05-22",
-    "departKorea": "2027-05-08",
+    "departKorea": "2027-05-09",
     "departEurope": "2027-05-21",
     "arriveKorea": "2027-05-22",
     "nights": 12,
-    "daysCount": 15,
-    "routeSummary": "ICN → DOH → BCN (4박) → OPO (4박) → PMI (4박) → BCN → ICN (직항)",
+    "daysCount": 14,
+    "routeSummary": "ICN(T2) → BCN(T1·4박) → OPO(4박) → PMI(4박) → BCN(T1) → ICN(T2) 대한항공 왕복 직항",
     "cities": [
       {
         "code": "bcn",
@@ -68,9 +68,9 @@ window.__DEFAULT_TRIP_DATA__ = {
   },
   "roadmap": [
     {
-      "phase": "STEP 1 · D-180 ~ D-150 (진행 중!)",
-      "title": "출국(도하 경유) 항공권 & 유럽 내 3구간 발권 (귀국 직항 완료!)",
-      "desc": "귀국편(5/21 21:00 바르셀로나 T2 → 인천 T1 트리니티항공 TW0408 직항, 2인 170만 원) 예매 완료! 이제 출국편(인천→도하→바르셀로나 카타르항공 편도)과 유럽 내 3구간을 수하물(20~25kg) 포함 조건으로 발권합니다.",
+      "phase": "STEP 1 · 장거리 직항 완료 · 유럽 3구간 발권",
+      "title": "대한항공 왕복 직항 완료! · 유럽 내 3구간 발권",
+      "desc": "대한항공 바르셀로나 왕복 직항(5/9 11:50 KE0915 · 5/21 20:50 KE0916, A350-900) 예매 완료! 이제 유럽 내 3구간(BCN→OPO · OPO→PMI · PMI→BCN)만 위탁수하물(20~25kg) 포함 조건으로 발권하면 항공 완성입니다.",
       "targetTab": "flights"
     },
     {
@@ -103,63 +103,55 @@ window.__DEFAULT_TRIP_DATA__ = {
       "id": "f1",
       "order": 1,
       "leg": "ICN-BCN",
-      "legTitle": "출국 장거리 (편도) · 인천 → 도하 → 바르셀로나",
+      "legTitle": "출국 장거리 (직항 · 예매완료) · 서울(인천) → 바르셀로나",
       "cityColor": "#C8553D",
-      "airline": "카타르항공 (도하 경유 편도 1순위)",
-      "flightNo": "QR859 → QR145 (예정)",
+      "airline": "대한항공 (Korean Air)",
+      "flightNo": "KE0915 · Airbus A350-900",
       "depAirport": "ICN",
-      "depCity": "인천",
-      "depLocal": "2027-05-08T01:25",
+      "depCity": "서울/인천 (터미널 2)",
+      "depLocal": "2027-05-09T11:50",
       "arrAirport": "BCN",
-      "arrCity": "바르셀로나",
-      "arrLocal": "2027-05-09T14:10",
-      "duration": "약 18시간 45분 (도하 경유 포함)",
-      "terminal": "ICN T1 → BCN T1",
-      "baggage": "위탁 25~30kg (운임별 상이) + 기내 7kg",
-      "status": "todo",
-      "estimatedCostKRW": 1800000,
-      "naverFlightsUrl": "https://flight.naver.com/flights/international/ICN-BCN-20270508?adult=2&isDirect=false&fareType=Y",
-      "googleFlightsUrl": "https://www.google.com/travel/flights?hl=ko&curr=KRW&q=One%20way%20flights%20from%20ICN%20to%20BCN%20on%202027-05-08%20for%202%20adults",
-      "bookingUrl": "https://www.qatarairways.com/ko-kr",
-      "bookingLabel": "카타르항공 공식",
+      "arrCity": "바르셀로나 (터미널 1)",
+      "arrLocal": "2027-05-09T19:10",
+      "duration": "14시간 20분 (무착륙 직항)",
+      "terminal": "ICN 터미널 2 (T2) → BCN 터미널 1 (T1)",
+      "baggage": "일반석 / U · 위탁수하물 1개(23kg) 포함 + 기내 10kg",
+      "status": "booked",
+      "estimatedCostKRW": 3800000,
+      "pnrMemo": "대한항공 왕복 직항 예매 완료 · 05/09(일) 11:50 ICN T2 → 19:10 BCN T1 · 기종 Airbus A350-900 (일반석/U · 수하물 1개 포함)",
+      "naverFlightsUrl": "https://flight.naver.com/flights/international/ICN-BCN-20270509?adult=2&isDirect=true&fareType=Y",
+      "googleFlightsUrl": "https://www.google.com/travel/flights?hl=ko&curr=KRW&q=One%20way%20flights%20from%20ICN%20to%20BCN%20on%202027-05-09%20for%202%20adults",
+      "bookingUrl": "https://www.koreanair.com/",
+      "bookingLabel": "대한항공 예약조회·좌석지정",
+      "extraUrl": "https://www.hanatour.com/",
+      "extraLabel": "하나투어 예약내역",
       "manageUrl": "",
       "pnrPrivate": true,
-      "seatMemo": "카타르항공은 편도 발권 시에도 할증 부담이 적어 귀국 직항과 조합하기 최고!",
-      "importantNote": "새벽 비행 날짜 체크 필수! 카타르항공 QR859(01:25 출발)는 자정 직후 출발입니다. 5/9(일) 오후 바르셀로나 도착(4박)에 맞추려면 ① 5/8(토) 밤 공항 도착 → 5/9(일) 01:25 출발편을 끊거나(아래 5/9 검색 비교), ② 5/8(토) 01:25 출발 후 도하 1박 스탑오버 패키지를 이용하면 캘린더 일정과 정확히 맞아떨어집니다.",
-      "extraUrl": "https://flight.naver.com/flights/international/ICN-BCN-20270509?adult=2&isDirect=false&fareType=Y",
-      "extraLabel": "5/9 새벽편 비교",
+      "seatMemo": "왕복 직항 확정! (A350-900 사전 좌석배정 · 2인 왕복 실결제액은 '정보 수정'에서 반영 가능)",
+      "importantNote": "[인천 제2여객터미널(T2) 출발 주의!] T1이 아닌 '인천국제공항 터미널 2(T2)'에서 5/9(일) 낮 11:50 출발합니다. 5/8(토) 밤에 무리해서 공항 갈 필요 없이 푹 주무시고 5/9(일) 오전 08:50경 T2에 도착하세요! 대한항공 공식 홈페이지/앱에서 항공사 6자리 예약번호(PNR)를 등록하면 A350-900 사전 좌석 지정이 가능합니다.",
       "candidates": [
         {
-          "name": "카타르항공 QR859+QR145 (도하 경유 편도)",
-          "time": "01:25 인천 → 도하 경유 → 14:10 바르셀로나",
-          "note": "중동 항공사는 편도 발권 페널티가 거의 없어 '갈 때 도하 경유 + 올 때 직항' 조합에 최적! 오후 체크인 시간과도 딱 맞음"
-        },
-        {
-          "name": "카타르항공 도하 스탑오버 옵션",
-          "time": "5/8 새벽 출발 → 도하 시내 5성급 1박($14~) → 5/9 바르셀로나 도착",
-          "note": "5/8 새벽 비행으로 출발해 도하 수크 와키프 야경까지 보고 5/9 바르셀로나에 입성하는 허니문 인기 코스"
+          "name": "[예매 완료] 대한항공 KE0915 무착륙 직항 (Airbus A350-900)",
+          "time": "2027.05.09(일) 11:50 ICN(T2) → 05.09(일) 19:10 BCN(T1) · 14시간 20분",
+          "note": "클래스 일반석/U · 위탁수하물 1개(23kg) 포함! A350-900 이코노미는 기본 3-3-3 배열이며, 기체 후미 테이퍼 구간의 창가 2인석 또는 29~31열 엑스트라 레그룸 좌석 선점을 추천합니다."
         }
       ],
       "transferTimeline": [
         {
-          "time": "전날 22:00",
-          "label": "인천공항 제1터미널 도착 · 수하물 위탁 · 면세품 수령"
+          "time": "08:50",
+          "label": "인천국제공항 제2터미널(T2) 도착 · 대한항공 카운터 수하물(23kg) 위탁 · 면세품 수령"
         },
         {
-          "time": "01:25",
-          "label": "인천(ICN) 출발 → 도하(DOH) 약 9시간 30분 비행"
+          "time": "11:50",
+          "label": "서울/인천(ICN T2) 대한항공 KE0915(A350-900) 이륙 → 14시간 20분 무착륙 직항 비행"
         },
         {
-          "time": "05:55 (현지)",
-          "label": "도하 하마드 공항 환승 (약 2시간 20분 여유)"
+          "time": "19:10 (현지)",
+          "label": "바르셀로나 엘프라트 공항 터미널 1(BCN T1) 도착 · EES 입국심사 및 수하물 수령"
         },
         {
-          "time": "08:15 (현지)",
-          "label": "도하(DOH) 출발 → 바르셀로나(BCN) 약 6시간 55분 비행"
-        },
-        {
-          "time": "14:10 (현지)",
-          "label": "바르셀로나 T1 도착 · EES 입국심사 후 Aerobus(35분, €7.45) 또는 공식 미터기 택시(시내 약 €30~38)로 숙소 이동"
+          "time": "20:15 (현지)",
+          "label": "공식 블랙&옐로우 미터기 택시(시내 약 €30~38, 25분) 또는 Aerobus A1(€7.45, 35분)으로 호텔 체크인 후 첫날 저녁 만찬!"
         }
       ]
     },
@@ -285,39 +277,39 @@ window.__DEFAULT_TRIP_DATA__ = {
       "leg": "PMI-BCN",
       "legTitle": "유럽 이동 3 (귀국 연결) · 마요르카 → 바르셀로나",
       "cityColor": "#D4A373",
-      "airline": "라이언에어 / 부엘링 / 에어유로파 (후보)",
+      "airline": "부엘링 / 에어유로파 (BCN T1 후보)",
       "flightNo": "오전~점심 일찍 출발편 예정",
       "depAirport": "PMI",
       "depCity": "마요르카 팔마",
       "depLocal": "2027-05-21T10:30",
       "arrAirport": "BCN",
-      "arrCity": "바르셀로나",
+      "arrCity": "바르셀로나 (터미널 1 권장)",
       "arrLocal": "2027-05-21T11:25",
       "duration": "약 55분",
-      "terminal": "PMI → BCN T2 또는 T1",
-      "baggage": "위탁수하물 20~25kg 포함 운임 필수 (귀국편 TW0408 23kg 기준 맞춤!)",
+      "terminal": "PMI → BCN 터미널 1 (T1 권장!)",
+      "baggage": "위탁수하물 20~25kg 포함 운임 필수 (대한항공 23kg 기준 맞춤!)",
       "status": "todo",
       "estimatedCostKRW": 320000,
       "naverFlightsUrl": "https://flight.naver.com/flights/international/PMI-BCN-20270521?adult=2&isDirect=true&fareType=Y",
       "googleFlightsUrl": "https://www.google.com/travel/flights?hl=ko&curr=KRW&q=One%20way%20flights%20from%20PMI%20to%20BCN%20on%202027-05-21%20for%202%20adults",
-      "bookingUrl": "https://www.ryanair.com/gb/en",
-      "bookingLabel": "Ryanair 공식",
-      "extraUrl": "https://www.vueling.com/en",
-      "extraLabel": "Vueling 공식",
+      "bookingUrl": "https://www.vueling.com/en",
+      "bookingLabel": "Vueling 공식",
+      "extraUrl": "https://www.aireuropa.com/en/en/home",
+      "extraLabel": "Air Europa 공식",
       "manageUrl": "",
       "pnrPrivate": true,
-      "seatMemo": "저녁 귀국편(TW0408)이 BCN 터미널 2(T2) 출발! 라이언에어·이지젯은 T2 도착이라 터미널 이동이 없습니다.",
-      "importantNote": "저녁 21:00 귀국 직항편(BCN T2 출발)과 '분리발권'이므로 지연 대비 최소 6~8시간 여유를 두고 오전 10~11시경 출발편을 예약하세요! BCN T2(0층 체크인 홀, 06~22시 운영) 및 T1(0층, 24시간) 모두 공식 수하물 보관소(Consigna)가 있어 큰 짐을 맡기고 시내 마지막 점심·쇼핑까지 여유롭게 다녀올 수 있습니다.",
+      "seatMemo": "저녁 귀국편(대한항공 KE0916)이 BCN 터미널 1(T1) 출발이므로 부엘링·에어유로파(T1 도착)가 동선 최고!",
+      "importantNote": "저녁 20:50 대한항공 귀국 직항편(BCN T1 출발)과 '분리발권'이므로 지연 대비 최소 6~8시간 여유를 두고 오전 10~11시경 출발편을 예약하세요! 부엘링·에어유로파를 타면 같은 BCN T1에 도착해 0층 수하물 보관소(Consigna, 24시간 운영)에 캐리어를 맡기고 Aerobus A1으로 시내 마지막 점심·쇼핑을 다녀오기 완벽합니다.",
       "candidates": [
         {
-          "name": "라이언에어 (Ryanair) / 이지젯 (BCN T2 도착)",
-          "time": "10:00~11:30 PMI → BCN (T2 도착)",
-          "note": "예매 완료한 트리니티항공(TW0408)과 동일한 '바르셀로나 터미널 2(T2)' 도착! 터미널 이동 없이 T2 0층 보관소에 바로 짐 맡기기 가장 편함 (20kg 수하물 추가 필수)"
+          "name": "부엘링 (Vueling) 오전 10~11시편 (BCN T1 도착 1순위)",
+          "time": "10:30 PMI → 11:25 BCN (T1 도착)",
+          "note": "매시간 운항! 저녁 대한항공 KE0916(T1 출발)과 동일한 '바르셀로나 터미널 1(T1)'에 바로 도착해 터미널 이동 없이 가장 편함"
         },
         {
-          "name": "부엘링 (Vueling) / 에어유로파 (BCN T1 도착)",
-          "time": "10:30 PMI → 11:25 BCN (T1 도착)",
-          "note": "매시간 운항! T1 도착 시에도 무료 공항 셔틀버스(Bus Lanzadera, 5~7분 간격·약 10분 소요)로 T2까지 편하게 이동 가능"
+          "name": "에어유로파 (Air Europa) (BCN T1 도착)",
+          "time": "10:00~11:30 PMI → BCN (T1 도착)",
+          "note": "대한항공과 같은 스카이팀 계열(BCN T1 도착) · 수하물 포함 운임 비교 추천"
         }
       ],
       "transferTimeline": [
@@ -331,11 +323,11 @@ window.__DEFAULT_TRIP_DATA__ = {
         },
         {
           "time": "10:30",
-          "label": "팔마(PMI) 이륙 → 11:25 바르셀로나 공항 도착 (T1 도착 시 무료 셔틀로 T2 이동 가능)"
+          "label": "팔마(PMI) 이륙 → 11:25 바르셀로나 공항 터미널 1(BCN T1) 도착"
         },
         {
           "time": "12:00",
-          "label": "BCN T2 0층 수하물 보관소(Consigna, 06~22시)에 캐리어 보관 후 Aerobus A2로 시내 나들이!"
+          "label": "BCN T1 0층 수하물 보관소(Consigna, 24시간 운영)에 캐리어 보관 후 Aerobus A1으로 시내 나들이!"
         }
       ]
     },
@@ -343,64 +335,56 @@ window.__DEFAULT_TRIP_DATA__ = {
       "id": "f5",
       "order": 5,
       "leg": "BCN-ICN",
-      "legTitle": "귀국 장거리 (직항 · 예매·좌석확정) · 바르셀로나 → 인천",
+      "legTitle": "귀국 장거리 (직항 · 예매완료) · 바르셀로나 → 서울(인천)",
       "cityColor": "#C8553D",
-      "airline": "트리니티항공 (구)티웨이항공",
-      "flightNo": "TW0408 (직항 · 일반석)",
+      "airline": "대한항공 (Korean Air)",
+      "flightNo": "KE0916 · Airbus A350-900",
       "depAirport": "BCN",
-      "depCity": "바르셀로나 (터미널 2)",
-      "depLocal": "2027-05-21T21:00",
+      "depCity": "바르셀로나 (터미널 1)",
+      "depLocal": "2027-05-21T20:50",
       "arrAirport": "ICN",
-      "arrCity": "인천 (터미널 1)",
-      "arrLocal": "2027-05-22T16:40",
-      "duration": "12시간 40분 (무착륙 직항)",
-      "terminal": "BCN 터미널 2 (T2) → ICN 터미널 1 (T1)",
-      "baggage": "일반석 · 수하물 포함 (위탁 23kg + 기내 10kg)",
-      "seatAssigned": "34G (복도) · 34H (창가)",
-      "seatMap242": {
-        "row": 34,
-        "selected": [
-          "G",
-          "H"
-        ],
-        "caption": "2-4-2 배열 우측 2인 독립 페어석 (32열 화장실·비상구와 1열 떨어진 조용한 리클라이닝 명당 · 부가서비스 구매 완료)"
-      },
+      "arrCity": "서울/인천 (터미널 2)",
+      "arrLocal": "2027-05-22T16:20",
+      "duration": "12시간 30분 (무착륙 직항)",
+      "terminal": "BCN 터미널 1 (T1) → ICN 터미널 2 (T2)",
+      "baggage": "일반석 / E · 위탁수하물 1개(23kg) 포함 + 기내 10kg",
       "status": "booked",
-      "estimatedCostKRW": 1700000,
-      "pnrMemo": "하나투어 발권 완료 (2인 170만 원) · 부가서비스 사전좌석 34G(복도)·34H(창가) 우측 2인석 구매 완료",
+      "estimatedCostKRW": 0,
+      "costIncludedIn": "f1",
+      "pnrMemo": "대한항공 왕복 직항 예매 완료 · 05/21(금) 20:50 BCN T1 → 05/22(토) 16:20 ICN T2 · 기종 Airbus A350-900 (일반석/E · 수하물 1개 포함)",
       "naverFlightsUrl": "https://flight.naver.com/flights/international/BCN-ICN-20270521?adult=2&isDirect=true&fareType=Y",
       "googleFlightsUrl": "https://www.google.com/travel/flights?hl=ko&curr=KRW&q=One%20way%20flights%20from%20BCN%20to%20ICN%20on%202027-05-21%20for%202%20adults",
-      "bookingUrl": "https://www.hanatour.com/",
-      "bookingLabel": "하나투어 예약확인",
-      "extraUrl": "https://www.twayair.com/",
-      "extraLabel": "트리니티(티웨이) 공식",
+      "bookingUrl": "https://www.koreanair.com/",
+      "bookingLabel": "대한항공 예약조회·좌석지정",
+      "extraUrl": "https://www.hanatour.com/",
+      "extraLabel": "하나투어 예약내역",
       "manageUrl": "",
       "pnrPrivate": true,
-      "seatMemo": "34G · 34H (우측 2인 독립석 · 부가서비스 구매 완료)",
-      "importantNote": "[필독 · 바르셀로나 터미널 2(T2) 출발!] 시내 카탈루냐 광장에서 공항 복귀 시 반드시 'Aerobus A2(T2행)'를 타세요. 수하물(23kg) 위탁 전 T2 출국장 체크인 A구역 근처 세관에서 ① 스페인 쇼핑분은 DIVA 무인기계 바코드 스캔, ② 포르투갈 쇼핑분은 바로 옆 세관 창구 실물 확인 도장을 먼저 받은 뒤 체크인하세요!",
+      "seatMemo": "구간 01 왕복 운임 포함 · A350-900 사전 좌석 지정 추천",
+      "importantNote": "[바르셀로나 터미널 1(T1) 출발 · 세관 먼저!] 시내 카탈루냐 광장에서 공항 복귀 시 'Aerobus A1(T1행)'을 타세요. 대한항공 카운터에서 수하물(23kg)을 부치기 전에 반드시 BCN T1 3층 출발홀 안쪽 세관 구역에서 ① 스페인 쇼핑분은 DIVA 무인기계 바코드 스캔, ② 포르투갈 쇼핑분은 바로 옆 세관 창구 실물 확인 도장을 먼저 받아야 합니다!",
       "candidates": [
         {
-          "name": "[예매·좌석 확정] 트리니티항공 TW0408 · 좌석 34G · 34H (우측 2인석)",
-          "time": "2027.05.21(금) 21:00 BCN(T2) → 05.22(토) 16:40 ICN(T1) · 12시간 40분",
-          "note": "하나투어 발권(2인 170만 원) + 부가서비스 사전좌석 34G(복도)·34H(창가) 지정 완료! 2-4-2 배열이라 옆자리 타인 없이 두 사람만 오붓하게 이동하는 최고 명당입니다."
+          "name": "[예매 완료] 대한항공 KE0916 무착륙 직항 (Airbus A350-900)",
+          "time": "2027.05.21(금) 20:50 BCN(T1) → 05.22(토) 16:20 ICN(T2) · 12시간 30분",
+          "note": "클래스 일반석/E · 위탁수하물 1개(23kg) 포함! 출국편(KE0915)과 동일한 대한항공 왕복 직항 발권으로 갈 때·올 때 모두 환승 피로 없이 가장 쾌적한 스케줄입니다."
         }
       ],
       "transferTimeline": [
         {
-          "time": "17:15",
-          "label": "카탈루냐 광장에서 Aerobus A2 탑승 → 바르셀로나 공항 터미널 2(T2) 도착 · 보관소 짐 찾기 · 와인/액체류 위탁 패킹"
+          "time": "17:00",
+          "label": "카탈루냐 광장에서 Aerobus A1 탑승 → 바르셀로나 공항 터미널 1(T1) 복귀 · 0층 보관소 짐 찾기 · 와인/액체류 위탁 패킹"
         },
         {
-          "time": "17:40",
-          "label": "T2 체크인 A구역 근처 세관: 스페인 영수증 지퍼백은 DIVA 무인 스캔, 포르투갈 영수증 지퍼백은 세관 창구 실물 도장"
+          "time": "17:25",
+          "label": "BCN T1 3층 출발층 세관: 스페인 영수증 지퍼백은 DIVA 무인 스캔, 포르투갈 영수증 지퍼백은 세관 창구 실물 도장"
         },
         {
-          "time": "18:05",
-          "label": "트리니티항공(TW0408) 카운터 체크인(좌석 34G·34H 보딩패스 수령) & 23kg 수하물 위탁 → 출국심사·면세 환급"
+          "time": "17:55",
+          "label": "대한항공(KE0916) 카운터 체크인 & 23kg 수하물 위탁 → 출국심사 후 면세구역 환급소 & Sala VIP Pau Casals 라운지 휴식"
         },
         {
-          "time": "21:00",
-          "label": "바르셀로나(BCN T2) TW0408 34G·34H 탑승 이륙 → 5/22(토) 16:40 인천국제공항 터미널 1 도착!"
+          "time": "20:50",
+          "label": "바르셀로나(BCN T1) 대한항공 KE0916 이륙 → 5/22(토) 16:20 인천국제공항 제2터미널(T2) 도착!"
         }
       ]
     }
@@ -411,10 +395,10 @@ window.__DEFAULT_TRIP_DATA__ = {
       "airport": "바르셀로나 엘프라트 공항 (BCN)",
       "options": [
         {
-          "method": "Aerobus (A1=T1행 / A2=T2행)",
+          "method": "Aerobus A1 (터미널 1 ↔ 카탈루냐 광장)",
           "time": "35분",
           "cost": "편도 €7.45 / 왕복 €12.85 (1인)",
-          "pros": "카탈루냐 광장 직행(5분 배차). 입국 날(카타르 T1)은 A1, 귀국 날(트리니티 TW0408 T2 출발)은 반드시 A2 탑승!"
+          "pros": "대한항공 입국(KE0915)·출국(KE0916) 모두 BCN 터미널 1(T1)을 이용하므로 헷갈릴 것 없이 무조건 'A1' 버스 이용!"
         },
         {
           "method": "공식 블랙&옐로우 택시 (미터기제)",
@@ -1998,78 +1982,74 @@ window.__DEFAULT_TRIP_DATA__ = {
       "dayNo": 0,
       "dow": "토",
       "city": "bcn",
-      "cityLabel": "출국 · 이동",
-      "calendarTag": "새벽 비행(카타르 도하공항 경유)",
-      "theme": "설레는 허니문 출발 · 인천 → 도하 경유",
-      "travelMode": "transit",
+      "cityLabel": "출발 전야 · 점검",
+      "calendarTag": "출발 전날 여유 패킹 & 모바일 체크인",
+      "theme": "일요일 낮 직항 덕분에 여유로운 토요일 밤 · 최종 짐 점검 & 꿀잠!",
+      "travelMode": "walking",
       "items": [
         {
-          "time": "22:00",
+          "time": "20:00",
           "placeId": "bcn-airport",
-          "customTitle": "인천국제공항 도착 · 수하물 위탁 · 출국 수속",
-          "stayMin": 180,
-          "moveTo": "카타르항공 (도하 경유 편도 예정)",
-          "moveMin": 960,
-          "memo": "여권·국제운전면허증·한국면허증 실물·트래블카드·기내 보습용품·목베개 최종 점검! 기내식에 신혼여행 케이크 사전 신청 가능 여부도 확인해보세요.",
+          "customTitle": "대한항공 KE0915 온라인 체크인 확인 & 캐리어 최종 패킹",
+          "stayMin": 90,
+          "moveTo": "집/호텔에서 편안한 숙면 (익일 08:50 인천 T2 이동)",
+          "moveMin": 0,
+          "memo": "새벽 비행이 아닌 일요일 11:50 낮 직항이라 토요일 밤에 공항 갈 필요가 없습니다! 여권·국제운전면허증·한국 실물면허증·트래블카드·보조배터리(기내 반입)만 점검하고 푹 주무세요.",
           "bookingId": "b-flight-icn-bcn"
         }
       ],
-      "planB": "새벽 비행 출발 시각(5/8 01:25 vs 5/9 01:25) 확정 후 공항 도착 시각만 맞춰 조정하면 됩니다. 라운지에서 샤워 후 탑승하면 기내 숙면에 훨씬 좋습니다."
+      "planB": "대한항공 모바일 체크인은 출발 48시간 전(5/7 금 11:50)부터 열리므로 미리 좌석과 모바일 탑승권을 발급받아 두세요."
     },
     {
       "date": "2027-05-09",
       "dayNo": 1,
       "dow": "일",
       "city": "bcn",
-      "cityLabel": "바르셀로나 1박",
-      "calendarTag": "바르셀로나 IN : 먹고 놀기",
-      "theme": "바르셀로나 도착 · 고딕 산책 · 바르셀로네타 & 첫 빠에야",
-      "travelMode": "walking",
+      "cityLabel": "출국 · 바셀 1박",
+      "calendarTag": "11:50 대한항공 직항 출발 → 19:10 바셀 IN",
+      "theme": "인천 T2 11:50 직항 이륙 → 19:10 바르셀로나 도착 · 첫 빠에야 만찬",
+      "travelMode": "transit",
       "items": [
         {
-          "time": "14:10",
+          "time": "08:50",
           "placeId": "bcn-airport",
-          "stayMin": 70,
-          "moveTo": "공식 미터기 택시(약 €30~38) 또는 Aerobus(35분)",
-          "moveMin": 35,
-          "memo": "BCN T1 도착 후 EES(안면·지문 생체등록) 입국심사 진행. 장거리 비행 첫날은 캐리어 2개 들고 호텔 문 앞까지 가는 공식 블랙&옐로우 미터기 택시 이용 추천."
+          "customTitle": "인천국제공항 제2터미널(T2) 도착 → 11:50 대한항공 KE0915 직항 이륙",
+          "stayMin": 180,
+          "moveTo": "대한항공 KE0915 무착륙 직항 (14시간 20분 비행)",
+          "moveMin": 860,
+          "memo": "[터미널 주의] T1이 아닌 인천공항 제2여객터미널(T2) 출발! 위탁수하물 1개(23kg) 부치고 면세품 수령 후 A350-900 탑승.",
+          "bookingId": "b-flight-icn-bcn"
         },
         {
-          "time": "15:30",
+          "time": "19:10",
+          "placeId": "bcn-airport",
+          "customTitle": "바르셀로나 엘프라트 공항 터미널 1(BCN T1) 도착 · 입국심사",
+          "stayMin": 65,
+          "moveTo": "공식 미터기 택시(약 €30~38, 25분) 또는 Aerobus A1",
+          "moveMin": 25,
+          "memo": "BCN T1 도착 후 EES(안면·지문 생체등록) 입국심사 진행. 저녁 도착이므로 캐리어 2개 싣고 호텔 문 앞까지 바로 가는 공식 블랙&옐로우 미터기 택시를 추천합니다!"
+        },
+        {
+          "time": "20:40",
           "placeId": "catalunya-sq",
-          "customTitle": "숙소 체크인 & 샤워 후 가벼운 환복",
-          "stayMin": 75,
-          "moveTo": "도보 산책",
+          "customTitle": "카탈루냐 광장 인근 숙소 체크인 & 가벼운 환복",
+          "stayMin": 40,
+          "moveTo": "택시 또는 도보 이동",
           "moveMin": 10,
-          "memo": "일요일은 대형 상점과 보케리아 시장이 쉬는 날이라 골목 산책과 바다·맛집 위주로 여유롭게!"
+          "memo": "5월 바르셀로나는 저녁 9시 무렵에 해가 져서 도착 직후 노을빛 거리가 정말 아름답습니다!"
         },
         {
-          "time": "17:00",
-          "placeId": "gothic-quarter",
-          "stayMin": 60,
-          "moveTo": "도보 (보른·포트벨 경유)",
-          "moveMin": 20,
-          "memo": "비스베 다리 아래에서 바르셀로나 첫 커플 사진 남기기."
-        },
-        {
-          "time": "18:20",
-          "placeId": "barceloneta",
-          "stayMin": 70,
-          "moveTo": "도보 12분",
-          "moveMin": 12,
-          "memo": "지중해 바닷바람 맞으며 해변 산책로 걷기 — 시차 졸음이 싹 달아납니다."
-        },
-        {
-          "time": "19:45",
+          "time": "21:30",
           "placeId": "food-7portes",
-          "stayMin": 100,
-          "moveTo": "택시 또는 산책 복귀",
-          "moveMin": 15,
-          "memo": "껍질이 다 손질되어 나오는 '부자 빠에야(Parellada)'와 시원한 상그리아로 허니문 첫날 건배!",
+          "customTitle": "7 Portes (또는 시우다드 콘달) · 허니문 첫날 빠에야 & 상그리아 건배!",
+          "stayMin": 90,
+          "moveTo": "택시 복귀 후 꿀잠",
+          "moveMin": 10,
+          "memo": "스페인 현지 저녁 피크(21시~)에 딱 맞춰 도착! 껍질이 손질되어 나오는 '부자 빠에야(Parellada)'와 상그리아로 무사 도착을 축하하세요. (7 Portes는 자정까지 영업)",
           "bookingId": "b-7portes"
         }
       ],
-      "planB": "장거리 비행으로 피곤하다면 바르셀로네타를 생략하고 숙소 루프탑 풀에서 쉰 뒤, 숙소 근처 시우다드 콘달(Ciudad Condal) 테라스에서 가볍게 타파스와 클라라 맥주로 첫날을 마무리하세요."
+      "planB": "14시간 비행 후 빨리 쉬고 싶다면 7 Portes 대신 카탈루냐 광장 숙소 바로 옆 시우다드 콘달(Ciudad Condal, 01:00까지 영업)이나 비니투스(Vinitus)에서 가볍게 꿀대구 타파스와 클라라 맥주 한 잔만 즐기고 일찍 취침하세요!"
     },
     {
       "date": "2027-05-10",
@@ -2690,8 +2670,8 @@ window.__DEFAULT_TRIP_DATA__ = {
       "dow": "금",
       "city": "bcn",
       "cityLabel": "마요르카→바셀→출국",
-      "calendarTag": "마요르카→바셀(오전) · 바셀 T2→인천 직항(21:00 확정)",
-      "theme": "팔마 출발 → 바르셀로나 마지막 타파스 만찬 → 21:00 BCN T2 직항 귀국",
+      "calendarTag": "마요르카→바셀(오전) · 바셀 T1→인천 직항(20:50 KE0916)",
+      "theme": "팔마 출발 → 바르셀로나 마지막 타파스 만찬 → 20:50 대한항공 KE0916 직항 귀국",
       "travelMode": "transit",
       "items": [
         {
@@ -2699,7 +2679,7 @@ window.__DEFAULT_TRIP_DATA__ = {
           "placeId": "pmi-airport",
           "customTitle": "팔마 공항 인근 만탱크 주유(영수증 보관!) → 렌터카 반납",
           "stayMin": 120,
-          "moveTo": "오전 비행 (PMI → BCN 약 55분)",
+          "moveTo": "오전 비행 (PMI → BCN T1 약 55분)",
           "moveMin": 55,
           "memo": "주유 영수증과 반납 시 차량 상태 사진을 찍어두면 추후 오청구 분쟁을 100% 예방할 수 있습니다.",
           "bookingId": "b-flight-pmi-bcn"
@@ -2707,33 +2687,33 @@ window.__DEFAULT_TRIP_DATA__ = {
         {
           "time": "11:30",
           "placeId": "bcn-airport",
-          "customTitle": "바르셀로나 공항 도착 → T2 0층 수하물 보관소(Consigna) 캐리어 보관",
+          "customTitle": "바르셀로나 T1 도착 → 0층 수하물 보관소(Consigna) 캐리어 보관",
           "stayMin": 45,
-          "moveTo": "Aerobus A2(35분)로 카탈루냐 광장 직행",
+          "moveTo": "Aerobus A1(35분)로 카탈루냐 광장 직행",
           "moveMin": 35,
-          "memo": "T1 도착편을 탔다면 무료 셔틀(10분)로 T2로 먼저 넘어가 T2 0층 보관소(06~22시 운영)에 캐리어를 맡겨두면 저녁 출국 동선이 훨씬 편합니다!"
+          "memo": "부엘링·에어유로파를 타면 저녁 대한항공(KE0916)과 똑같은 T1에 도착합니다! T1 0층 보관소(24시간 운영)에 큰 짐을 맡기고 가볍게 시내로 나가세요."
         },
         {
           "time": "13:00",
           "placeId": "food-ciudad-condal",
           "customTitle": "바르셀로나 마지막 타파스 & 못 산 쇼핑 마무리",
           "stayMin": 180,
-          "moveTo": "16:30 Aerobus A2(T2행) 탑승 → 공항 복귀",
+          "moveTo": "16:15 Aerobus A1(T1행) 탑승 → 공항 복귀",
           "moveMin": 40,
-          "memo": "투론 초콜릿, 올리브유, 국화꿀차(만사니야) 등 마트 선물 구매 후 위탁 캐리어(23kg)에 넣을 준비! 공항 복귀 시 반드시 'A2(터미널 2행)' 버스 탑승!"
+          "memo": "투론 초콜릿, 올리브유, 국화꿀차(만사니야) 등 마트 선물 구매 후 위탁 캐리어(23kg)에 넣을 준비!"
         },
         {
-          "time": "17:15",
+          "time": "17:00",
           "placeId": "bcn-airport",
-          "customTitle": "BCN T2 짐 찾기 → 체크인 A구역 세관(DIVA/도장) → 21:00 TW0408 직항 탑승",
-          "stayMin": 225,
-          "moveTo": "트리니티항공 TW0408 직항 (21:00 출발 · 12시간 40분)",
-          "moveMin": 760,
-          "memo": "[예매완료 · BCN 터미널 2] 수하물 부치기 전 T2 출국장 체크인 A구역 근처 세관에서 ① 스페인 영수증은 DIVA 스캔, ② 포르투갈 영수증은 세관 창구 실물 도장 먼저!",
+          "customTitle": "BCN T1 짐 찾기 → 3층 출발홀 세관(DIVA/도장) → 20:50 대한항공 KE0916 탑승",
+          "stayMin": 230,
+          "moveTo": "대한항공 KE0916 직항 (20:50 출발 · 12시간 30분)",
+          "moveMin": 750,
+          "memo": "[예매완료 · BCN 터미널 1] 대한항공 카운터 수하물 위탁 전 T1 3층 출발홀 안쪽 세관에서 ① 스페인 영수증은 DIVA 스캔, ② 포르투갈 영수증은 세관 창구 실물 도장 먼저!",
           "bookingId": "b-flight-bcn-icn"
         }
       ],
-      "planB": "시내에 나가지 않고 여유롭게 쉬고 싶다면 BCN 공항 인근 아울렛(빌라데칸스 더 스타일 아울렛)을 들르거나 BCN T2 에어사이드 VIP 라운지(Sala VIP Canudas)에서 휴식 후 탑승하세요."
+      "planB": "시내에 나가지 않고 여유롭게 쉬고 싶다면 BCN 공항 인근 아울렛(빌라데칸스 더 스타일 아울렛, 무료 셔틀 15분)을 들르거나 BCN T1 VIP 라운지(Sala VIP Pau Casals)에서 휴식 후 탑승하세요."
     },
     {
       "date": "2027-05-22",
@@ -2741,18 +2721,18 @@ window.__DEFAULT_TRIP_DATA__ = {
       "dow": "토",
       "city": "bcn",
       "cityLabel": "한국 도착",
-      "calendarTag": "16:40 인천공항 T1 도착 (TW0408 직항)",
-      "theme": "인천국제공항 제1터미널 직항 도착 · 우리의 새로운 일상 시작!",
+      "calendarTag": "16:20 인천공항 T2 도착 (대한항공 KE0916)",
+      "theme": "인천국제공항 제2터미널 직항 도착 · 우리의 새로운 일상 시작!",
       "travelMode": "transit",
       "items": [
         {
-          "time": "16:40",
+          "time": "16:20",
           "placeId": "bcn-airport",
-          "customTitle": "인천국제공항 터미널 1 도착 (TW0408 직항 · 12시간 40분 비행) · 귀가",
+          "customTitle": "인천국제공항 제2터미널(T2) 도착 (대한항공 KE0916 · 12시간 30분 비행) · 귀가",
           "stayMin": 60,
           "moveTo": "집으로!",
           "moveMin": 60,
-          "memo": "귀국편을 무착륙 직항(21:00→16:40)으로 끊어 경유 피로 없이 상쾌하게 도착! 일요일 하루가 통째로 남아 시차 적응하고 양가 선물 정리하기까지 완벽한 스케줄입니다."
+          "memo": "출국·귀국 모두 대한항공 A350-900 무착륙 직항으로 환승 피로 없이 오후 4시 20분 상쾌하게 도착! 일요일 하루가 통째로 남아 시차 적응까지 완벽합니다."
         }
       ],
       "planB": "얼큰한 한식 국물로 시차 피로 싹 풀기!"
@@ -2762,44 +2742,42 @@ window.__DEFAULT_TRIP_DATA__ = {
     {
       "id": "b-flight-icn-bcn",
       "category": "항공",
-      "title": "출국 편도 · 인천 → 도하 → 바르셀로나 (카타르항공)",
+      "title": "출국 직항 · 서울/인천(T2) → 바르셀로나(T1) · 대한항공 KE0915",
       "city": "common",
       "placeId": "bcn-airport",
-      "date": "2027-05-08",
-      "time": "01:25 새벽 출발 (도하 경유)",
-      "opensAt": "2026-11-15",
-      "openNote": "지금 바로 가격 비교 & 발권 가능! (귀국 직항 예매 완료)",
-      "status": "todo",
-      "price": "2인 편도 약 180만 원 예상",
-      "urlLabel": "네이버 항공권",
-      "url": "https://flight.naver.com/flights/international/ICN-BCN-20270508?adult=2&isDirect=false&fareType=Y",
-      "subUrl": "https://www.google.com/travel/flights?hl=ko&curr=KRW&q=One%20way%20flights%20from%20ICN%20to%20BCN%20on%202027-05-08%20for%202%20adults",
-      "subLabel": "Google 항공권",
-      "thirdUrl": "https://www.qatarairways.com/ko-kr",
-      "thirdLabel": "카타르항공",
-      "voucher": "",
+      "date": "2027-05-09",
+      "time": "11:50 출발 → 당일 19:10 도착 (14시간 20분)",
+      "opensAt": "2026-11-18",
+      "openNote": "예매 완료! (Airbus A350-900 · 일반석/U · 수하물 1개 포함)",
+      "status": "booked",
+      "price": "대한항공 왕복 직항 발권 완료",
+      "urlLabel": "대한항공 공식(좌석지정)",
+      "url": "https://www.koreanair.com/",
+      "subUrl": "https://www.hanatour.com/",
+      "subLabel": "하나투어 예약내역",
+      "voucher": "KE0915 · 05/09(일) 11:50 ICN T2 출발 · A350-900",
       "priority": 1,
-      "note": "카타르항공은 편도 발권 할증 부담이 적어 귀국 직항(TW0408)과 조합하기 최적! 5/9(일) 현지 도착 기준 새벽 비행 날짜(5/8 vs 5/9 01:25) 꼭 재확인하세요."
+      "note": "인천공항 제2여객터미널(T2) 출발 → 바르셀로나 터미널 1(T1) 도착! 대한항공 홈페이지/앱에서 항공사 6자리 예약번호(PNR)로 A350-900 사전 좌석 지정을 진행하세요."
     },
     {
       "id": "b-flight-bcn-icn",
       "category": "항공",
-      "title": "귀국 직항 편도 · 바르셀로나(T2) → 인천(T1) · 트리니티 TW0408 (좌석 34G·34H)",
+      "title": "귀국 직항 · 바르셀로나(T1) → 서울/인천(T2) · 대한항공 KE0916",
       "city": "common",
       "placeId": "bcn-airport",
       "date": "2027-05-21",
-      "time": "21:00 출발 → 익일 16:40 도착 (12시간 40분)",
-      "opensAt": "2026-11-15",
-      "openNote": "하나투어 예매 & 부가서비스 좌석(34G·34H) 구매 완료!",
+      "time": "20:50 출발 → 익일 16:20 도착 (12시간 30분)",
+      "opensAt": "2026-11-18",
+      "openNote": "예매 완료! (Airbus A350-900 · 일반석/E · 수하물 1개 포함)",
       "status": "booked",
-      "price": "2인 170만 원 결제 완료 (좌석 지정 완료)",
-      "urlLabel": "하나투어 예약확인",
-      "url": "https://www.hanatour.com/",
-      "subUrl": "https://www.twayair.com/",
-      "subLabel": "트리니티(티웨이) 공식",
-      "voucher": "하나투어 발권 · TW0408 · 좌석 34G·34H (23kg 포함)",
+      "price": "출국편(KE0915) 왕복 운임 포함",
+      "urlLabel": "대한항공 공식(좌석지정)",
+      "url": "https://www.koreanair.com/",
+      "subUrl": "https://www.hanatour.com/",
+      "subLabel": "하나투어 예약내역",
+      "voucher": "KE0916 · 05/21(금) 20:50 BCN T1 출발 · A350-900",
       "priority": 1,
-      "note": "2-4-2 배열 우측 2인 독립석(34G 복도 · 34H 창가) 사전 구매 완료! 하나투어 예약내역의 '항공사 예약번호(6자리 PNR)'로 트리니티(티웨이) 공식 홈페이지에서도 좌석·수하물 연동 상태를 한 번 확인해두세요."
+      "note": "바르셀로나 엘프라트 공항 '터미널 1(T1)' 출발 → 인천 제2터미널(T2) 도착! 수하물 위탁 전 T1 3층 세관(DIVA 스캔 / 포르투갈 세관도장) 먼저 처리 필수."
     },
     {
       "id": "b-flight-bcn-opo",
@@ -2854,18 +2832,18 @@ window.__DEFAULT_TRIP_DATA__ = {
       "date": "2027-05-21",
       "time": "10:00~11:00 출발 추천",
       "opensAt": "2026-11-20",
-      "openNote": "귀국 직항(21:00 BCN T2 출발) 기준 최소 6~8시간 전 도착편 선택",
+      "openNote": "귀국 직항(20:50 BCN T1 출발) 기준 최소 6~8시간 전 도착편 선택",
       "status": "todo",
       "price": "2인 수하물 포함 약 32만 원",
       "urlLabel": "네이버 항공권",
       "url": "https://flight.naver.com/flights/international/PMI-BCN-20270521?adult=2&isDirect=true&fareType=Y",
       "subUrl": "https://www.google.com/travel/flights?hl=ko&curr=KRW&q=One%20way%20flights%20from%20PMI%20to%20BCN%20on%202027-05-21%20for%202%20adults",
       "subLabel": "Google 항공권",
-      "thirdUrl": "https://www.ryanair.com/gb/en",
-      "thirdLabel": "Ryanair",
+      "thirdUrl": "https://www.vueling.com/en",
+      "thirdLabel": "Vueling",
       "voucher": "",
       "priority": 1,
-      "note": "귀국편(TW0408)이 BCN T2 출발이므로 라이언에어·이지젯(T2 도착)이 동선상 가장 편하며, 부엘링·에어유로파(T1 도착)도 무료 공항 셔틀(10분)로 쉽게 연결됩니다."
+      "note": "대한항공 귀국편(KE0916)이 BCN T1 출발이므로 같은 BCN T1에 도착하는 부엘링(Vueling)·에어유로파(Air Europa)가 동선상 가장 완벽합니다!"
     },
     {
       "id": "b-stay-all",
@@ -3121,9 +3099,9 @@ window.__DEFAULT_TRIP_DATA__ = {
       "city": "bcn",
       "placeId": "food-7portes",
       "date": "2027-05-09",
-      "time": "19:45",
+      "time": "21:30",
       "opensAt": "2027-04-15",
-      "openNote": "방문 3~4주 전 온라인 예약",
+      "openNote": "방문 3~4주 전 온라인 예약 (자정까지 영업)",
       "status": "todo",
       "price": "예약 무료 (식사 약 €90)",
       "url": "https://7portes.com/en/",
@@ -3131,7 +3109,7 @@ window.__DEFAULT_TRIP_DATA__ = {
       "subLabel": "TheFork",
       "voucher": "",
       "priority": 3,
-      "note": "일요일 저녁 피크 시간대 대기 없이 바로 착석 가능"
+      "note": "KE0915 19:10 도착 → 호텔 체크인 후 21:30 현지 저녁 피크 타임에 맞춰 예약 추천!"
     },
     {
       "id": "b-caspatro",
@@ -3200,8 +3178,8 @@ window.__DEFAULT_TRIP_DATA__ = {
   "budget": [
     {
       "category": "항공",
-      "planned": 4720000,
-      "actual": 1700000,
+      "planned": 5020000,
+      "actual": 0,
       "currency": "KRW"
     },
     {
@@ -3240,25 +3218,13 @@ window.__DEFAULT_TRIP_DATA__ = {
       "id": "bi-1",
       "category": "항공",
       "city": "common",
-      "title": "출국 항공권 · 인천 → 도하 → 바르셀로나 편도 (2인)",
+      "title": "장거리 왕복 직항 항공권 · 인천(T2) ↔ 바르셀로나(T1) (2인 · 대한항공 KE0915/0916)",
       "currency": "KRW",
-      "planned": 1800000,
+      "planned": 3800000,
       "actual": 0,
-      "payStatus": "todo",
-      "method": "신용카드(마일리지/무이자)",
-      "memo": "5/8(또는 5/9 새벽) 카타르항공 도하 경유 편도 2인 기준"
-    },
-    {
-      "id": "bi-1b",
-      "category": "항공",
-      "city": "common",
-      "title": "귀국 직항 항공권 · 바르셀로나(T2) → 인천(T1) 편도 (2인 · TW0408 · 34G/34H)",
-      "currency": "KRW",
-      "planned": 1700000,
-      "actual": 1700000,
-      "payStatus": "paid",
-      "method": "하나투어 결제완료",
-      "memo": "5/21(금) 21:00 BCN T2 → 5/22(토) 16:40 ICN T1 · 일반석(23kg 포함) + 사전좌석 34G·34H 우측 2인석 구매 완료 (부가서비스 비용 별도 합산 원할 시 수정 클릭)"
+      "payStatus": "deposit",
+      "method": "하나투어 · 대한항공 발권 완료",
+      "memo": "5/9(일) 11:50 KE0915 · 5/21(금) 20:50 KE0916 (Airbus A350-900) — 우측 '수정'에서 2인 실결제액을 입력하시면 결제 완료로 합산됩니다!"
     },
     {
       "id": "bi-2",
@@ -3569,28 +3535,28 @@ window.__DEFAULT_TRIP_DATA__ = {
     {
       "id": "c17",
       "group": "예약·통신·보험",
-      "text": "[귀국편 완료 체크] 하나투어 예매내역의 '항공사 예약번호(6자리 PNR)'로 트리니티(티웨이) 공식 홈페이지에서 TW0408 여정·수하물(23kg)·사전좌석(34G·34H) 연동 확인",
+      "text": "[대한항공 왕복 직항 체크] 대한항공 공식 홈페이지/앱에 '항공사 예약번호(6자리 영문 PNR)' 등록 후 KE0915·KE0916(A350-900) 사전 좌석 배정 완료하기",
       "done": false,
       "due": "지금 바로"
     },
     {
       "id": "c18",
       "group": "예약·통신·보험",
-      "text": "출국 도하 경유편(카타르항공) 발권 시 자정 새벽 출발일(5/8 스탑오버 vs 5/9 01:25) 확정 & 출발 48시간 전 기내 허니문 축하 케이크(무료) 신청",
+      "text": "출발 48시간 전(2027.05.07 금 11:50~) 대한항공 모바일 체크인 오픈 알림 설정 & 인천공항 제2여객터미널(T2) 교통편 확인",
       "done": false,
-      "due": "발권·출발 전"
+      "due": "2027-05-07"
     },
     {
       "id": "c19",
       "group": "예약·통신·보험",
-      "text": "5/21 오전 마요르카→바르셀로나 연결편 발권 시 귀국편(TW0408)과 같은 'BCN 터미널 2(T2)' 도착편(라이언에어·이지젯 등) 우선 검토",
+      "text": "5/21 오전 마요르카→바르셀로나 연결편 발권 시 대한항공(KE0916)과 같은 'BCN 터미널 1(T1)' 도착편(부엘링·에어유로파) 우선 선택",
       "done": false,
       "due": "유럽항공 발권 시"
     },
     {
       "id": "c20",
       "group": "필수 서류·금융",
-      "text": "택스리펀드 지퍼백 2개 분리 준비: ① 스페인 영수증(BCN T2 DIVA 무인스캔용) / ② 포르투갈 영수증(BCN T2 세관 창구 실물 도장용)",
+      "text": "택스리펀드 지퍼백 2개 분리 준비: ① 스페인 영수증(BCN T1 3층 세관 DIVA 무인스캔용) / ② 포르투갈 영수증(BCN T1 세관 창구 실물 도장용)",
       "done": false,
       "due": "짐싸기·귀국 날"
     },
@@ -3659,8 +3625,8 @@ window.__DEFAULT_TRIP_DATA__ = {
     },
     {
       "icon": "",
-      "title": "BCN 터미널 2 택스리펀드 (스페인 DIVA vs 포르투갈 세관도장)",
-      "body": "귀국편(트리니티항공 TW0408)은 바르셀로나 터미널 2(T2) 출발입니다. 짐을 부치기 전에 T2 출국장 체크인 A구역 근처 세관에 들러 ① 스페인 구매분은 DIVA 무인 스캐너에 바코드를 찍고(최소 구매액 제한 없음), ② 포르투갈 구매분(매장당 €61.5 이상)은 타 EU 국가 발행분이라 기계 승인이 안 되므로 바로 옆 세관 창구에서 실물 확인 후 수동 도장을 받아야 합니다."
+      "title": "BCN 터미널 1 택스리펀드 (스페인 DIVA vs 포르투갈 세관도장)",
+      "body": "대한항공 귀국편(KE0916)은 바르셀로나 터미널 1(T1) 출발입니다. 짐을 부치기 전에 T1 3층 출발홀 안쪽 세관에 들러 ① 스페인 구매분은 DIVA 무인 스캐너에 바코드를 찍고(최소 구매액 제한 없음), ② 포르투갈 구매분(매장당 €61.5 이상)은 타 EU 국가 발행분이라 기계 승인이 안 되므로 바로 옆 세관 창구에서 실물 확인 후 수동 도장을 받아야 합니다."
     },
     {
       "icon": "",
@@ -3669,13 +3635,13 @@ window.__DEFAULT_TRIP_DATA__ = {
     },
     {
       "icon": "",
-      "title": "여행사 발권 항공권 PNR 연동 & 공항 버스 노선(A1 vs A2)",
-      "body": "하나투어 등 여행사로 발권한 항공권은 예약내역 안의 '항공사 예약번호(영문·숫자 6자리 PNR)'로 항공사 공식 앱/웹에서 조회해 부가서비스(34G·34H 좌석·23kg 수하물)가 정상 반영됐는지 미리 확인해두면 안심됩니다. 또한 바르셀로나 시내↔공항 Aerobus는 T1행(A1)과 T2행(A2)이 다르니 귀국 날(TW0408, T2 출발)엔 꼭 A2를 타세요."
+      "title": "대한항공 터미널 공식 (인천은 T2 · 바르셀로나는 T1!)",
+      "body": "대한항공 KE0915/KE0916은 한국에서는 '인천공항 제2여객터미널(T2)', 스페인에서는 '바르셀로나 공항 터미널 1(T1)'을 이용합니다. 시내 카탈루냐 광장 공항버스도 입국·귀국 모두 헷갈릴 것 없이 'Aerobus A1(T1 전용)'만 이용하면 됩니다."
     },
     {
       "icon": "",
-      "title": "장거리 기내 컨디션 & 카타르 허니문 케이크 특전",
-      "body": "귀국 직항(TW0408)에 지정하신 34G·34H는 2-4-2 배열의 우측 2인 독립석이자 앞쪽 32열 화장실과도 한 줄 떨어져 있어 소음 없이 두 분만 편히 쉴 수 있는 명당입니다. 출국편 카타르항공 발권 후에는 출발 48시간 전까지 마이페이지/고객센터로 무료 기내 허니문 축하 케이크(SPML)도 꼭 신청해보세요!"
+      "title": "대한항공 A350-900 좌석 명당 & 스카이패스 적립",
+      "body": "투입 기종인 최신형 Airbus A350-900은 기내 습도·기압이 쾌적하고 소음이 적습니다. 이코노미 기본 3-3-3 배열 중 기체 후미 테이퍼 구간의 창가 2인석 또는 29~31열 엑스트라 레그룸 좌석이 커플 명당이니 대한항공 앱에 6자리 예약번호(PNR)를 등록해 미리 좌석과 스카이패스 회원번호를 입력해두세요!"
     }
   ]
 };

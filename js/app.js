@@ -78,7 +78,7 @@
 
     if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
       navigator.serviceWorker
-        .register('sw.js?v=8')
+        .register('sw.js?v=9')
         .then((reg) => reg.update().catch(() => {}))
         .catch(() => {});
     }
@@ -116,46 +116,53 @@
         if (!saved.coupleTitle || saved.coupleTitle === '우리의 이베리아 허니문') {
           saved.coupleTitle = '종구♡쨀린 허니문';
         }
-        let mergedBudgetItems = Array.isArray(saved.budgetItems) && saved.budgetItems.length ? saved.budgetItems : fresh.budgetItems;
-        const legacyRoundTripIdx = mergedBudgetItems.findIndex(
-          (x) => x.id === 'bi-1' && x.title && x.title.includes('왕복') && (!x.actual || x.actual === 0)
-        );
-        const hasSplitReturn = mergedBudgetItems.some((x) => x.id === 'bi-1b');
-        if (legacyRoundTripIdx !== -1 && !hasSplitReturn) {
-          const freshOut = fresh.budgetItems.find((x) => x.id === 'bi-1');
-          const freshRet = fresh.budgetItems.find((x) => x.id === 'bi-1b');
-          if (freshOut && freshRet) {
-            mergedBudgetItems = [
-              ...mergedBudgetItems.slice(0, legacyRoundTripIdx),
-              freshOut,
-              freshRet,
-              ...mergedBudgetItems.slice(legacyRoundTripIdx + 1)
-            ];
+        let mergedBudgetItems = Array.isArray(saved.budgetItems) && saved.budgetItems.length ? [...saved.budgetItems] : [...fresh.budgetItems];
+        const freshMainFlight = fresh.budgetItems.find((b) => b.id === 'bi-1');
+        // Migrate previous split Doha(bi-1) + T'way(bi-1b) items into unified Korean Air round-trip bi-1
+        const hasOldSplit = mergedBudgetItems.some((x) => x.id === 'bi-1b');
+        const hasOldDoha = mergedBudgetItems.some((x) => x.id === 'bi-1' && x.title && (x.title.includes('도하') || !x.title.includes('대한항공')));
+        if (freshMainFlight && (hasOldSplit || hasOldDoha)) {
+          mergedBudgetItems = mergedBudgetItems.filter((x) => x.id !== 'bi-1b');
+          const bi1Idx = mergedBudgetItems.findIndex((x) => x.id === 'bi-1');
+          if (bi1Idx !== -1) {
+            const prevBi1 = mergedBudgetItems[bi1Idx];
+            const keepUserPaid = prevBi1.title && prevBi1.title.includes('대한항공') && prevBi1.actual > 0;
+            mergedBudgetItems[bi1Idx] = keepUserPaid ? prevBi1 : { ...freshMainFlight };
+          } else {
+            mergedBudgetItems.unshift({ ...freshMainFlight });
           }
         }
-        // Sync any base budget items newly confirmed or updated in trip.json
-        mergedBudgetItems = mergedBudgetItems.map((item) => {
-          const baseMatch = fresh.budgetItems.find((b) => b.id === item.id);
-          if (baseMatch && baseMatch.payStatus === 'paid' && item.payStatus === 'todo' && (!item.actual || item.actual === 0)) {
-            return { ...baseMatch };
-          }
-          if (baseMatch && item.id === 'bi-1b' && item.actual === 1700000 && !item.title.includes('34G')) {
-            return { ...item, title: baseMatch.title, method: baseMatch.method, memo: baseMatch.memo };
+
+        let mergedChecklist = Array.isArray(saved.checklist) && saved.checklist.length ? [...saved.checklist] : [...fresh.checklist];
+        const refreshedIds = new Set(['c17', 'c18', 'c19', 'c20']);
+        mergedChecklist = mergedChecklist.map((item) => {
+          const fm = fresh.checklist.find((fc) => fc.id === item.id);
+          if (fm && refreshedIds.has(item.id) && item.text !== fm.text) {
+            return { ...fm, done: false };
           }
           return item;
         });
-        let mergedChecklist = Array.isArray(saved.checklist) && saved.checklist.length ? [...saved.checklist] : [...fresh.checklist];
         const existingCheckIds = new Set(mergedChecklist.map((c) => c.id));
         fresh.checklist.forEach((fc) => {
           if (!existingCheckIds.has(fc.id)) {
             mergedChecklist.push(fc);
           }
         });
-        if (saved.flightOverrides && saved.flightOverrides.f5 && saved.flightOverrides.f5.status === 'todo') {
-          delete saved.flightOverrides.f5;
+
+        if (saved.flightOverrides) {
+          ['f1', 'f5'].forEach((fid) => {
+            const ov = saved.flightOverrides[fid];
+            if (ov && (ov.status === 'todo' || (ov.airline && !ov.airline.includes('대한항공')))) {
+              delete saved.flightOverrides[fid];
+            }
+          });
         }
-        if (saved.bookingOverrides && saved.bookingOverrides['b-flight-bcn-icn'] && saved.bookingOverrides['b-flight-bcn-icn'].status === 'todo') {
-          delete saved.bookingOverrides['b-flight-bcn-icn'];
+        if (saved.bookingOverrides) {
+          ['b-flight-icn-bcn', 'b-flight-bcn-icn'].forEach((bid) => {
+            if (saved.bookingOverrides[bid] && saved.bookingOverrides[bid].status === 'todo') {
+              delete saved.bookingOverrides[bid];
+            }
+          });
         }
         userState = {
           ...fresh,
@@ -446,7 +453,7 @@
     if (titleEl) titleEl.textContent = userState.coupleTitle;
     document.title = `${userState.coupleTitle} · 바르셀로나 · 포르투 · 마요르카`;
 
-    const start = new Date('2027-05-08T00:00:00+09:00');
+    const start = new Date('2027-05-09T00:00:00+09:00');
     const end = new Date('2027-05-22T23:59:59+09:00');
     const now = new Date();
     const ddayPill = document.getElementById('dday-pill');
@@ -487,7 +494,7 @@
     }
 
     const stats = [
-      { label: '일정', value: '12박 15일', sub: '5/8 출발 · 5/21 출국', tab: 'home' },
+      { label: '일정', value: '12박 14일', sub: '5/9 직항 출발 · 5/22 도착', tab: 'home' },
       { label: '항공권', value: `${bookedFlightsCount} / ${flights.length} 구간`, sub: bookedFlightsCount === 0 ? '전 구간 예약 전' : '발권 현황 보기', tab: 'flights' },
       { label: '숙소', value: `${bookedStaysCities} / 3 도시`, sub: `후보 ${stays.length}곳 비교`, tab: 'stays' },
       { label: '필수 예약', value: `${doneBookings} / ${actionableBookings.length} 완료`, sub: '투어·입장권·렌터카', tab: 'bookings' },
@@ -598,7 +605,8 @@
             : CITY_META[tripDay.city]?.badge || 'city-badge-bcn';
 
         const shortMobileLabel =
-          tripDay.dayNo === 0 ? '출국'
+          tripDay.dayNo === 0 ? '전야'
+          : tripDay.dayNo === 1 ? '출국·바셀'
           : tripDay.dayNo === 13 ? '귀국편'
           : tripDay.dayNo === 14 ? '도착'
           : tripDay.city === 'bcn' ? '바셀'
@@ -2037,10 +2045,11 @@ ${names}`;
             if (bId) {
               userState.bookingOverrides[bId] = { ...(userState.bookingOverrides[bId] || {}), status: status === 'booked' ? 'booked' : 'todo' };
             }
-            const budgetMap = { f1: 'bi-1', f2: 'bi-2', f3: 'bi-3', f4: 'bi-4', f5: 'bi-1b' };
+            const budgetMap = { f1: 'bi-1', f2: 'bi-2', f3: 'bi-3', f4: 'bi-4', f5: 'bi-1' };
             const bItem = userState.budgetItems.find((x) => x.id === budgetMap[flightId]);
             if (bItem && status === 'booked' && paidKRW > 0) {
               bItem.currency = 'KRW';
+              bItem.planned = paidKRW;
               bItem.actual = paidKRW;
               bItem.payStatus = 'paid';
             }

@@ -11,13 +11,13 @@
   <meta name="apple-mobile-web-app-title" content="종구♡쨀린 허니문" />
 
   <title>종구♡쨀린 허니문 · 바르셀로나 · 포르투 · 마요르카</title>
-  <meta name="description" content="2027.05.08 출발 — 05.21 출국 (12박 15일) · 바르셀로나·포르투·마요르카 신혼여행 플래너" />
+  <meta name="description" content="2027.05.09 직항 출발 — 05.22 도착 (12박 14일) · 바르셀로나·포르투·마요르카 신혼여행 플래너" />
 
   <!-- KakaoTalk / Messenger Share OpenGraph -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://moneymoeungu.github.io/honeymoon-2027/" />
   <meta property="og:site_name" content="종구♡쨀린 허니문" />
-  <meta property="og:title" content="종구♡쨀린 허니문 (2027.05.08 ~ 05.21)" />
+  <meta property="og:title" content="종구♡쨀린 허니문 (2027.05.09 ~ 05.22 · 대한항공 직항)" />
   <meta property="og:description" content="바르셀로나 4박 · 포르투 4박 · 마요르카 4박 | 캘린더·항공·지도·맛집·예산 플래너" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -30,8 +30,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" crossorigin="" onerror="this.onerror=null;this.href='https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';" />
   <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" crossorigin="" onerror="var s=document.createElement('script');s.src='https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';document.head.appendChild(s);"></script>
 
-  <link rel="manifest" href="manifest.json?v=8" />
-  <link rel="stylesheet" href="css/styles.css?v=8" />
+  <link rel="manifest" href="manifest.json?v=9" />
+  <link rel="stylesheet" href="css/styles.css?v=9" />
 </head>
 <body data-layout="tabs">
 
@@ -41,7 +41,7 @@
       <!-- Top Meta Bar -->
       <div class="flex flex-wrap items-center justify-between gap-2 pb-3.5 mb-4 border-b border-[var(--border-line)] text-xs text-[var(--text-sub)]">
         <div class="flex flex-wrap items-center gap-x-2.5 gap-y-1 tabular-nums">
-          <span class="font-medium text-[var(--text-main)]">2027.05.08(토) — 05.21(금) · 12박 15일</span>
+          <span class="font-medium text-[var(--text-main)]">2027.05.09(일) 출발 — 05.22(토) 도착 · 12박 14일</span>
           <span class="text-[var(--border-strong)] hidden sm:inline">|</span>
           <span class="text-[11px] sm:text-xs">
             한국 <strong id="clock-kst" class="text-[var(--text-main)]">--:--</strong> ·
@@ -74,7 +74,7 @@
 
           <!-- Clean City Color Legend Route -->
           <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs sm:text-sm text-[var(--text-sub)]">
-            <span>인천(도하 경유)</span>
+            <span class="font-medium text-[var(--done-text)]">인천 T2 직항(5/9 11:50 · KE0915)</span>
             <span class="text-[var(--text-muted)]">→</span>
             <span class="inline-flex items-center gap-1 font-medium text-[var(--text-main)]">
               <span class="city-dot dot-bcn"></span>바르셀로나 4박
@@ -88,7 +88,7 @@
               <span class="city-dot dot-pmi"></span>마요르카 4박
             </span>
             <span class="text-[var(--text-muted)]">→</span>
-            <span class="font-medium text-[var(--done-text)]">인천 직항(5/22 16:40 · 34G/34H 확정)</span>
+            <span class="font-medium text-[var(--done-text)]">인천 T2 직항(5/22 16:20 · KE0916)</span>
           </div>
         </div>
       </div>
@@ -171,7 +171,7 @@
       <div>
         <div class="mb-3">
           <h2 class="text-base sm:text-lg font-bold">출발 전 준비 순서</h2>
-          <p class="text-xs text-[var(--text-sub)]">귀국 직항(TW0408) 예매 완료! 남은 출국편·유럽 구간 및 예약 진행 순서입니다.</p>
+          <p class="text-xs text-[var(--text-sub)]">대한항공 바르셀로나 왕복 직항(KE0915 · KE0916) 예매 완료! 남은 유럽 내 3구간 및 숙소·투어 준비 순서입니다.</p>
         </div>
         <div id="roadmap-list" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3"></div>
       </div>
@@ -182,10 +182,10 @@
       <div class="hm-card p-4 sm:p-5">
         <div class="flex flex-wrap items-center gap-2 mb-1">
           <h2 class="text-base sm:text-lg font-bold">항공권 및 도시 간 이동</h2>
-          <span id="flights-summary-badge" class="px-2 py-0.5 rounded text-xs font-semibold status-todo">1/5 발권</span>
+          <span id="flights-summary-badge" class="px-2 py-0.5 rounded text-xs font-semibold status-todo">2/5 발권</span>
         </div>
         <p class="text-xs sm:text-sm text-[var(--text-sub)]">
-          귀국 직항(5/21 21:00 바르셀로나 T2 → 인천 T1 트리니티 TW0408)은 예매 완료! 이제 출국편(인천→도하→바르셀로나)과 유럽 내 3구간을 수하물(20~25kg) 포함 조건으로 발권하세요.
+          대한항공 장거리 왕복 직항(5/9 11:50 KE0915 · 5/21 20:50 KE0916, Airbus A350-900) 예매 완료! 이제 유럽 내 3구간을 수하물(20~25kg) 포함 조건으로 발권하세요.
         </p>
       </div>
 
@@ -469,11 +469,11 @@
           </div>
           <div class="p-3 hm-subtle-box flex flex-col justify-between gap-2">
             <div>
-              <div class="font-semibold text-[var(--text-main)] mb-1">출국 항공편(카타르항공 등) 기내 허니문 축하 케이크 요청 문구</div>
-              <p class="text-[var(--text-sub)] leading-relaxed">"We are traveling on our honeymoon! Could we kindly request a complimentary Honeymoon Celebration Cake (SPML) on board if available? Thank you!"</p>
+              <div class="font-semibold text-[var(--text-main)] mb-1">바르셀로나 택시 기사님께 호텔/공항 목적지 스페인어 안내 문구</div>
+              <p class="text-[var(--text-sub)] leading-relaxed">"¡Hola! Vamos a [호텔명] cerca de Plaça de Catalunya, por favor. Con taxímetro, gracias." (안녕하세요, 카탈루냐 광장 근처 [호텔명]으로 가주세요. 미터기로 부탁드립니다.)</p>
             </div>
             <div>
-              <button type="button" data-copy-snippet="We are traveling on our honeymoon! Could we kindly request a complimentary Honeymoon Celebration Cake (SPML) on board if available? Thank you!" class="btn-hm btn-hm-sm">문구 복사</button>
+              <button type="button" data-copy-snippet="¡Hola! Vamos al hotel cerca de Plaça de Catalunya, por favor. Con taxímetro, gracias." class="btn-hm btn-hm-sm">문구 복사</button>
             </div>
           </div>
         </div>
@@ -538,7 +538,7 @@
   <div id="modal-root"></div>
   <div id="toast-root"></div>
 
-  <script src="data/trip-data.js?v=8"></script>
-  <script src="js/app.js?v=8"></script>
+  <script src="data/trip-data.js?v=9"></script>
+  <script src="js/app.js?v=9"></script>
 </body>
 </html>
